@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6254" systemVersion="14B25" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="oUC-II-Cfy">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6254" systemVersion="14B25" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="QhH-Zg-VwR">
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6247"/>
     </dependencies>
@@ -101,34 +101,46 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="RkP-h6-Alq">
-                                <rect key="frame" x="8" y="9" width="101" height="100"/>
+                                <rect key="frame" x="8" y="77" width="101" height="100"/>
                             </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="店舗名" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="n7f-8E-P2I">
-                                <rect key="frame" x="143" y="20" width="98" height="21"/>
+                                <rect key="frame" x="150" y="77" width="98" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="uF0-F7-ytq">
-                                <rect key="frame" x="143" y="59" width="50" height="50"/>
+                                <rect key="frame" x="150" y="127" width="50" height="50"/>
                             </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="住所・目印" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wSi-Ih-IgM">
-                                <rect key="frame" x="8" y="133" width="185" height="21"/>
+                                <rect key="frame" x="8" y="219" width="185" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" text="料理の評価・一言" translatesAutoresizingMaskIntoConstraints="NO" id="IMn-4Q-e2w">
-                                <rect key="frame" x="8" y="177" width="240" height="358"/>
+                                <rect key="frame" x="8" y="260" width="240" height="240"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="PzJ-KE-VXW">
-                                <rect key="frame" x="124" y="550" width="69" height="30"/>
-                                <state key="normal" title="bookmark">
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ubz-q3-bIJ">
+                                <rect key="frame" x="8" y="28" width="57" height="30"/>
+                                <state key="normal" title="＜BACK">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
+                                <connections>
+                                    <action selector="tapBtn2:" destination="QhH-Zg-VwR" eventType="touchUpInside" id="Q6w-by-haZ"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="contactAdd" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="PzJ-KE-VXW">
+                                <rect key="frame" x="268" y="523" width="22" height="22"/>
+                                <state key="normal">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="tapBtn:" destination="QhH-Zg-VwR" eventType="touchUpInside" id="6kd-fO-oV3"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -143,7 +155,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="mfc-PR-Bma" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="431" y="1077"/>
+            <point key="canvasLocation" x="-344" y="1077"/>
         </scene>
         <!--グルメ-->
         <scene sceneID="7lN-MB-Alx">
@@ -379,11 +391,11 @@
             </objects>
             <point key="canvasLocation" x="-344" y="339"/>
         </scene>
-        <!--BookMark-->
+        <!--Bookmark-->
         <scene sceneID="LRw-WZ-q8r">
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="hbY-kj-xoQ" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="BookMark" id="0p7-di-LNE"/>
+                    <tabBarItem key="tabBarItem" title="Bookmark" id="0p7-di-LNE"/>
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="5np-3p-sVD">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
