@@ -8,6 +8,8 @@
 
 #import <UIKit/UIKit.h>
 
-@interface seventhViewController : UIViewController
+@interface seventhViewController : UIViewController<UITableViewDelegate,UITableViewDataSource>
+
+@property (weak, nonatomic) IBOutlet UITableView *myTableView;
 
 @end

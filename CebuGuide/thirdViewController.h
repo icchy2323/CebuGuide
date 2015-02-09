@@ -9,5 +9,10 @@
 #import <UIKit/UIKit.h>
 
 @interface thirdViewController : UIViewController
+@property (weak, nonatomic) IBOutlet UILabel *myLabel;
+
+- (IBAction)tapBtn3:(id)sender;
+
+- (IBAction)tapBtn4:(id)sender;
 
 @end

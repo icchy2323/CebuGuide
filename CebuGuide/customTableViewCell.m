@@ -10,6 +10,11 @@
 
 @implementation customTableViewCell
 
++ (CGFloat)rowHeight
+{
+    return 60.0f;
+}
+
 - (void)awakeFromNib {
     // Initialization code
 }

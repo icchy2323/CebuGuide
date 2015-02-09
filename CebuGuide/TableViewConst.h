@@ -8,6 +8,8 @@
 
 #import <Foundation/Foundation.h>
 
+static NSString * const TableViewCustomCellIdentifier = @"TableViewCustomCell";
+
 @interface TableViewConst : NSObject
 
 @end

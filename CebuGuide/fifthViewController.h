@@ -8,6 +8,8 @@
 
 #import <UIKit/UIKit.h>
 
-@interface fifthViewController : UIViewController
+@interface fifthViewController : UIViewController<UITableViewDelegate,UITableViewDataSource>
+
+@property (weak, nonatomic) IBOutlet UITableView *myTableView;
 
 @end

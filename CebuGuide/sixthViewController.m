@@ -7,8 +7,15 @@
 //
 
 #import "sixthViewController.h"
+#import "customTableViewCell.h"
+#import "TableViewConst.h"
 
 @interface sixthViewController ()
+
+//テーブルに表示する情報が入ります。
+@property (nonatomic, strong) NSArray *dataSourceName;
+@property (nonatomic, strong) NSArray *dataSourceHyouka;
+
 
 @end
 
@@ -17,6 +24,46 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
+    
+    // デリゲートメソッドをこのクラスで実装する
+    self.myTableView.delegate = self;
+    self.myTableView.dataSource = self;
+    
+    
+    // テーブルに表示したいデータソースをセット
+    self.dataSourceName = @[@"a", @"b", @"c", @"d", @"e"];
+    self.dataSourceHyouka = @[@"⭐︎", @"⭐︎⭐︎", @"⭐︎⭐︎⭐︎"];
+    
+
+    
+    UINib *nib = [UINib nibWithNibName:@"TableViewCustomCell" bundle:nil];
+    [self.myTableView registerNib:nib forCellReuseIdentifier:@"cell"];
+    
+   
+}
+
+- (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath
+{
+    return [customTableViewCell rowHeight];
+}
+
+-(NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section{
+    return 20;
+}
+
+-(UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath{
+    static NSString *CellIdentifier = @"cell";
+    
+    //customTableViewCell *cell;
+    
+    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:CellIdentifier];
+    
+    if (cell == nil) {
+       cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:CellIdentifier];
+    }
+    cell.textLabel.text = [NSString stringWithFormat:@"%ld",(long)indexPath.row];
+    
+    return cell;
 }
 
 - (void)didReceiveMemoryWarning {

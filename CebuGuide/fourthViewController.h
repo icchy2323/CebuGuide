@@ -8,6 +8,10 @@
 
 #import <UIKit/UIKit.h>
 
-@interface fourthViewController : UIViewController
+@interface fourthViewController : UIViewController<UITableViewDelegate,UITableViewDataSource>
+
+@property (weak, nonatomic) IBOutlet UITableView *myTableView;
+
+- (IBAction)tapBtn:(id)sender;
 
 @end

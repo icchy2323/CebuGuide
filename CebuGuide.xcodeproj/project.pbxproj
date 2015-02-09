@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		583BC51B1A886E460087730B /* eighthViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 583BC51A1A886E460087730B /* eighthViewController.m */; };
+		5855E5951A847BA00097A581 /* TableViewConst.m in Sources */ = {isa = PBXBuildFile; fileRef = 5855E5941A847BA00097A581 /* TableViewConst.m */; };
+		5855E5971A847BE90097A581 /* TableViewCustomCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5855E5961A847BE90097A581 /* TableViewCustomCell.xib */; };
+		5855E59A1A847C9F0097A581 /* customTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 5855E5991A847C9F0097A581 /* customTableViewCell.m */; };
 		58AF3FF31A78A61F0075BAC3 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 58AF3FF21A78A61F0075BAC3 /* main.m */; };
 		58AF3FF61A78A61F0075BAC3 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 58AF3FF51A78A61F0075BAC3 /* AppDelegate.m */; };
 		58AF3FF91A78A61F0075BAC3 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 58AF3FF81A78A61F0075BAC3 /* ViewController.m */; };
@@ -14,6 +18,13 @@
 		58AF3FFE1A78A61F0075BAC3 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 58AF3FFD1A78A61F0075BAC3 /* Images.xcassets */; };
 		58AF40011A78A61F0075BAC3 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 58AF3FFF1A78A61F0075BAC3 /* LaunchScreen.xib */; };
 		58AF400D1A78A61F0075BAC3 /* CebuGuideTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 58AF400C1A78A61F0075BAC3 /* CebuGuideTests.m */; };
+		58AF40171A78A9C00075BAC3 /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 58AF40161A78A9C00075BAC3 /* MapKit.framework */; };
+		58BC08971A7F2F94000CF949 /* secondViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 58BC08961A7F2F94000CF949 /* secondViewController.m */; };
+		58BC089A1A7F30BB000CF949 /* thirdViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 58BC08991A7F30BB000CF949 /* thirdViewController.m */; };
+		58BC08A01A7F4632000CF949 /* fourthViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 58BC089F1A7F4632000CF949 /* fourthViewController.m */; };
+		58BC08A31A7F4CE9000CF949 /* fifthViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 58BC08A21A7F4CE9000CF949 /* fifthViewController.m */; };
+		58BC08D81A808AAC000CF949 /* sixthViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 58BC08D71A808AAC000CF949 /* sixthViewController.m */; };
+		58BC08DB1A808AEF000CF949 /* seventhViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 58BC08DA1A808AEF000CF949 /* seventhViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -27,6 +38,13 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		583BC5191A886E460087730B /* eighthViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = eighthViewController.h; sourceTree = "<group>"; };
+		583BC51A1A886E460087730B /* eighthViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = eighthViewController.m; sourceTree = "<group>"; };
+		5855E5931A847BA00097A581 /* TableViewConst.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TableViewConst.h; sourceTree = "<group>"; };
+		5855E5941A847BA00097A581 /* TableViewConst.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TableViewConst.m; sourceTree = "<group>"; };
+		5855E5961A847BE90097A581 /* TableViewCustomCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TableViewCustomCell.xib; sourceTree = "<group>"; };
+		5855E5981A847C9F0097A581 /* customTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = customTableViewCell.h; sourceTree = "<group>"; };
+		5855E5991A847C9F0097A581 /* customTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = customTableViewCell.m; sourceTree = "<group>"; };
 		58AF3FED1A78A61F0075BAC3 /* CebuGuide.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CebuGuide.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		58AF3FF11A78A61F0075BAC3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		58AF3FF21A78A61F0075BAC3 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -40,6 +58,19 @@
 		58AF40061A78A61F0075BAC3 /* CebuGuideTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CebuGuideTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		58AF400B1A78A61F0075BAC3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		58AF400C1A78A61F0075BAC3 /* CebuGuideTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CebuGuideTests.m; sourceTree = "<group>"; };
+		58AF40161A78A9C00075BAC3 /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
+		58BC08951A7F2F94000CF949 /* secondViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = secondViewController.h; sourceTree = "<group>"; };
+		58BC08961A7F2F94000CF949 /* secondViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = secondViewController.m; sourceTree = "<group>"; };
+		58BC08981A7F30BB000CF949 /* thirdViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = thirdViewController.h; sourceTree = "<group>"; };
+		58BC08991A7F30BB000CF949 /* thirdViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = thirdViewController.m; sourceTree = "<group>"; };
+		58BC089E1A7F4632000CF949 /* fourthViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = fourthViewController.h; sourceTree = "<group>"; };
+		58BC089F1A7F4632000CF949 /* fourthViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = fourthViewController.m; sourceTree = "<group>"; };
+		58BC08A11A7F4CE9000CF949 /* fifthViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = fifthViewController.h; sourceTree = "<group>"; };
+		58BC08A21A7F4CE9000CF949 /* fifthViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = fifthViewController.m; sourceTree = "<group>"; };
+		58BC08D61A808AAC000CF949 /* sixthViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = sixthViewController.h; sourceTree = "<group>"; };
+		58BC08D71A808AAC000CF949 /* sixthViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = sixthViewController.m; sourceTree = "<group>"; };
+		58BC08D91A808AEF000CF949 /* seventhViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = seventhViewController.h; sourceTree = "<group>"; };
+		58BC08DA1A808AEF000CF949 /* seventhViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = seventhViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -47,6 +78,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				58AF40171A78A9C00075BAC3 /* MapKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -60,9 +92,19 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		5855E5921A847B5A0097A581 /* Const */ = {
+			isa = PBXGroup;
+			children = (
+				5855E5931A847BA00097A581 /* TableViewConst.h */,
+				5855E5941A847BA00097A581 /* TableViewConst.m */,
+			);
+			name = Const;
+			sourceTree = "<group>";
+		};
 		58AF3FE41A78A61F0075BAC3 = {
 			isa = PBXGroup;
 			children = (
+				58AF40161A78A9C00075BAC3 /* MapKit.framework */,
 				58AF3FEF1A78A61F0075BAC3 /* CebuGuide */,
 				58AF40091A78A61F0075BAC3 /* CebuGuideTests */,
 				58AF3FEE1A78A61F0075BAC3 /* Products */,
@@ -81,14 +123,32 @@
 		58AF3FEF1A78A61F0075BAC3 /* CebuGuide */ = {
 			isa = PBXGroup;
 			children = (
+				5855E5921A847B5A0097A581 /* Const */,
 				58AF3FF41A78A61F0075BAC3 /* AppDelegate.h */,
 				58AF3FF51A78A61F0075BAC3 /* AppDelegate.m */,
 				58AF3FF71A78A61F0075BAC3 /* ViewController.h */,
 				58AF3FF81A78A61F0075BAC3 /* ViewController.m */,
+				58BC08951A7F2F94000CF949 /* secondViewController.h */,
+				58BC08961A7F2F94000CF949 /* secondViewController.m */,
+				58BC08981A7F30BB000CF949 /* thirdViewController.h */,
+				58BC08991A7F30BB000CF949 /* thirdViewController.m */,
+				58BC089E1A7F4632000CF949 /* fourthViewController.h */,
+				58BC089F1A7F4632000CF949 /* fourthViewController.m */,
+				58BC08A11A7F4CE9000CF949 /* fifthViewController.h */,
+				58BC08A21A7F4CE9000CF949 /* fifthViewController.m */,
+				58BC08D61A808AAC000CF949 /* sixthViewController.h */,
+				58BC08D71A808AAC000CF949 /* sixthViewController.m */,
+				58BC08D91A808AEF000CF949 /* seventhViewController.h */,
+				58BC08DA1A808AEF000CF949 /* seventhViewController.m */,
+				583BC5191A886E460087730B /* eighthViewController.h */,
+				583BC51A1A886E460087730B /* eighthViewController.m */,
 				58AF3FFA1A78A61F0075BAC3 /* Main.storyboard */,
 				58AF3FFD1A78A61F0075BAC3 /* Images.xcassets */,
 				58AF3FFF1A78A61F0075BAC3 /* LaunchScreen.xib */,
 				58AF3FF01A78A61F0075BAC3 /* Supporting Files */,
+				5855E5961A847BE90097A581 /* TableViewCustomCell.xib */,
+				5855E5981A847C9F0097A581 /* customTableViewCell.h */,
+				5855E5991A847C9F0097A581 /* customTableViewCell.m */,
 			);
 			path = CebuGuide;
 			sourceTree = "<group>";
@@ -201,6 +261,7 @@
 			files = (
 				58AF3FFC1A78A61F0075BAC3 /* Main.storyboard in Resources */,
 				58AF40011A78A61F0075BAC3 /* LaunchScreen.xib in Resources */,
+				5855E5971A847BE90097A581 /* TableViewCustomCell.xib in Resources */,
 				58AF3FFE1A78A61F0075BAC3 /* Images.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -219,9 +280,18 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5855E59A1A847C9F0097A581 /* customTableViewCell.m in Sources */,
+				583BC51B1A886E460087730B /* eighthViewController.m in Sources */,
+				58BC08A01A7F4632000CF949 /* fourthViewController.m in Sources */,
+				58BC08971A7F2F94000CF949 /* secondViewController.m in Sources */,
 				58AF3FF91A78A61F0075BAC3 /* ViewController.m in Sources */,
 				58AF3FF61A78A61F0075BAC3 /* AppDelegate.m in Sources */,
 				58AF3FF31A78A61F0075BAC3 /* main.m in Sources */,
+				5855E5951A847BA00097A581 /* TableViewConst.m in Sources */,
+				58BC089A1A7F30BB000CF949 /* thirdViewController.m in Sources */,
+				58BC08DB1A808AEF000CF949 /* seventhViewController.m in Sources */,
+				58BC08A31A7F4CE9000CF949 /* fifthViewController.m in Sources */,
+				58BC08D81A808AAC000CF949 /* sixthViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -344,6 +414,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = CebuGuide/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
@@ -354,6 +425,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = CebuGuide/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
@@ -412,6 +484,7 @@
 				58AF40121A78A61F0075BAC3 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		58AF40131A78A61F0075BAC3 /* Build configuration list for PBXNativeTarget "CebuGuideTests" */ = {
 			isa = XCConfigurationList;
@@ -420,6 +493,7 @@
 				58AF40151A78A61F0075BAC3 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
