@@ -37,8 +37,8 @@
 //    
 //    //縮尺を設定
 //    MKCoordinateRegion cr = mapView.region;
-//    cr.span.latitudeDelta = 0.03; //数字を小さくすると、詳細な地図（範囲が狭い）になる 緯度
-//    cr.span.longitudeDelta = 0.03; //　　　　　　　　同上　　　　　　　　　　　　　　　経度
+//    cr.span.latitudeDelta = 0.01; //数字を小さくすると、詳細な地図（範囲が狭い）になる 緯度
+//    cr.span.longitudeDelta = 0.01; //　　　　　　　　同上　　　　　　　　　　　　　　　経度
 //    
 //    [mapView setRegion:cr];
 //
@@ -66,7 +66,7 @@
 //    // 地図の中心座標に現在地を設定
 //    mapView.centerCoordinate = mapView.userLocation.location.coordinate;
 //    // 表示倍率の設定
-//    MKCoordinateSpan span = MKCoordinateSpanMake(0.03, 0.03);
+//    MKCoordinateSpan span = MKCoordinateSpanMake(0.01, 0.01);
 //    MKCoordinateRegion region = MKCoordinateRegionMake(mapView.userLocation.coordinate, span);
 //    [mapView setRegion:region animated:YES];
 //    

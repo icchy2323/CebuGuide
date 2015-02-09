@@ -42,7 +42,7 @@ context:(void *)context
     // 地図の中心座標に現在地を設定
     mapView.centerCoordinate = mapView.userLocation.location.coordinate;
     // 表示倍率の設定
-    MKCoordinateSpan span = MKCoordinateSpanMake(0.005, 0.005);
+    MKCoordinateSpan span = MKCoordinateSpanMake(0.01, 0.01);
     MKCoordinateRegion region = MKCoordinateRegionMake(mapView.userLocation.coordinate, span);
     [mapView setRegion:region animated:YES];
     
