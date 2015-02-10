@@ -8,7 +8,7 @@
 
 #import <UIKit/UIKit.h>
 
-@interface eighthViewController : UIViewController
+@interface syousaiViewController : UIViewController
 @property (weak, nonatomic) IBOutlet UIImageView *myImageView;
 @property (weak, nonatomic) IBOutlet UILabel *myLabel;
 @property (weak, nonatomic) IBOutlet UIImageView *myImageView2;

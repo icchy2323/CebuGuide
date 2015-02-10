@@ -6,13 +6,13 @@
 //  Copyright (c) 2015年 市川 貴章. All rights reserved.
 //
 
-#import "eighthViewController.h"
+#import "syousaiViewController.h"
 
-@interface eighthViewController ()
+@interface syousaiViewController ()
 
 @end
 
-@implementation eighthViewController
+@implementation syousaiViewController
 
 - (void)viewDidLoad {
     [super viewDidLoad];

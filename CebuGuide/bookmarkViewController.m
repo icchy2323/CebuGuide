@@ -1,38 +1,22 @@
 //
-//  fourthViewController.m
+//  thirdViewController.m
 //  CebuGuide
 //
 //  Created by 市川 貴章 on 2015/02/02.
 //  Copyright (c) 2015年 市川 貴章. All rights reserved.
 //
 
-#import "fourthViewController.h"
+#import "bookmarkViewController.h"
 
-@interface fourthViewController ()
+@interface bookmarkViewController ()
 
 @end
 
-@implementation fourthViewController
+@implementation bookmarkViewController
 
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
-}
-
--(NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section{
-    return 20;
-}
-
--(UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath{
-    static NSString *CellIdentifer = @"Cell";
-    
-    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:CellIdentifer];
-    
-    if (cell == nil) {
-        cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:CellIdentifer];
-        cell.textLabel.text = [NSString stringWithFormat:@"%ld",(long)indexPath.row];
-    }
-    return cell;
 }
 
 - (void)didReceiveMemoryWarning {
@@ -51,5 +35,12 @@
 */
 
 - (IBAction)tapBtn:(id)sender {
+}
+- (IBAction)tapBtn2:(id)sender {
+}
+- (IBAction)tapBtn3:(id)sender {
+}
+
+- (IBAction)tapBtn4:(id)sender {
 }
 @end

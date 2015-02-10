@@ -8,7 +8,7 @@
 
 #import <UIKit/UIKit.h>
 
-@interface fourthViewController : UIViewController<UITableViewDelegate,UITableViewDataSource>
+@interface gourmetlistViewController : UIViewController<UITableViewDelegate,UITableViewDataSource>
 
 @property (weak, nonatomic) IBOutlet UITableView *myTableView;
 

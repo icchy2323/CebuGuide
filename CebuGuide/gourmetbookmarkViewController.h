@@ -1,5 +1,5 @@
 //
-//  seventhViewController.h
+//  sixthViewController.h
 //  CebuGuide
 //
 //  Created by 市川 貴章 on 2015/02/03.
@@ -8,8 +8,7 @@
 
 #import <UIKit/UIKit.h>
 
-@interface seventhViewController : UIViewController<UITableViewDelegate,UITableViewDataSource>
+@interface gourmetbookmarkViewController : UIViewController<UITableViewDelegate,UITableViewDataSource>
 
 @property (weak, nonatomic) IBOutlet UITableView *myTableView;
-
 @end

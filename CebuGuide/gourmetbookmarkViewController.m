@@ -6,11 +6,11 @@
 //  Copyright (c) 2015年 市川 貴章. All rights reserved.
 //
 
-#import "sixthViewController.h"
+#import "gourmetbookmarkViewController.h"
 #import "customTableViewCell.h"
 #import "TableViewConst.h"
 
-@interface sixthViewController ()
+@interface gourmetbookmarkViewController ()
 
 //テーブルに表示する情報が入ります。
 @property (nonatomic, strong) NSArray *dataSourceName;
@@ -19,7 +19,7 @@
 
 @end
 
-@implementation sixthViewController
+@implementation gourmetbookmarkViewController
 
 - (void)viewDidLoad {
     [super viewDidLoad];

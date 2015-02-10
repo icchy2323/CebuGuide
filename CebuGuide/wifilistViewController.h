@@ -8,7 +8,7 @@
 
 #import <UIKit/UIKit.h>
 
-@interface fifthViewController : UIViewController<UITableViewDelegate,UITableViewDataSource>
+@interface wifilistViewController : UIViewController<UITableViewDelegate,UITableViewDataSource>
 
 @property (weak, nonatomic) IBOutlet UITableView *myTableView;
 

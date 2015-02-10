@@ -8,7 +8,7 @@
 
 #import <UIKit/UIKit.h>
 
-@interface thirdViewController : UIViewController
+@interface bookmarkViewController : UIViewController
 @property (weak, nonatomic) IBOutlet UILabel *myLabel;
 
 - (IBAction)tapBtn3:(id)sender;

@@ -7,7 +7,7 @@
         <!--Wi-Fi-->
         <scene sceneID="ufC-wZ-h7g">
             <objects>
-                <viewController id="vXZ-lx-hvc" customClass="ViewController" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="wifimainViewController" id="vXZ-lx-hvc" customClass="wifimainViewController" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="jyV-Pf-zRb"/>
                         <viewControllerLayoutGuide type="bottom" id="2fi-mo-0CV"/>
@@ -28,7 +28,7 @@
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
-                                    <action selector="tapBtn:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="WZl-zr-4Hk"/>
+                                    <action selector="tapBtn:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="sOn-Yb-de7"/>
                                     <segue destination="yxU-Rf-ULj" kind="show" id="TB1-Wk-qRa"/>
                                 </connections>
                             </button>
@@ -45,10 +45,10 @@
             </objects>
             <point key="canvasLocation" x="1190" y="347"/>
         </scene>
-        <!--Fifth View Controller-->
+        <!--Wifilist View Controller-->
         <scene sceneID="bz6-aI-wsQ">
             <objects>
-                <viewController storyboardIdentifier="fifthViewController" id="yxU-Rf-ULj" customClass="fifthViewController" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="wifilistViewController" id="yxU-Rf-ULj" customClass="wifilistViewController" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="PTk-OO-88j"/>
                         <viewControllerLayoutGuide type="bottom" id="uAG-ds-ztq"/>
@@ -88,10 +88,10 @@
             </objects>
             <point key="canvasLocation" x="1946" y="347"/>
         </scene>
-        <!--Eighth View Controller-->
+        <!--Syousai View Controller-->
         <scene sceneID="OGg-nL-acS">
             <objects>
-                <viewController storyboardIdentifier="eighthViewController" id="QhH-Zg-VwR" customClass="eighthViewController" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="syousaiViewController" id="QhH-Zg-VwR" customClass="syousaiViewController" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="xhL-Gw-ptp"/>
                         <viewControllerLayoutGuide type="bottom" id="Mc4-Ld-PXn"/>
@@ -160,7 +160,7 @@
         <!--グルメ-->
         <scene sceneID="7lN-MB-Alx">
             <objects>
-                <viewController storyboardIdentifier="secondViewController" id="Hk1-CT-dlO" customClass="secondViewController" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="gourmetmainViewController" id="Hk1-CT-dlO" customClass="gourmetmainViewController" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="9kb-5h-Fbu"/>
                         <viewControllerLayoutGuide type="bottom" id="BOL-Fg-vwd"/>
@@ -198,10 +198,10 @@
             </objects>
             <point key="canvasLocation" x="1190" y="1077"/>
         </scene>
-        <!--Fourth View Controller-->
+        <!--Gourmetlist View Controller-->
         <scene sceneID="an6-E4-5UD">
             <objects>
-                <viewController storyboardIdentifier="fourthViewController" id="QCX-zK-C7b" customClass="fourthViewController" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="gourmetlistViewController" id="QCX-zK-C7b" customClass="gourmetlistViewController" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="Jcc-3B-cez"/>
                         <viewControllerLayoutGuide type="bottom" id="oX3-jv-sa6"/>
@@ -245,7 +245,7 @@
         <!--Bookmark-->
         <scene sceneID="d2m-50-cfw">
             <objects>
-                <viewController storyboardIdentifier="thirdViewController" id="GKb-sE-QCw" customClass="thirdViewController" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="bookmarkViewController" id="GKb-sE-QCw" customClass="bookmarkViewController" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="3eT-ny-Voo"/>
                         <viewControllerLayoutGuide type="bottom" id="Myv-LZ-4kC"/>
@@ -293,10 +293,10 @@
             </objects>
             <point key="canvasLocation" x="1190" y="-402"/>
         </scene>
-        <!--Seventh View Controller-->
+        <!--Wifibookmark View Controller-->
         <scene sceneID="HJi-Rg-7pZ">
             <objects>
-                <viewController storyboardIdentifier="seventhViewController" id="aBH-Wk-yB0" customClass="seventhViewController" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="wifibookmarkViewController" id="aBH-Wk-yB0" customClass="wifibookmarkViewController" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="jwM-DZ-R5u"/>
                         <viewControllerLayoutGuide type="bottom" id="47b-YB-kEB"/>
@@ -332,10 +332,10 @@
             </objects>
             <point key="canvasLocation" x="1946" y="-402"/>
         </scene>
-        <!--Sixth View Controller-->
+        <!--Gourmetbookmark View Controller-->
         <scene sceneID="nWI-B0-H7m">
             <objects>
-                <viewController storyboardIdentifier="sixthViewController" id="XHz-zd-PNy" customClass="sixthViewController" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="gourmetbookmarkViewController" id="XHz-zd-PNy" customClass="gourmetbookmarkViewController" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="VRV-Le-4Cq"/>
                         <viewControllerLayoutGuide type="bottom" id="TQ0-YI-ztJ"/>

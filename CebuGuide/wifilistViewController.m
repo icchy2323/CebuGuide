@@ -6,13 +6,13 @@
 //  Copyright (c) 2015年 市川 貴章. All rights reserved.
 //
 
-#import "fifthViewController.h"
+#import "wifilistViewController.h"
 
-@interface fifthViewController ()
+@interface wifilistViewController ()
 
 @end
 
-@implementation fifthViewController
+@implementation wifilistViewController
 
 - (void)viewDidLoad {
     [super viewDidLoad];

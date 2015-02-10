@@ -1,5 +1,5 @@
 //
-//  sixthViewController.h
+//  seventhViewController.h
 //  CebuGuide
 //
 //  Created by 市川 貴章 on 2015/02/03.
@@ -8,7 +8,8 @@
 
 #import <UIKit/UIKit.h>
 
-@interface sixthViewController : UIViewController<UITableViewDelegate,UITableViewDataSource>
+@interface wifibookmarkViewController : UIViewController<UITableViewDelegate,UITableViewDataSource>
 
 @property (weak, nonatomic) IBOutlet UITableView *myTableView;
+
 @end
