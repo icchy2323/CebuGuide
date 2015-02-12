@@ -8,12 +8,19 @@
 
 #import <UIKit/UIKit.h>
 
-@interface syousaiViewController : UIViewController
+@interface syousaiViewController : UIViewController{
+     NSArray *_wifiArray;
+}
 @property (weak, nonatomic) IBOutlet UIImageView *myImageView;
 @property (weak, nonatomic) IBOutlet UILabel *myLabel;
 @property (weak, nonatomic) IBOutlet UIImageView *myImageView2;
 @property (weak, nonatomic) IBOutlet UILabel *myLabel2;
+@property (weak, nonatomic) IBOutlet UILabel *myLabel3;
 @property (weak, nonatomic) IBOutlet UITextView *myTextView;
+
+@property (nonatomic,assign) int
+selectNum;
+
 - (IBAction)tapBtn:(id)sender;
 - (IBAction)tapBtn2:(id)sender;
 

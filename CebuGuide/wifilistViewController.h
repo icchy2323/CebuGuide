@@ -8,8 +8,15 @@
 
 #import <UIKit/UIKit.h>
 
-@interface wifilistViewController : UIViewController<UITableViewDelegate,UITableViewDataSource>
+@interface wifilistViewController : UIViewController<UITableViewDelegate,UITableViewDataSource>{
+     NSArray *_wifiArray;
+}
 
 @property (weak, nonatomic) IBOutlet UITableView *myTableView;
+
+@property (nonatomic,assign) int
+selectNum;
+@property (nonatomic,strong)NSArray *wifiList;
+@property (nonatomic,strong)NSString *wifiString;
 
 @end

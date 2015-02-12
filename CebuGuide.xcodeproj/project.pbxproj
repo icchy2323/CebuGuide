@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		5821210D1A8C630300B2CDF7 /* gourmet.plist in Resources */ = {isa = PBXBuildFile; fileRef = 5821210C1A8C630300B2CDF7 /* gourmet.plist */; };
+		5821210F1A8C6C2700B2CDF7 /* wifi.plist in Resources */ = {isa = PBXBuildFile; fileRef = 5821210E1A8C6C2700B2CDF7 /* wifi.plist */; };
 		583BC51B1A886E460087730B /* syousaiViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 583BC51A1A886E460087730B /* syousaiViewController.m */; };
 		583BC51F1A889D360087730B /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 583BC51E1A889D360087730B /* Default-568h@2x.png */; };
 		5855E5951A847BA00097A581 /* TableViewConst.m in Sources */ = {isa = PBXBuildFile; fileRef = 5855E5941A847BA00097A581 /* TableViewConst.m */; };
@@ -41,6 +43,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		5821210C1A8C630300B2CDF7 /* gourmet.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = gourmet.plist; sourceTree = "<group>"; };
+		5821210E1A8C6C2700B2CDF7 /* wifi.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = wifi.plist; sourceTree = "<group>"; };
 		583BC5191A886E460087730B /* syousaiViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = syousaiViewController.h; sourceTree = "<group>"; };
 		583BC51A1A886E460087730B /* syousaiViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = syousaiViewController.m; sourceTree = "<group>"; };
 		583BC51E1A889D360087730B /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
@@ -157,6 +161,8 @@
 				5855E5961A847BE90097A581 /* TableViewCustomCell.xib */,
 				5855E5981A847C9F0097A581 /* customTableViewCell.h */,
 				5855E5991A847C9F0097A581 /* customTableViewCell.m */,
+				5821210C1A8C630300B2CDF7 /* gourmet.plist */,
+				5821210E1A8C6C2700B2CDF7 /* wifi.plist */,
 			);
 			path = CebuGuide;
 			sourceTree = "<group>";
@@ -270,8 +276,10 @@
 				58AF3FFC1A78A61F0075BAC3 /* Main.storyboard in Resources */,
 				58AF40011A78A61F0075BAC3 /* LaunchScreen.xib in Resources */,
 				58C27E601A89BE6600D62C58 /* Info.plist in Resources */,
+				5821210F1A8C6C2700B2CDF7 /* wifi.plist in Resources */,
 				5855E5971A847BE90097A581 /* TableViewCustomCell.xib in Resources */,
 				583BC51F1A889D360087730B /* Default-568h@2x.png in Resources */,
+				5821210D1A8C630300B2CDF7 /* gourmet.plist in Resources */,
 				58AF3FFE1A78A61F0075BAC3 /* Images.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

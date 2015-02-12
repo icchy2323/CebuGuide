@@ -31,7 +31,7 @@
     
     
     // テーブルに表示したいデータソースをセット
-    self.dataSourceName = @[@"a", @"b", @"c", @"d", @"e"];
+    self.dataSourceName = @[@"a", @"b", @"c"];
     self.dataSourceHyouka = @[@"⭐︎", @"⭐︎⭐︎", @"⭐︎⭐︎⭐︎"];
     
 

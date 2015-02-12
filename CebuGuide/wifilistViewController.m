@@ -17,11 +17,55 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
+    
+    //プロジェクト内のファイルにアクセスできるオブジェクトを作成
+    NSBundle *bundle = [NSBundle mainBundle];
+    
+    //読み込むプロパティリストのファイルパス（場所）を指定
+    NSString *path = [bundle pathForResource:@"wifi" ofType:@"plist"];
+    
+    //プロパティリストの中身のデータを取得
+    NSDictionary *dic = [NSDictionary dictionaryWithContentsOfFile:path];
+    
+    _wifiArray = [dic objectForKey:@"Wifilist"];
+    
+    self.myTableView.delegate = self;
+    self.myTableView.dataSource = self;
+    
+    //ナビゲーションコントローラのタイトル設定
+    self.navigationItem.title = [NSString stringWithFormat:@"%@",self.wifiString];
+    
+    //友達リストを表示する
+    NSString *strNameList = @"";
+    NSString *strAddressList = @"";
+    NSString *strCommentList = @"";
+    
+    //高速列挙でデータを取り出して文字列変数にセット
+    for (NSDictionary *wifiDic in self.wifiList) {
+        strNameList = [strNameList stringByAppendingString:wifiDic[@"Name"]];
+        strNameList = [strNameList stringByAppendingString:@"\n"];
+        
+        strAddressList = [strAddressList stringByAppendingString:wifiDic[@"Address"]];
+        strAddressList = [strAddressList stringByAppendingString:@"\n"];
+        
+        strCommentList = [strCommentList stringByAppendingString:wifiDic[@"Comment"]];
+        strCommentList = [strCommentList stringByAppendingString:@"\n"];
+        
+     }
+    
+    NSLog(@"%@",strNameList);
+    NSLog(@"%@",strAddressList);
+    NSLog(@"%@",strCommentList);
+    
+    
+    self.myTableView.delegate = self;
+    self.myTableView.dataSource = self;
+    
 }
 
 
 -(NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section{
-    return 20;
+    return _wifiArray.count;
 }
 
 -(UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath{
@@ -31,7 +75,10 @@
     
     if (cell == nil) {
         cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:CellIdentifer];
-        cell.textLabel.text = [NSString stringWithFormat:@"%ld",(long)indexPath.row];
+        
+        NSDictionary *wifiDic =(NSDictionary*)_wifiArray[indexPath.row][@"wifilist"];
+        
+        cell.textLabel.text = [NSString stringWithFormat:@"%@",wifiDic[@"Name"]];
     }
     return cell;
 }

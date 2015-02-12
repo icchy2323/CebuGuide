@@ -7,6 +7,7 @@
 //
 
 #import "syousaiViewController.h"
+#import "wifibookmarkViewController.h"
 
 @interface syousaiViewController ()
 
@@ -17,7 +18,16 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
+    
+    NSLog(@"%d",self.selectNum);
+    
+    _wifiArray = @[@{@"name":@"a",@"desc":@"⭐︎"},@{@"name":@"b",@"desc":@"⭐︎⭐︎"},@{@"name":@"c",@"desc":@"⭐︎⭐︎⭐︎"}];
+                            
+    self.myLabel.text = [NSString stringWithFormat:@"%@",_wifiArray[self.selectNum][@"name"]];
+    self.myLabel3.text = [NSString stringWithFormat:@"%@",_wifiArray[self.selectNum][@"desc"]];
+    
 }
+
 
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
@@ -38,12 +48,15 @@
     
     //    AlertViewの設定
     UIAlertView *alert= [[UIAlertView alloc]
-                         initWithTitle:@"Bookmark" message:@"に追加しますか?" delegate:self cancelButtonTitle:@"cancel" otherButtonTitles:@"OK", nil];
+                         initWithTitle:@"Add to" message:@"Bookmark?" delegate:self cancelButtonTitle:@"cancel" otherButtonTitles:@"OK", nil];
     //    設定したAlertViewを表示
     [alert show];
 }
 
 - (IBAction)tapBtn2:(id)sender {
+    
+     [self dismissViewControllerAnimated:YES completion:nil];
+    
 }
 
 //ボタンがクリックされた時に、どのボタンが押されたか認識できるメソッド

@@ -34,10 +34,6 @@
 }
 */
 
-- (IBAction)tapBtn:(id)sender {
-}
-- (IBAction)tapBtn2:(id)sender {
-}
 - (IBAction)tapBtn3:(id)sender {
 }
 

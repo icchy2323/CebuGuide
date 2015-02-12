@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>Wifilist</key>
+	<array>
+		<dict>
+			<key>NO</key>
+			<integer>0</integer>
+			<key>wifilist</key>
+			<dict>
+				<key>Picture</key>
+				<string></string>
+				<key>Name</key>
+				<string></string>
+				<key>Genre</key>
+				<string></string>
+				<key>Address</key>
+				<string></string>
+				<key>Evaluation</key>
+				<string></string>
+				<key>Comment</key>
+				<string></string>
+			</dict>
+		</dict>
+		<dict>
+			<key>NO</key>
+			<integer>1</integer>
+			<key>wifilist</key>
+			<dict>
+				<key>Picture</key>
+				<string></string>
+				<key>Name</key>
+				<string></string>
+				<key>Genre</key>
+				<string></string>
+				<key>Address</key>
+				<string></string>
+				<key>Evaluatoin</key>
+				<string></string>
+				<key>Comment</key>
+				<string></string>
+			</dict>
+		</dict>
+		<dict>
+			<key>NO</key>
+			<integer>2</integer>
+			<key>wifilist</key>
+			<dict>
+				<key>Picture</key>
+				<string></string>
+				<key>Name</key>
+				<string></string>
+				<key>Genre</key>
+				<string></string>
+				<key>Address</key>
+				<string></string>
+				<key>Evaluation</key>
+				<string></string>
+				<key>Comment</key>
+				<string></string>
+			</dict>
+		</dict>
+	</array>
+</dict>
+</plist>

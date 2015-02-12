@@ -8,7 +8,9 @@
 
 #import <UIKit/UIKit.h>
 
-@interface wifibookmarkViewController : UIViewController<UITableViewDelegate,UITableViewDataSource>
+@interface wifibookmarkViewController : UIViewController<UITableViewDelegate,UITableViewDataSource>{
+    NSArray *_wifiArray;
+}
 
 @property (weak, nonatomic) IBOutlet UITableView *myTableView;
 
