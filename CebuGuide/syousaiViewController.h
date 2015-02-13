@@ -9,8 +9,10 @@
 #import <UIKit/UIKit.h>
 
 @interface syousaiViewController : UIViewController{
-     NSArray *_wifiArray;
+    NSArray *_gourmetArray;
+    NSArray *_wifiArray;
 }
+
 @property (weak, nonatomic) IBOutlet UIImageView *myImageView;
 @property (weak, nonatomic) IBOutlet UILabel *myLabel;
 @property (weak, nonatomic) IBOutlet UIImageView *myImageView2;

@@ -8,7 +8,14 @@
 
 #import <UIKit/UIKit.h>
 
-@interface gourmetbookmarkViewController : UIViewController<UITableViewDelegate,UITableViewDataSource>
+@interface gourmetbookmarkViewController : UIViewController<UITableViewDelegate,UITableViewDataSource>{
+    NSArray *_gourmetArray;
+}
+
+@property (nonatomic,assign) int
+selectNum;
+@property (nonatomic,strong)NSArray *gourmetList;
+@property (nonatomic,strong)NSString *gourmetString;
 
 @property (weak, nonatomic) IBOutlet UITableView *myTableView;
 

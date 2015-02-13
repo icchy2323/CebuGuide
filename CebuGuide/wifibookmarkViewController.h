@@ -12,6 +12,11 @@
     NSArray *_wifiArray;
 }
 
+@property (nonatomic,assign) int
+selectNum;
+@property (nonatomic,strong)NSArray *wifiList;
+@property (nonatomic,strong)NSString *wifiString;
+
 @property (weak, nonatomic) IBOutlet UITableView *myTableView;
 
 @end

@@ -12,7 +12,7 @@
 				<key>Picture</key>
 				<string></string>
 				<key>Name</key>
-				<string>restaurant1</string>
+				<string>gourmet1</string>
 				<key>Genre</key>
 				<string></string>
 				<key>Address</key>
@@ -31,7 +31,7 @@
 				<key>Picture</key>
 				<string></string>
 				<key>Name</key>
-				<string>restaurant2</string>
+				<string>gourmet2</string>
 				<key>Genre</key>
 				<string></string>
 				<key>Address</key>
@@ -50,7 +50,7 @@
 				<key>Picture</key>
 				<string></string>
 				<key>Name</key>
-				<string>restaurant3</string>
+				<string>gourmet3</string>
 				<key>Genre</key>
 				<string></string>
 				<key>Address</key>

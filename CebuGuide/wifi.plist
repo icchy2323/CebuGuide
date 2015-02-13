@@ -12,7 +12,7 @@
 				<key>Picture</key>
 				<string></string>
 				<key>Name</key>
-				<string>restaurant1</string>
+				<string>wifi1</string>
 				<key>Genre</key>
 				<string></string>
 				<key>Address</key>
@@ -20,7 +20,7 @@
 				<key>Evaluation</key>
 				<string>⭐︎</string>
 				<key>Comment</key>
-				<string>aaa</string>
+				<string>AAA</string>
 			</dict>
 		</dict>
 		<dict>
@@ -31,7 +31,7 @@
 				<key>Picture</key>
 				<string></string>
 				<key>Name</key>
-				<string>restaurant2</string>
+				<string>wifi2</string>
 				<key>Genre</key>
 				<string></string>
 				<key>Address</key>
@@ -39,7 +39,7 @@
 				<key>Evaluatoin</key>
 				<string>⭐︎⭐︎</string>
 				<key>Comment</key>
-				<string>bbb</string>
+				<string>BBB</string>
 			</dict>
 		</dict>
 		<dict>
@@ -50,7 +50,7 @@
 				<key>Picture</key>
 				<string></string>
 				<key>Name</key>
-				<string>restaurant3</string>
+				<string>wifi3</string>
 				<key>Genre</key>
 				<string></string>
 				<key>Address</key>
@@ -58,7 +58,7 @@
 				<key>Evaluation</key>
 				<string>⭐︎⭐︎⭐︎</string>
 				<key>Comment</key>
-				<string>ccc</string>
+				<string>CCC</string>
 			</dict>
 		</dict>
 	</array>

@@ -7,6 +7,7 @@
 //
 
 #import "syousaiViewController.h"
+#import "gourmetbookmarkViewController.h"
 #import "wifibookmarkViewController.h"
 
 @interface syousaiViewController ()
@@ -46,22 +47,19 @@
 
 - (IBAction)tapBtn:(id)sender {
     
-    //    AlertViewの設定
-    UIAlertView *alert= [[UIAlertView alloc]
-                         initWithTitle:@"Add to" message:@"Bookmark?" delegate:self cancelButtonTitle:@"cancel" otherButtonTitles:@"OK", nil];
-    //    設定したAlertViewを表示
+    //AlertViewの設定
+    UIAlertView *alert= [[UIAlertView alloc] initWithTitle:@"Add to" message:@"Bookmark?" delegate:self cancelButtonTitle:@"cancel" otherButtonTitles:@"OK", nil];
+    
+    //設定したAlertViewを表示
     [alert show];
 }
 
 - (IBAction)tapBtn2:(id)sender {
-    
-     [self dismissViewControllerAnimated:YES completion:nil];
-    
+    [self dismissViewControllerAnimated:YES completion:nil];
 }
 
 //ボタンがクリックされた時に、どのボタンが押されたか認識できるメソッド
-- (void)alertView:(UIAlertView *)alertView
-clickedButtonAtIndex:(NSInteger)buttonIndex{
+- (void)alertView:(UIAlertView *)alertView clickedButtonAtIndex:(NSInteger)buttonIndex{
     
     if (buttonIndex == 1) {
         NSLog(@"OK");

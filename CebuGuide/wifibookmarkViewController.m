@@ -7,6 +7,8 @@
 //
 
 #import "wifibookmarkViewController.h"
+#import "customTableViewCell.h"
+#import "TableViewConst.h"
 #import "syousaiViewController.h"
 
 @interface wifibookmarkViewController ()
@@ -18,10 +20,55 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
-    _wifiArray = @[@"a",@"b",@"c"];
+    
+    //プロジェクト内のファイルにアクセスできるオブジェクトを作成
+    NSBundle *bundle = [NSBundle mainBundle];
+    
+    //読み込むプロパティリストのファイルパス（場所）を指定
+    NSString *path = [bundle pathForResource:@"wifi" ofType:@"plist"];
+    
+    //プロパティリストの中身のデータを取得
+    NSDictionary *dic = [NSDictionary dictionaryWithContentsOfFile:path];
+    
+    _wifiArray = [dic objectForKey:@"Wifilist"];
     
     self.myTableView.delegate = self;
     self.myTableView.dataSource = self;
+    
+    //ナビゲーションコントローラのタイトル設定
+    self.navigationItem.title = [NSString stringWithFormat:@"Wi-Fi"];
+    
+    //友達リストを表示する
+    NSString *strNameList = @"";
+    NSString *strEvaluationList = @"";
+    NSString *strCommentList = @"";
+    
+    //高速列挙でデータを取り出して文字列変数にセット
+    for (NSDictionary *wifiDic in self.wifiList) {
+        strNameList = [strNameList stringByAppendingString:wifiDic[@"Name"]];
+        strNameList = [strNameList stringByAppendingString:@"\n"];
+        
+        strEvaluationList = [strEvaluationList stringByAppendingString:wifiDic[@"Evaluation"]];
+        strEvaluationList = [strEvaluationList stringByAppendingString:@"\n"];
+        
+        strCommentList = [strCommentList stringByAppendingString:wifiDic[@"Comment"]];
+        strCommentList = [strCommentList stringByAppendingString:@"\n"];
+        
+    }
+    
+    NSLog(@"%@",strNameList);
+    NSLog(@"%@",strEvaluationList);
+    NSLog(@"%@",strCommentList);
+    
+    UINib *nib = [UINib nibWithNibName:@"TableViewCustomCell" bundle:nil];
+    [self.myTableView registerNib:nib forCellReuseIdentifier:@"cell"];
+    
+    
+}
+
+- (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath
+{
+    return [customTableViewCell rowHeight];
 }
 
 
@@ -30,28 +77,29 @@
 }
 
 -(UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath{
-    static NSString *CellIdentifier = @"Cell";
+    static NSString *CellIdentifier = @"cell";
     UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:CellIdentifier];
     
     if (cell == nil) {
         cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:CellIdentifier];
-        //cell.textLabel.text = [NSString stringWithFormat:@"%@",_wifiArray[indexPath.row]];
     }
     
-    cell.textLabel.text = [NSString stringWithFormat:@"%@",_wifiArray[indexPath.row]];
+    NSDictionary *wifiDic = (NSDictionary *)_wifiArray[indexPath.row][@"wifilist"];
+    
+    cell.textLabel.text = [NSString stringWithFormat:@"%@",wifiDic[@"Name"]];
+    
     return cell;
 }
 
-//ryoma0211
--(void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
-{
-    [self performSegueWithIdentifier:@"Hoge" sender:self];
+
+-(void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath{
+    [self performSegueWithIdentifier:@"move" sender:self];
 }
-//////////
+
 
 -(void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender{
     
-     if ( [[segue identifier] isEqualToString:@"Hoge"] ) {
+    if ( [[segue identifier] isEqualToString:@"move"] ) {
     syousaiViewController *dvc = [segue destinationViewController];
     dvc.selectNum = (int)self.myTableView.indexPathForSelectedRow.row;
      }
