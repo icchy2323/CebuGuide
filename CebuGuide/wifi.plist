@@ -12,15 +12,15 @@
 				<key>Picture</key>
 				<string></string>
 				<key>Name</key>
-				<string></string>
+				<string>restaurant1</string>
 				<key>Genre</key>
 				<string></string>
 				<key>Address</key>
 				<string></string>
 				<key>Evaluation</key>
-				<string></string>
+				<string>⭐︎</string>
 				<key>Comment</key>
-				<string></string>
+				<string>aaa</string>
 			</dict>
 		</dict>
 		<dict>
@@ -31,15 +31,15 @@
 				<key>Picture</key>
 				<string></string>
 				<key>Name</key>
-				<string></string>
+				<string>restaurant2</string>
 				<key>Genre</key>
 				<string></string>
 				<key>Address</key>
 				<string></string>
 				<key>Evaluatoin</key>
-				<string></string>
+				<string>⭐︎⭐︎</string>
 				<key>Comment</key>
-				<string></string>
+				<string>bbb</string>
 			</dict>
 		</dict>
 		<dict>
@@ -50,15 +50,15 @@
 				<key>Picture</key>
 				<string></string>
 				<key>Name</key>
-				<string></string>
+				<string>restaurant3</string>
 				<key>Genre</key>
 				<string></string>
 				<key>Address</key>
 				<string></string>
 				<key>Evaluation</key>
-				<string></string>
+				<string>⭐︎⭐︎⭐︎</string>
 				<key>Comment</key>
-				<string></string>
+				<string>ccc</string>
 			</dict>
 		</dict>
 	</array>

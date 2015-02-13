@@ -19,4 +19,8 @@ selectNum;
 @property (nonatomic,strong)NSArray *wifiList;
 @property (nonatomic,strong)NSString *wifiString;
 
+- (IBAction)tapBtn:(id)sender;
+
+@property (weak, nonatomic) IBOutlet UILabel *myLabel;
+
 @end

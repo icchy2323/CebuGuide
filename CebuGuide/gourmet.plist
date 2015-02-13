@@ -8,64 +8,58 @@
 			<key>NO</key>
 			<integer>0</integer>
 			<key>gourmetlist</key>
-			<array>
-				<dict>
-					<key>Picture</key>
-					<string></string>
-					<key>Name</key>
-					<string>a</string>
-					<key>Genre</key>
-					<string></string>
-					<key>Address</key>
-					<string>A</string>
-					<key>Evaluation</key>
-					<string></string>
-					<key>Comment</key>
-					<string>aaa</string>
-				</dict>
-			</array>
+			<dict>
+				<key>Picture</key>
+				<string></string>
+				<key>Name</key>
+				<string>restaurant1</string>
+				<key>Genre</key>
+				<string></string>
+				<key>Address</key>
+				<string></string>
+				<key>Evaluation</key>
+				<string>⭐︎</string>
+				<key>Comment</key>
+				<string>aaa</string>
+			</dict>
 		</dict>
 		<dict>
 			<key>NO</key>
-			<integer>1</integer>
+			<integer>0</integer>
 			<key>gourmetlist</key>
-			<array>
-				<dict>
-					<key>Picture</key>
-					<string></string>
-					<key>Name</key>
-					<string>b</string>
-					<key>Genre</key>
-					<string></string>
-					<key>Address</key>
-					<string>B</string>
-					<key>Evaluation</key>
-					<string></string>
-					<key>Comment</key>
-					<string>bbb</string>
-				</dict>
-			</array>
+			<dict>
+				<key>Picture</key>
+				<string></string>
+				<key>Name</key>
+				<string>restaurant2</string>
+				<key>Genre</key>
+				<string></string>
+				<key>Address</key>
+				<string></string>
+				<key>Evaluation</key>
+				<string>⭐︎⭐︎</string>
+				<key>Comment</key>
+				<string>bbb</string>
+			</dict>
 		</dict>
 		<dict>
 			<key>NO</key>
-			<integer>2</integer>
+			<integer>0</integer>
 			<key>gourmetlist</key>
-			<array>
-				<dict>
-					<key>Picture</key>
-					<string></string>
-					<key>Name</key>
-					<string>c</string>
-					<key>Genre</key>
-					<string></string>
-					<key>Address</key>
-					<string>C</string>
-					<key>Evaluation</key>
-					<string></string>
-					<key>Comment</key>
-					<string>ccc</string>
-				</dict>
-			</array>
+			<dict>
+				<key>Picture</key>
+				<string></string>
+				<key>Name</key>
+				<string>restaurant3</string>
+				<key>Genre</key>
+				<string></string>
+				<key>Address</key>
+				<string></string>
+				<key>Evaluation</key>
+				<string>⭐︎⭐︎⭐︎</string>
+				<key>Comment</key>
+				<string>ccc</string>
+			</dict>
 		</dict>
 	</array>
 </dict>

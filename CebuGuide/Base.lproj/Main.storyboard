@@ -67,6 +67,7 @@
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
+                                    <action selector="tapBtn:" destination="yxU-Rf-ULj" eventType="touchUpInside" id="dhq-D5-U03"/>
                                     <segue destination="ZSe-Dk-YPg" kind="unwind" unwindAction="returnMain:" id="abf-op-8RA"/>
                                 </connections>
                             </button>
@@ -80,6 +81,7 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
                     <connections>
+                        <outlet property="myLabel" destination="m5A-gM-bpx" id="mi7-Lu-p7y"/>
                         <outlet property="myTableView" destination="LMC-Tn-byu" id="AZv-1U-OAD"/>
                     </connections>
                 </viewController>
@@ -242,6 +244,7 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
                     <connections>
+                        <outlet property="myLabel" destination="pEp-Nd-OKT" id="oMe-vP-AeV"/>
                         <outlet property="myTableView" destination="vv7-xO-njE" id="VNm-SK-tv4"/>
                     </connections>
                 </viewController>

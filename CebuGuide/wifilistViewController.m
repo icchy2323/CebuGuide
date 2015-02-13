@@ -37,7 +37,7 @@
     
     //友達リストを表示する
     NSString *strNameList = @"";
-    NSString *strAddressList = @"";
+    NSString *strEvaluationList = @"";
     NSString *strCommentList = @"";
     
     //高速列挙でデータを取り出して文字列変数にセット
@@ -45,8 +45,8 @@
         strNameList = [strNameList stringByAppendingString:wifiDic[@"Name"]];
         strNameList = [strNameList stringByAppendingString:@"\n"];
         
-        strAddressList = [strAddressList stringByAppendingString:wifiDic[@"Address"]];
-        strAddressList = [strAddressList stringByAppendingString:@"\n"];
+        strEvaluationList = [strEvaluationList stringByAppendingString:wifiDic[@"Evaluation"]];
+        strEvaluationList = [strEvaluationList stringByAppendingString:@"\n"];
         
         strCommentList = [strCommentList stringByAppendingString:wifiDic[@"Comment"]];
         strCommentList = [strCommentList stringByAppendingString:@"\n"];
@@ -54,12 +54,8 @@
      }
     
     NSLog(@"%@",strNameList);
-    NSLog(@"%@",strAddressList);
+    NSLog(@"%@",strEvaluationList);
     NSLog(@"%@",strCommentList);
-    
-    
-    self.myTableView.delegate = self;
-    self.myTableView.dataSource = self;
     
 }
 
@@ -75,11 +71,12 @@
     
     if (cell == nil) {
         cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:CellIdentifer];
-        
-        NSDictionary *wifiDic =(NSDictionary*)_wifiArray[indexPath.row][@"wifilist"];
-        
-        cell.textLabel.text = [NSString stringWithFormat:@"%@",wifiDic[@"Name"]];
     }
+    
+    NSDictionary *wifiDic =(NSDictionary *)_wifiArray[indexPath.row][@"wifilist"];
+    
+    cell.textLabel.text = [NSString stringWithFormat:@"%@",wifiDic[@"Name"]];
+    
     return cell;
 }
 
@@ -98,4 +95,6 @@
 }
 */
 
+- (IBAction)tapBtn:(id)sender {
+}
 @end

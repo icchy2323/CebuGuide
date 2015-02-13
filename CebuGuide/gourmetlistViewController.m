@@ -17,10 +17,51 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
+    
+    //プロジェクト内のファイルにアクセスできるオブジェクトを作成
+    NSBundle *bundle = [NSBundle mainBundle];
+    
+    //読み込むプロパティリストのファイルパス（場所）を指定
+    NSString *path = [bundle pathForResource:@"gourmet" ofType:@"plist"];
+    
+    //プロパティリストの中身のデータを取得
+    NSDictionary *dic = [NSDictionary dictionaryWithContentsOfFile:path];
+    
+    _gourmetArray = [dic objectForKey:@"Gourmetlist"];
+    
+    self.myTableView.delegate = self;
+    self.myTableView.dataSource = self;
+    
+    //ナビゲーションコントローラのタイトル設定
+    self.navigationItem.title = [NSString stringWithFormat:@"%@",self.gourmetString];
+    
+    //友達リストを表示する
+    NSString *strNameList = @"";
+    NSString *strEvaluationList = @"";
+    NSString *strCommentList = @"";
+    
+    //高速列挙でデータを取り出して文字列変数にセット
+    for (NSDictionary *gourmetDic in self.gourmetList) {
+        strNameList = [strNameList stringByAppendingString:gourmetDic[@"Name"]];
+        strNameList = [strNameList stringByAppendingString:@"\n"];
+        
+        strEvaluationList = [strEvaluationList stringByAppendingString:gourmetDic[@"Evaluation"]];
+        strEvaluationList = [strEvaluationList stringByAppendingString:@"\n"];
+        
+        strCommentList = [strCommentList stringByAppendingString:gourmetDic[@"Comment"]];
+        strCommentList = [strCommentList stringByAppendingString:@"\n"];
+        
+    }
+    
+    NSLog(@"%@",strNameList);
+    NSLog(@"%@",strEvaluationList);
+    NSLog(@"%@",strCommentList);
+    
 }
 
+
 -(NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section{
-    return 20;
+    return _gourmetArray.count;
 }
 
 -(UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath{
@@ -30,8 +71,12 @@
     
     if (cell == nil) {
         cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:CellIdentifer];
-        cell.textLabel.text = [NSString stringWithFormat:@"%ld",(long)indexPath.row];
     }
+    
+    NSDictionary *gourmetDic =(NSDictionary *)_gourmetArray[indexPath.row][@"gourmetlist"];
+        
+    cell.textLabel.text = [NSString stringWithFormat:@"%@",gourmetDic[@"Name"]];
+    
     return cell;
 }
 
