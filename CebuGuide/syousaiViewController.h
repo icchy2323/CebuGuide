@@ -22,6 +22,11 @@
 
 @property (nonatomic,assign) int
 selectNum;
+@property (nonatomic,strong)NSArray *wifiList;
+@property (nonatomic,strong)NSString *wifiString;
+@property (nonatomic,strong)NSArray *gourmetList;
+@property (nonatomic,strong)NSString *gourmetString;
+
 
 - (IBAction)tapBtn:(id)sender;
 - (IBAction)tapBtn2:(id)sender;

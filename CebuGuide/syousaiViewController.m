@@ -20,12 +20,90 @@
     [super viewDidLoad];
     // Do any additional setup after loading the view.
     
-    NSLog(@"%d",self.selectNum);
+    //プロジェクト内のファイルにアクセスできるオブジェクトを作成
+    NSBundle *bundle = [NSBundle mainBundle];
     
-    _wifiArray = @[@{@"name":@"a",@"desc":@"⭐︎"},@{@"name":@"b",@"desc":@"⭐︎⭐︎"},@{@"name":@"c",@"desc":@"⭐︎⭐︎⭐︎"}];
-                            
-    self.myLabel.text = [NSString stringWithFormat:@"%@",_wifiArray[self.selectNum][@"name"]];
-    self.myLabel3.text = [NSString stringWithFormat:@"%@",_wifiArray[self.selectNum][@"desc"]];
+    //読み込むプロパティリストのファイルパス（場所）を指定
+    NSString *path = [bundle pathForResource:@"wifi" ofType:@"plist"];
+    
+    //プロパティリストの中身のデータを取得
+    NSDictionary *dic = [NSDictionary dictionaryWithContentsOfFile:path];
+    
+    _wifiArray = [dic objectForKey:@"Wifilist"];
+    
+    //ナビゲーションコントローラのタイトル設定
+    self.navigationItem.title = [NSString stringWithFormat:@"Wi-Fi"];
+    
+    //リストを表示する
+    NSString *strPictureList = @"";
+    NSString *strNameList = @"";
+    NSString *strGenreList = @"";
+    NSString *strAddressList = @"";
+    NSString *strEvaluationList = @"";
+    NSString *strCommentList = @"";
+    
+    
+    //ボタンが押された時
+    NSDictionary *wifiDic = _wifiArray[self.selectNum];
+    
+    strPictureList = [strPictureList stringByAppendingString:wifiDic[@"wifilist"][@"Picture"]];
+    strPictureList = [strPictureList stringByAppendingString:@"\n"];
+    
+    strNameList = [strNameList stringByAppendingString:wifiDic[@"wifilist"][@"Name"]];
+    strNameList = [strNameList stringByAppendingString:@"\n"];
+    
+    strGenreList = [strGenreList stringByAppendingString:wifiDic[@"wifilist"][@"Genre"]];
+    strGenreList = [strGenreList stringByAppendingString:@"\n"];
+    
+    strAddressList = [strAddressList stringByAppendingString:wifiDic[@"wifilist"][@"Address"]];
+    strAddressList = [strAddressList stringByAppendingString:@"\n"];
+    
+    strEvaluationList = [strEvaluationList stringByAppendingString:wifiDic[@"wifilist"][@"Evaluation"]];
+    strEvaluationList = [strEvaluationList stringByAppendingString:@"\n"];
+    
+    strCommentList = [strCommentList stringByAppendingString:wifiDic[@"wifilist"][@"Comment"]];
+    strCommentList = [strCommentList stringByAppendingString:@"\n"];
+
+//    //高速列挙でデータを取り出して文字列変数にセット
+//    for (NSDictionary *wifiDic in self.wifiList) {
+//        strPictureList = [strPictureList stringByAppendingString:wifiDic[@"Picture"]];
+//        strPictureList = [strPictureList stringByAppendingString:@"\n"];
+//        
+//        strNameList = [strNameList stringByAppendingString:wifiDic[@"Name"]];
+//        strNameList = [strNameList stringByAppendingString:@"\n"];
+//        
+//        strGenreList = [strGenreList stringByAppendingString:wifiDic[@"Genre"]];
+//        strGenreList = [strGenreList stringByAppendingString:@"\n"];
+//        
+//        strAddressList = [strAddressList stringByAppendingString:wifiDic[@"Address"]];
+//        strAddressList = [strAddressList stringByAppendingString:@"\n"];
+//        
+//        strEvaluationList = [strEvaluationList stringByAppendingString:wifiDic[@"Evaluation"]];
+//        strEvaluationList = [strEvaluationList stringByAppendingString:@"\n"];
+//        
+//        strCommentList = [strCommentList stringByAppendingString:wifiDic[@"Comment"]];
+//        strCommentList = [strCommentList stringByAppendingString:@"\n"];
+//        
+//    }
+    
+    NSLog(@"%@",strPictureList);
+    NSLog(@"%@",strNameList);
+    NSLog(@"%@",strGenreList);
+    NSLog(@"%@",strAddressList);
+    NSLog(@"%@",strEvaluationList);
+    NSLog(@"%@",strCommentList);
+    
+    self.myImageView.image = [UIImage imageNamed:@"Picture.png"];
+    self.myImageView2.image = [UIImage imageNamed:@"Genre.png"];
+    self.myLabel.text = strNameList;
+    self.myLabel2.text = strAddressList;
+    self.myLabel3.text = strEvaluationList;
+    self.myTextView.text = strCommentList;
+    
+//  self.myLabel.text = [NSString stringWithFormat:@"%@",_wifiArray[self.selectNum][@"Name"]];
+//  self.myLabel2.text = [NSString stringWithFormat:@"%@",_wifiArray[self.selectNum][@"Address"]];
+//  self.myLabel3.text = [NSString stringWithFormat:@"%@",_wifiArray[self.selectNum][@"Evaluation"]];
+//  self.myTextView.text = [NSString stringWithFormat:@"%@",_wifiArray[self.selectNum][@"Comment"]];
     
 }
 

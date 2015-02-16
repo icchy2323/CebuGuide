@@ -102,6 +102,13 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		584A09FA1A91C65B00ADCB8A /* image */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = image;
+			sourceTree = "<group>";
+		};
 		5855E5921A847B5A0097A581 /* Const */ = {
 			isa = PBXGroup;
 			children = (
@@ -170,6 +177,7 @@
 		58AF3FF01A78A61F0075BAC3 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				584A09FA1A91C65B00ADCB8A /* image */,
 				58C27E5E1A89BE6600D62C58 /* Info.plist */,
 				58C27E5F1A89BE6600D62C58 /* main.m */,
 			);
