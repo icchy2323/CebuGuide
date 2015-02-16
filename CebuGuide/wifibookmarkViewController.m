@@ -63,7 +63,6 @@
     UINib *nib = [UINib nibWithNibName:@"TableViewCustomCell" bundle:nil];
     [self.myTableView registerNib:nib forCellReuseIdentifier:@"cell"];
     
-    
 }
 
 - (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath
@@ -71,18 +70,18 @@
     return [customTableViewCell rowHeight];
 }
 
-
 -(NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section{
     return _wifiArray.count;
 }
 
 -(UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath{
     static NSString *CellIdentifier = @"cell";
-    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:CellIdentifier];
     
-    if (cell == nil) {
-        cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:CellIdentifier];
-    }
+    customTableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:CellIdentifier];
+    
+//    if (cell == nil) {
+//        cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:CellIdentifier];
+//    }
     
     NSDictionary *wifiDic = (NSDictionary *)_wifiArray[indexPath.row][@"wifilist"];
     

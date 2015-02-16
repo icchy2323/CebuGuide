@@ -7,6 +7,8 @@
 //
 
 #import "gourmetlistViewController.h"
+#import "customTableViewCell.h"
+#import "TableViewConst.h"
 
 @interface gourmetlistViewController ()
 
@@ -57,24 +59,31 @@
     NSLog(@"%@",strEvaluationList);
     NSLog(@"%@",strCommentList);
     
+    UINib *nib = [UINib nibWithNibName:@"TableViewCustomCell" bundle:nil];
+    [self.myTableView registerNib:nib forCellReuseIdentifier:@"cell"];
+    
 }
 
+- (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath
+{
+    return [customTableViewCell rowHeight];
+}
 
 -(NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section{
     return _gourmetArray.count;
 }
 
 -(UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath{
-    static NSString *CellIdentifer = @"Cell";
+    static NSString *CellIdentifer = @"cell";
     
-    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:CellIdentifer];
+    customTableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:CellIdentifer];
     
-    if (cell == nil) {
-        cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:CellIdentifer];
-    }
+//    if (cell == nil) {
+//        cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:CellIdentifer];
+//    }
     
     NSDictionary *gourmetDic =(NSDictionary *)_gourmetArray[indexPath.row][@"gourmetlist"];
-        
+    
     cell.textLabel.text = [NSString stringWithFormat:@"%@",gourmetDic[@"Name"]];
     
     return cell;
