@@ -38,15 +38,27 @@
     //ナビゲーションコントローラのタイトル設定
     self.navigationItem.title = [NSString stringWithFormat:@"Wi-Fi"];
     
-    //友達リストを表示する
+    //リストを表示する
+    NSString *strPictureList = @"";
     NSString *strNameList = @"";
+    NSString *strGenreList = @"";
+    NSString *strAddressList = @"";
     NSString *strEvaluationList = @"";
     NSString *strCommentList = @"";
     
     //高速列挙でデータを取り出して文字列変数にセット
     for (NSDictionary *wifiDic in self.wifiList) {
+        strPictureList = [strPictureList stringByAppendingString:wifiDic[@"Picture"]];
+        strPictureList = [strPictureList stringByAppendingString:@"\n"];
+        
         strNameList = [strNameList stringByAppendingString:wifiDic[@"Name"]];
         strNameList = [strNameList stringByAppendingString:@"\n"];
+        
+        strGenreList = [strGenreList stringByAppendingString:wifiDic[@"Genre"]];
+        strGenreList = [strGenreList stringByAppendingString:@"\n"];
+        
+        strAddressList = [strAddressList stringByAppendingString:wifiDic[@"Address"]];
+        strAddressList = [strAddressList stringByAppendingString:@"\n"];
         
         strEvaluationList = [strEvaluationList stringByAppendingString:wifiDic[@"Evaluation"]];
         strEvaluationList = [strEvaluationList stringByAppendingString:@"\n"];
@@ -56,7 +68,10 @@
         
     }
     
+    NSLog(@"%@",strPictureList);
     NSLog(@"%@",strNameList);
+    NSLog(@"%@",strGenreList);
+    NSLog(@"%@",strAddressList);
     NSLog(@"%@",strEvaluationList);
     NSLog(@"%@",strCommentList);
     

@@ -16,7 +16,7 @@
 				<key>Genre</key>
 				<string></string>
 				<key>Address</key>
-				<string></string>
+				<string>aaa</string>
 				<key>Evaluation</key>
 				<string>⭐︎</string>
 				<key>Comment</key>
@@ -35,7 +35,7 @@
 				<key>Genre</key>
 				<string></string>
 				<key>Address</key>
-				<string></string>
+				<string>bbb</string>
 				<key>Evaluatoin</key>
 				<string>⭐︎⭐︎</string>
 				<key>Comment</key>
@@ -54,7 +54,7 @@
 				<key>Genre</key>
 				<string></string>
 				<key>Address</key>
-				<string></string>
+				<string>ccc</string>
 				<key>Evaluation</key>
 				<string>⭐︎⭐︎⭐︎</string>
 				<key>Comment</key>
