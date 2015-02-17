@@ -7,8 +7,8 @@
 //
 
 #import "syousaiViewController.h"
-#import "gourmetbookmarkViewController.h"
 #import "wifibookmarkViewController.h"
+#import "gourmetbookmarkViewController.h"
 
 @interface syousaiViewController ()
 
@@ -25,14 +25,29 @@
     
     //読み込むプロパティリストのファイルパス（場所）を指定
     NSString *path = [bundle pathForResource:@"wifi" ofType:@"plist"];
+    NSString *path2 = [bundle pathForResource:@"gourmet" ofType:@"plist"];
     
     //プロパティリストの中身のデータを取得
     NSDictionary *dic = [NSDictionary dictionaryWithContentsOfFile:path];
+    NSDictionary *dic2 = [NSDictionary dictionaryWithContentsOfFile:path2];
     
     _wifiArray = [dic objectForKey:@"Wifilist"];
+    _gourmetArray = [dic2 objectForKey:@"Gourmetlist"];
+    
+    NSDictionary *wifiDic = _wifiArray[self.selectNum];
+    NSDictionary *gourmetDic = _gourmetArray[self.selectNum];
     
     //ナビゲーションコントローラのタイトル設定
     self.navigationItem.title = [NSString stringWithFormat:@"Wi-Fi"];
+
+    //wifi,gourmetどちらから来たか判定する
+    NSDictionary *commonDic = [[NSDictionary alloc]init];
+    
+    if ([self.selectType isEqualToString:@"wifi"]) {
+        commonDic = wifiDic[@"wifilist"];
+    } else {
+        commonDic = gourmetDic[@"gourmetlist"];
+    }
     
     //リストを表示する
     NSString *strPictureList = @"";
@@ -42,49 +57,23 @@
     NSString *strEvaluationList = @"";
     NSString *strCommentList = @"";
     
-    
-    //ボタンが押された時
-    NSDictionary *wifiDic = _wifiArray[self.selectNum];
-    
-    strPictureList = [strPictureList stringByAppendingString:wifiDic[@"wifilist"][@"Picture"]];
+    strPictureList = [strPictureList stringByAppendingString:commonDic[@"Picture"]];
     strPictureList = [strPictureList stringByAppendingString:@"\n"];
     
-    strNameList = [strNameList stringByAppendingString:wifiDic[@"wifilist"][@"Name"]];
+    strNameList = [strNameList stringByAppendingString:commonDic[@"Name"]];
     strNameList = [strNameList stringByAppendingString:@"\n"];
     
-    strGenreList = [strGenreList stringByAppendingString:wifiDic[@"wifilist"][@"Genre"]];
+    strGenreList = [strGenreList stringByAppendingString:commonDic[@"Genre"]];
     strGenreList = [strGenreList stringByAppendingString:@"\n"];
     
-    strAddressList = [strAddressList stringByAppendingString:wifiDic[@"wifilist"][@"Address"]];
+    strAddressList = [strAddressList stringByAppendingString:commonDic[@"Address"]];
     strAddressList = [strAddressList stringByAppendingString:@"\n"];
     
-    strEvaluationList = [strEvaluationList stringByAppendingString:wifiDic[@"wifilist"][@"Evaluation"]];
+    strEvaluationList = [strEvaluationList stringByAppendingString:commonDic[@"Evaluation"]];
     strEvaluationList = [strEvaluationList stringByAppendingString:@"\n"];
     
-    strCommentList = [strCommentList stringByAppendingString:wifiDic[@"wifilist"][@"Comment"]];
+    strCommentList = [strCommentList stringByAppendingString:commonDic[@"Comment"]];
     strCommentList = [strCommentList stringByAppendingString:@"\n"];
-
-//    //高速列挙でデータを取り出して文字列変数にセット
-//    for (NSDictionary *wifiDic in self.wifiList) {
-//        strPictureList = [strPictureList stringByAppendingString:wifiDic[@"Picture"]];
-//        strPictureList = [strPictureList stringByAppendingString:@"\n"];
-//        
-//        strNameList = [strNameList stringByAppendingString:wifiDic[@"Name"]];
-//        strNameList = [strNameList stringByAppendingString:@"\n"];
-//        
-//        strGenreList = [strGenreList stringByAppendingString:wifiDic[@"Genre"]];
-//        strGenreList = [strGenreList stringByAppendingString:@"\n"];
-//        
-//        strAddressList = [strAddressList stringByAppendingString:wifiDic[@"Address"]];
-//        strAddressList = [strAddressList stringByAppendingString:@"\n"];
-//        
-//        strEvaluationList = [strEvaluationList stringByAppendingString:wifiDic[@"Evaluation"]];
-//        strEvaluationList = [strEvaluationList stringByAppendingString:@"\n"];
-//        
-//        strCommentList = [strCommentList stringByAppendingString:wifiDic[@"Comment"]];
-//        strCommentList = [strCommentList stringByAppendingString:@"\n"];
-//        
-//    }
     
     NSLog(@"%@",strPictureList);
     NSLog(@"%@",strNameList);
@@ -124,7 +113,6 @@
 */
 
 - (IBAction)tapBtn:(id)sender {
-    
     //AlertViewの設定
     UIAlertView *alert= [[UIAlertView alloc] initWithTitle:@"Add to" message:@"Bookmark?" delegate:self cancelButtonTitle:@"cancel" otherButtonTitles:@"OK", nil];
     
@@ -138,7 +126,6 @@
 
 //ボタンがクリックされた時に、どのボタンが押されたか認識できるメソッド
 - (void)alertView:(UIAlertView *)alertView clickedButtonAtIndex:(NSInteger)buttonIndex{
-    
     if (buttonIndex == 1) {
         NSLog(@"OK");
     } else {

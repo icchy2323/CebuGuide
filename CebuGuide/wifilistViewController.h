@@ -16,7 +16,7 @@
 
 @property (nonatomic,assign) int
 selectNum;
-@property (nonatomic,strong)NSArray *wifiList;
+@property (nonatomic,strong)NSArray *wifilist;
 @property (nonatomic,strong)NSString *wifiString;
 
 - (IBAction)tapBtn:(id)sender;

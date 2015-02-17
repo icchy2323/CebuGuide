@@ -16,7 +16,7 @@
 
 @property (nonatomic,assign) int
 selectNum;
-@property (nonatomic,strong)NSArray *gourmetList;
+@property (nonatomic,strong)NSArray *gourmetlist;
 @property (nonatomic,strong)NSString *gourmetString;
 
 - (IBAction)tapBtn:(id)sender;

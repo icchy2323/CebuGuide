@@ -66,8 +66,8 @@
 }
 
 //位置情報更新時に呼ばれる
--(void)locationManager:(CLLocationManager *)manager didUpdateLocations:(NSArray *)locations
-{
+-(void)locationManager:(CLLocationManager *)manager didUpdateLocations:(NSArray *)locations{
+    
     //ユーザの位置を表示するかどうか
     _mapView.showsUserLocation = YES;
     

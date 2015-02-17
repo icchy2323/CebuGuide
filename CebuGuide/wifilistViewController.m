@@ -46,7 +46,7 @@
     NSString *strCommentList = @"";
     
     //高速列挙でデータを取り出して文字列変数にセット
-    for (NSDictionary *wifiDic in self.wifiList) {
+    for (NSDictionary *wifiDic in self.wifilist) {
         strPictureList = [strPictureList stringByAppendingString:wifiDic[@"Picture"]];
         strPictureList = [strPictureList stringByAppendingString:@"\n"];
         
@@ -79,8 +79,7 @@
     
 }
 
-- (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath
-{
+- (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath{
     return [customTableViewCell rowHeight];
 }
 

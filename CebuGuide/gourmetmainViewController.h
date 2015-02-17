@@ -9,12 +9,11 @@
 #import <UIKit/UIKit.h>
 #import <MapKit/MapKit.h>
 
-@interface gourmetmainViewController : UIViewController<MKMapViewDelegate>
-{
+@interface gourmetmainViewController : UIViewController<MKMapViewDelegate>{
     MKMapView *_mapView;
     BOOL _alreadyStartingCoordinateSet;
-    
 }
+
 @property (nonatomic) CLLocationManager *locationManager;
 
 @property (weak, nonatomic) IBOutlet UILabel *myLabel;

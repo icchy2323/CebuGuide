@@ -20,12 +20,15 @@
 @property (weak, nonatomic) IBOutlet UILabel *myLabel3;
 @property (weak, nonatomic) IBOutlet UITextView *myTextView;
 
-@property (nonatomic,assign) int
-selectNum;
-@property (nonatomic,strong)NSArray *wifiList;
-@property (nonatomic,strong)NSString *wifiString;
-@property (nonatomic,strong)NSArray *gourmetList;
-@property (nonatomic,strong)NSString *gourmetString;
+@property (nonatomic,assign) int selectNum;
+
+@property (nonatomic,strong) NSString *selectType;
+
+@property (nonatomic,strong) NSArray *wifilist;
+@property (nonatomic,strong) NSString *wifiString;
+
+@property (nonatomic,strong) NSArray *gourmetlist;
+@property (nonatomic,strong) NSString *gourmetString;
 
 
 - (IBAction)tapBtn:(id)sender;

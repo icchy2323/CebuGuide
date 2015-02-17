@@ -12,9 +12,9 @@
     NSArray *_gourmetArray;
 }
 
-@property (nonatomic,assign) int
-selectNum;
-@property (nonatomic,strong)NSArray *gourmetList;
+@property (nonatomic,assign) int selectNum;
+
+@property (nonatomic,strong)NSArray *gourmetlist;
 @property (nonatomic,strong)NSString *gourmetString;
 
 @property (weak, nonatomic) IBOutlet UITableView *myTableView;
