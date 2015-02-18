@@ -20,6 +20,9 @@
     [super viewDidLoad];
     // Do any additional setup after loading the view.
     
+    //Tab barを表示させる
+    //self.hidesBottomBarWhenPushed = NO;
+    
     //プロジェクト内のファイルにアクセスできるオブジェクトを作成
     NSBundle *bundle = [NSBundle mainBundle];
     
