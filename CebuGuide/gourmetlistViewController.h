@@ -7,15 +7,17 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "syousaitwoViewController.h"
 
 @interface gourmetlistViewController : UIViewController<UITableViewDelegate,UITableViewDataSource>{
     NSArray *_gourmetArray;
+    syousaitwoViewController *SyousaitwoViewController;
 }
 
 @property (weak, nonatomic) IBOutlet UITableView *myTableView;
 
-@property (nonatomic,assign) int
-selectNum;
+@property (nonatomic,assign) int selectNum;
+
 @property (nonatomic,strong)NSArray *gourmetlist;
 @property (nonatomic,strong)NSString *gourmetString;
 

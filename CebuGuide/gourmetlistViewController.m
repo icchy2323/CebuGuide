@@ -103,6 +103,18 @@
     return cell;
 }
 
+-(void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath{
+
+    SyousaitwoViewController = [self.storyboard instantiateViewControllerWithIdentifier:@"syousaitwoViewController"];
+    
+    SyousaitwoViewController.selectNum = (int)self.myTableView.indexPathForSelectedRow.row;
+    
+    SyousaitwoViewController.selectType = @"gourmet";
+    
+    [self presentViewController:SyousaitwoViewController animated:NO completion:nil];
+}
+
+
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.

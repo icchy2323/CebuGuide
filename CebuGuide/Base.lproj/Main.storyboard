@@ -90,6 +90,82 @@
             </objects>
             <point key="canvasLocation" x="1946" y="347"/>
         </scene>
+        <!--Syousaitwo View Controller-->
+        <scene sceneID="MRQ-vx-inG">
+            <objects>
+                <viewController storyboardIdentifier="syousaitwoViewController" id="d5q-2m-lTW" customClass="syousaitwoViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="xq1-HO-ndY"/>
+                        <viewControllerLayoutGuide type="bottom" id="S9c-TP-Q2e"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="LE2-4E-7GL">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Store name" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="e1h-fj-W0l">
+                                <rect key="frame" x="156" y="115" width="190" height="25"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Address・mark" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="SXp-Go-dXd">
+                                <rect key="frame" x="16" y="251" width="190" height="25"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Evaluation" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7WR-Ae-9Pe">
+                                <rect key="frame" x="16" y="318" width="190" height="25"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" text="Comment" translatesAutoresizingMaskIntoConstraints="NO" id="eJF-Hf-DiS">
+                                <rect key="frame" x="10" y="376" width="250" height="80"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Rjv-gM-sPM">
+                                <rect key="frame" x="16" y="98" width="100" height="100"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="ZJz-RX-YsO">
+                                <rect key="frame" x="156" y="148" width="50" height="50"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="contactAdd" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kia-R9-a5O">
+                                <rect key="frame" x="228" y="501" width="22" height="22"/>
+                                <state key="normal">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="tapBtn:" destination="d5q-2m-lTW" eventType="touchUpInside" id="3xV-TM-Utd"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="c6t-HA-OSI">
+                                <rect key="frame" x="10" y="48" width="37" height="30"/>
+                                <state key="normal" title="close">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="tapBtn2:" destination="d5q-2m-lTW" eventType="touchUpInside" id="grn-5G-raJ"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <connections>
+                        <outlet property="myImageView" destination="Rjv-gM-sPM" id="Xba-hb-VSE"/>
+                        <outlet property="myImageView2" destination="ZJz-RX-YsO" id="cLH-uE-Yjg"/>
+                        <outlet property="myLabel" destination="e1h-fj-W0l" id="kJT-oR-fZd"/>
+                        <outlet property="myLabel2" destination="SXp-Go-dXd" id="q2k-uV-Pg4"/>
+                        <outlet property="myLabel3" destination="7WR-Ae-9Pe" id="XGZ-ZD-9fW"/>
+                        <outlet property="myTextView" destination="eJF-Hf-DiS" id="rjf-Do-IpU"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="qj8-Os-oSb" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2786" y="707"/>
+        </scene>
         <!--Syousai View Controller-->
         <scene sceneID="OGg-nL-acS">
             <objects>

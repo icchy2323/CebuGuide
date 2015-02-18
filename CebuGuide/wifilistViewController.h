@@ -7,15 +7,17 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "syousaitwoViewController.h"
 
 @interface wifilistViewController : UIViewController<UITableViewDelegate,UITableViewDataSource>{
      NSArray *_wifiArray;
+     syousaitwoViewController *SyousaitwoViewController;
 }
 
 @property (weak, nonatomic) IBOutlet UITableView *myTableView;
 
-@property (nonatomic,assign) int
-selectNum;
+@property (nonatomic,assign) int selectNum;
+
 @property (nonatomic,strong)NSArray *wifilist;
 @property (nonatomic,strong)NSString *wifiString;
 

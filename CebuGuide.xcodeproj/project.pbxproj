@@ -21,6 +21,7 @@
 		58AF40011A78A61F0075BAC3 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 58AF3FFF1A78A61F0075BAC3 /* LaunchScreen.xib */; };
 		58AF400D1A78A61F0075BAC3 /* CebuGuideTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 58AF400C1A78A61F0075BAC3 /* CebuGuideTests.m */; };
 		58AF40171A78A9C00075BAC3 /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 58AF40161A78A9C00075BAC3 /* MapKit.framework */; };
+		58BB8C191A94639B001BF443 /* syousaitwoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 58BB8C181A94639B001BF443 /* syousaitwoViewController.m */; };
 		58BC08971A7F2F94000CF949 /* gourmetmainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 58BC08961A7F2F94000CF949 /* gourmetmainViewController.m */; };
 		58BC089A1A7F30BB000CF949 /* bookmarkViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 58BC08991A7F30BB000CF949 /* bookmarkViewController.m */; };
 		58BC08A01A7F4632000CF949 /* gourmetlistViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 58BC089F1A7F4632000CF949 /* gourmetlistViewController.m */; };
@@ -65,6 +66,8 @@
 		58AF400B1A78A61F0075BAC3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		58AF400C1A78A61F0075BAC3 /* CebuGuideTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CebuGuideTests.m; sourceTree = "<group>"; };
 		58AF40161A78A9C00075BAC3 /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
+		58BB8C171A94639B001BF443 /* syousaitwoViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = syousaitwoViewController.h; sourceTree = "<group>"; };
+		58BB8C181A94639B001BF443 /* syousaitwoViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = syousaitwoViewController.m; sourceTree = "<group>"; };
 		58BC08951A7F2F94000CF949 /* gourmetmainViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = gourmetmainViewController.h; sourceTree = "<group>"; };
 		58BC08961A7F2F94000CF949 /* gourmetmainViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = gourmetmainViewController.m; sourceTree = "<group>"; };
 		58BC08981A7F30BB000CF949 /* bookmarkViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = bookmarkViewController.h; sourceTree = "<group>"; };
@@ -153,14 +156,16 @@
 				58BC08991A7F30BB000CF949 /* bookmarkViewController.m */,
 				58BC08A11A7F4CE9000CF949 /* wifilistViewController.h */,
 				58BC08A21A7F4CE9000CF949 /* wifilistViewController.m */,
-				58BC089F1A7F4632000CF949 /* gourmetlistViewController.m */,
 				58BC089E1A7F4632000CF949 /* gourmetlistViewController.h */,
+				58BC089F1A7F4632000CF949 /* gourmetlistViewController.m */,
 				58BC08D91A808AEF000CF949 /* wifibookmarkViewController.h */,
 				58BC08DA1A808AEF000CF949 /* wifibookmarkViewController.m */,
 				58BC08D61A808AAC000CF949 /* gourmetbookmarkViewController.h */,
 				58BC08D71A808AAC000CF949 /* gourmetbookmarkViewController.m */,
 				583BC5191A886E460087730B /* syousaiViewController.h */,
 				583BC51A1A886E460087730B /* syousaiViewController.m */,
+				58BB8C171A94639B001BF443 /* syousaitwoViewController.h */,
+				58BB8C181A94639B001BF443 /* syousaitwoViewController.m */,
 				58AF3FFA1A78A61F0075BAC3 /* Main.storyboard */,
 				58AF3FFD1A78A61F0075BAC3 /* Images.xcassets */,
 				58AF3FFF1A78A61F0075BAC3 /* LaunchScreen.xib */,
@@ -311,6 +316,7 @@
 				58BC08A01A7F4632000CF949 /* gourmetlistViewController.m in Sources */,
 				58BC08971A7F2F94000CF949 /* gourmetmainViewController.m in Sources */,
 				58AF3FF91A78A61F0075BAC3 /* wifimainViewController.m in Sources */,
+				58BB8C191A94639B001BF443 /* syousaitwoViewController.m in Sources */,
 				58AF3FF61A78A61F0075BAC3 /* AppDelegate.m in Sources */,
 				5855E5951A847BA00097A581 /* TableViewConst.m in Sources */,
 				58BC089A1A7F30BB000CF949 /* bookmarkViewController.m in Sources */,
