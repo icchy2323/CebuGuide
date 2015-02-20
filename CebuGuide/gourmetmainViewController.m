@@ -149,10 +149,20 @@
 //    
 //}
 
--(IBAction)returnMain:(UIStoryboardSegue *)segue {
-}
+//-(IBAction)returnMain:(UIStoryboardSegue *)segue {
+//}
 
 - (IBAction)tapBtn:(id)sender {
+    gourmetlistViewController *GourmetlistViewController;
+
+    GourmetlistViewController = [self.storyboard instantiateViewControllerWithIdentifier:@"gourmetlistViewController"];
+    
+    GourmetlistViewController.selectType = @"gourmet";
+    
+    GourmetlistViewController.modalTransitionStyle = UIModalTransitionStyleFlipHorizontal;
+    
+    [self presentViewController:GourmetlistViewController animated:YES completion:nil];
+
 }
 
 - (void)didReceiveMemoryWarning {

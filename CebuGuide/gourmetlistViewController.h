@@ -8,6 +8,7 @@
 
 #import <UIKit/UIKit.h>
 #import "syousaitwoViewController.h"
+#import "gourmetmainViewController.h"
 
 @interface gourmetlistViewController : UIViewController<UITableViewDelegate,UITableViewDataSource>{
     NSArray *_gourmetArray;
@@ -17,6 +18,8 @@
 @property (weak, nonatomic) IBOutlet UITableView *myTableView;
 
 @property (nonatomic,assign) int selectNum;
+
+@property (nonatomic,strong) NSString *selectType;
 
 @property (nonatomic,strong)NSArray *gourmetlist;
 @property (nonatomic,strong)NSString *gourmetString;

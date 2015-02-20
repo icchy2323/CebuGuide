@@ -8,6 +8,7 @@
 
 #import <UIKit/UIKit.h>
 #import <MapKit/MapKit.h>
+#import "gourmetlistViewController.h"
 
 @interface gourmetmainViewController : UIViewController<MKMapViewDelegate>{
     MKMapView *_mapView;
@@ -15,6 +16,8 @@
 }
 
 @property (nonatomic) CLLocationManager *locationManager;
+
+@property (nonatomic,strong) NSString *selectType;
 
 @property (weak, nonatomic) IBOutlet UILabel *myLabel;
 @property (weak, nonatomic) IBOutlet UIButton *myButton;

@@ -8,6 +8,7 @@
 
 #import <UIKit/UIKit.h>
 #import <MapKit/MapKit.h>
+#import "wifilistViewController.h"
 
 @interface wifimainViewController : UIViewController<CLLocationManagerDelegate>
 {
@@ -16,6 +17,8 @@
 
 }
 @property (nonatomic) CLLocationManager *locationManager;
+
+@property (nonatomic,strong) NSString *selectType;
 
 @property (weak, nonatomic) IBOutlet UILabel *myLabel;
 @property (weak, nonatomic) IBOutlet UIButton *myButton;

@@ -29,7 +29,6 @@
                                 </state>
                                 <connections>
                                     <action selector="tapBtn:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="sOn-Yb-de7"/>
-                                    <segue destination="yxU-Rf-ULj" kind="show" id="TB1-Wk-qRa"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -57,7 +56,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <tableView clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" translatesAutoresizingMaskIntoConstraints="NO" id="LMC-Tn-byu">
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" translatesAutoresizingMaskIntoConstraints="NO" id="LMC-Tn-byu">
                                 <rect key="frame" x="0.0" y="61" width="600" height="482"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                             </tableView>
@@ -79,6 +78,10 @@
                             </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="LMC-Tn-byu" firstAttribute="leading" secondItem="OPr-ue-vXA" secondAttribute="leading" id="90U-o5-Qgd"/>
+                            <constraint firstAttribute="trailing" secondItem="LMC-Tn-byu" secondAttribute="trailing" id="Zkk-hR-Mua"/>
+                        </constraints>
                     </view>
                     <connections>
                         <outlet property="myLabel" destination="m5A-gM-bpx" id="mi7-Lu-p7y"/>
@@ -103,7 +106,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Store name" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="e1h-fj-W0l">
-                                <rect key="frame" x="156" y="115" width="190" height="25"/>
+                                <rect key="frame" x="149" y="115" width="190" height="25"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
@@ -121,7 +124,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" text="Comment" translatesAutoresizingMaskIntoConstraints="NO" id="eJF-Hf-DiS">
-                                <rect key="frame" x="10" y="376" width="250" height="80"/>
+                                <rect key="frame" x="16" y="376" width="250" height="80"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
@@ -129,11 +132,8 @@
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Rjv-gM-sPM">
                                 <rect key="frame" x="16" y="98" width="100" height="100"/>
                             </imageView>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="ZJz-RX-YsO">
-                                <rect key="frame" x="156" y="148" width="50" height="50"/>
-                            </imageView>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="contactAdd" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kia-R9-a5O">
-                                <rect key="frame" x="228" y="501" width="22" height="22"/>
+                                <rect key="frame" x="266" y="515" width="22" height="22"/>
                                 <state key="normal">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
@@ -142,7 +142,7 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="c6t-HA-OSI">
-                                <rect key="frame" x="10" y="48" width="37" height="30"/>
+                                <rect key="frame" x="10" y="28" width="37" height="30"/>
                                 <state key="normal" title="close">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
@@ -150,6 +150,9 @@
                                     <action selector="tapBtn2:" destination="d5q-2m-lTW" eventType="touchUpInside" id="grn-5G-raJ"/>
                                 </connections>
                             </button>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="ZJz-RX-YsO">
+                                <rect key="frame" x="149" y="148" width="50" height="50"/>
+                            </imageView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
@@ -190,12 +193,6 @@
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" text="Comment" translatesAutoresizingMaskIntoConstraints="NO" id="IMn-4Q-e2w">
-                                <rect key="frame" x="8" y="346" width="250" height="80"/>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
-                            </textView>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ubz-q3-bIJ">
                                 <rect key="frame" x="8" y="33" width="37" height="30"/>
                                 <state key="normal" title="close">
@@ -203,15 +200,6 @@
                                 </state>
                                 <connections>
                                     <action selector="tapBtn2:" destination="QhH-Zg-VwR" eventType="touchUpInside" id="Q6w-by-haZ"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="contactAdd" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="PzJ-KE-VXW">
-                                <rect key="frame" x="268" y="523" width="22" height="22"/>
-                                <state key="normal">
-                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
-                                </state>
-                                <connections>
-                                    <action selector="tapBtn:" destination="QhH-Zg-VwR" eventType="touchUpInside" id="6kd-fO-oV3"/>
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Evaluation" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3Pe-8r-HTE">
@@ -226,6 +214,12 @@
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" text="Comment" translatesAutoresizingMaskIntoConstraints="NO" id="IMn-4Q-e2w">
+                                <rect key="frame" x="16" y="350" width="250" height="80"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
@@ -268,7 +262,6 @@
                                 </state>
                                 <connections>
                                     <action selector="tapBtn:" destination="Hk1-CT-dlO" eventType="touchUpInside" id="WBB-VD-Krh"/>
-                                    <segue destination="QCX-zK-C7b" kind="show" id="isP-NW-YEi"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -282,7 +275,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="kM2-Qi-D0h" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1190" y="1077"/>
+            <point key="canvasLocation" x="1190" y="1089"/>
         </scene>
         <!--Gourmetlist View Controller-->
         <scene sceneID="an6-E4-5UD">
@@ -296,10 +289,6 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <tableView clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" translatesAutoresizingMaskIntoConstraints="NO" id="vv7-xO-njE">
-                                <rect key="frame" x="0.0" y="61" width="600" height="482"/>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                            </tableView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Gourmet" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pEp-Nd-OKT">
                                 <rect key="frame" x="128" y="28" width="120" height="35"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
@@ -316,8 +305,16 @@
                                     <segue destination="soB-Sr-NjV" kind="unwind" unwindAction="returnMain:" id="luE-bN-S2E"/>
                                 </connections>
                             </button>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" translatesAutoresizingMaskIntoConstraints="NO" id="vv7-xO-njE">
+                                <rect key="frame" x="0.0" y="59" width="600" height="482"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            </tableView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="vv7-xO-njE" secondAttribute="trailing" id="DUx-52-vXz"/>
+                            <constraint firstItem="vv7-xO-njE" firstAttribute="leading" secondItem="qOf-Mr-C6A" secondAttribute="leading" id="iSY-xC-pZg"/>
+                        </constraints>
                     </view>
                     <connections>
                         <outlet property="myLabel" destination="pEp-Nd-OKT" id="oMe-vP-AeV"/>
@@ -327,7 +324,7 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="WEm-zS-Q6f" userLabel="First Responder" sceneMemberID="firstResponder"/>
                 <exit id="soB-Sr-NjV" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
-            <point key="canvasLocation" x="1946" y="1077"/>
+            <point key="canvasLocation" x="1946" y="1089"/>
         </scene>
         <!--Bookmark-->
         <scene sceneID="d2m-50-cfw">
@@ -488,7 +485,7 @@
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="3xb-m9-x17" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-344" y="339"/>
+            <point key="canvasLocation" x="-342" y="347"/>
         </scene>
         <!--Bookmark-->
         <scene sceneID="LRw-WZ-q8r">

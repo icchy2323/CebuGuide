@@ -84,8 +84,8 @@
     NSLog(@"%@",strEvaluationList);
     NSLog(@"%@",strCommentList);
     
-    self.myImageView.image = [UIImage imageNamed:@"Picture.png"];
-    self.myImageView2.image = [UIImage imageNamed:@"Genre.png"];
+    self.myImageView.image = [UIImage imageNamed:commonDic[@"Picture"]];
+    self.myImageView2.image = [UIImage imageNamed:commonDic[@"Genre"]];
     self.myLabel.text = strNameList;
     self.myLabel2.text = strAddressList;
     self.myLabel3.text = strEvaluationList;

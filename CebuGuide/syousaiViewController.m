@@ -82,8 +82,8 @@
     NSLog(@"%@",strEvaluationList);
     NSLog(@"%@",strCommentList);
     
-    self.myImageView.image = [UIImage imageNamed:@"Picture.png"];
-    self.myImageView2.image = [UIImage imageNamed:@"Genre.png"];
+    self.myImageView.image = [UIImage imageNamed:commonDic[@"Picture"]];
+    self.myImageView2.image = [UIImage imageNamed:commonDic[@"Genre"]];
     self.myLabel.text = strNameList;
     self.myLabel2.text = strAddressList;
     self.myLabel3.text = strEvaluationList;
@@ -112,25 +112,25 @@
 }
 */
 
-- (IBAction)tapBtn:(id)sender {
-    //AlertViewの設定
-    UIAlertView *alert= [[UIAlertView alloc] initWithTitle:@"Add to" message:@"Bookmark?" delegate:self cancelButtonTitle:@"cancel" otherButtonTitles:@"OK", nil];
-    
-    //設定したAlertViewを表示
-    [alert show];
-}
+//- (IBAction)tapBtn:(id)sender {
+//    //AlertViewの設定
+//    UIAlertView *alert= [[UIAlertView alloc] initWithTitle:@"Add to" message:@"Bookmark?" delegate:self cancelButtonTitle:@"cancel" otherButtonTitles:@"OK", nil];
+//    
+//    //設定したAlertViewを表示
+//    [alert show];
+//}
 
 - (IBAction)tapBtn2:(id)sender {
     [self dismissViewControllerAnimated:YES completion:nil];
 }
 
-//ボタンがクリックされた時に、どのボタンが押されたか認識できるメソッド
-- (void)alertView:(UIAlertView *)alertView clickedButtonAtIndex:(NSInteger)buttonIndex{
-    if (buttonIndex == 1) {
-        NSLog(@"OK");
-    } else {
-        NSLog(@"Cancel");
-    }
-}
+////ボタンがクリックされた時に、どのボタンが押されたか認識できるメソッド
+//- (void)alertView:(UIAlertView *)alertView clickedButtonAtIndex:(NSInteger)buttonIndex{
+//    if (buttonIndex == 1) {
+//        NSLog(@"OK");
+//    } else {
+//        NSLog(@"Cancel");
+//    }
+//}
 
 @end

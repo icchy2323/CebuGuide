@@ -98,7 +98,11 @@
     
     NSDictionary *gourmetDic =(NSDictionary *)_gourmetArray[indexPath.row][@"gourmetlist"];
     
-    cell.textLabel.text = [NSString stringWithFormat:@"%@",gourmetDic[@"Name"]];
+    //cell.textLabel.text = [NSString stringWithFormat:@"%@",gourmetDic[@"Name"]];
+    
+    cell.myLabel.text =[NSString stringWithFormat:@"%@",gourmetDic[@"Name"]];
+    cell.myLabel2.text =[NSString stringWithFormat:@"%@",gourmetDic[@"Evaluation"]];
+    cell.myImageView.image = [UIImage imageNamed:gourmetDic[@"Picture"]];
     
     return cell;
 }
@@ -131,5 +135,16 @@
 */
 
 - (IBAction)tapBtn:(id)sender {
+    gourmetmainViewController *GourmetmainViewController;
+
+    GourmetmainViewController = [self.storyboard instantiateViewControllerWithIdentifier:@"gourmetmainViewController"];
+    
+    GourmetmainViewController.selectType = @"gourmet";
+    
+    GourmetmainViewController.modalTransitionStyle = UIModalTransitionStyleFlipHorizontal;
+    
+    [self presentViewController:GourmetmainViewController animated:YES completion:nil];
+
 }
+
 @end

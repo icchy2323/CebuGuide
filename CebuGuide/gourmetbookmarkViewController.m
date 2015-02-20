@@ -97,9 +97,13 @@
 //       cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:CellIdentifier];
 //    }
     
-    NSDictionary *gourmetDic = (NSDictionary *)_gourmetArray[indexPath.row][@"gourmetlist"];
+    NSDictionary *gourmetDic2 = (NSDictionary *)_gourmetArray[indexPath.row][@"gourmetlist"];
     
-    cell.textLabel.text = [NSString stringWithFormat:@"%@",gourmetDic[@"Name"]];
+    //cell.textLabel.text = [NSString stringWithFormat:@"%@",gourmetDic[@"Name"]];
+    
+    cell.myLabel.text =[NSString stringWithFormat:@"%@",gourmetDic2[@"Name"]];
+    cell.myLabel2.text =[NSString stringWithFormat:@"%@",gourmetDic2[@"Evaluation"]];
+    cell.myImageView.image = [UIImage imageNamed:gourmetDic2[@"Picture"]];
     
     return cell;
 }

@@ -99,7 +99,11 @@
     
     NSDictionary *wifiDic = (NSDictionary *)_wifiArray[indexPath.row][@"wifilist"];
     
-    cell.textLabel.text = [NSString stringWithFormat:@"%@",wifiDic[@"Name"]];
+    //cell.textLabel.text = [NSString stringWithFormat:@"%@",wifiDic[@"Name"]];
+    
+    cell.myLabel.text = [NSString stringWithFormat:@"%@",wifiDic[@"Name"]];
+    cell.myLabel2.text = [NSString stringWithFormat:@"%@",wifiDic[@"Evaluation"]];
+    cell.myImageView.image = [UIImage imageNamed:wifiDic[@"Picture"]];
     
     return cell;
 }

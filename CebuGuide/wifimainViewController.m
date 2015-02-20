@@ -131,6 +131,15 @@
 }
 
 -(IBAction)tapBtn:(id)sender {
+    wifilistViewController *WifilistViewController;
+    
+    WifilistViewController = [self.storyboard instantiateViewControllerWithIdentifier:@"wifilistViewController"];
+    
+    //WifilistViewController.selectType = @"wifi";
+    
+    WifilistViewController.modalTransitionStyle = UIModalTransitionStyleFlipHorizontal;
+    
+    [self presentViewController:WifilistViewController animated:YES completion:nil];
 }
 
 -(void)didReceiveMemoryWarning {
