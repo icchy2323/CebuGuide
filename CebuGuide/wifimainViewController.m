@@ -135,7 +135,7 @@
     
     WifilistViewController = [self.storyboard instantiateViewControllerWithIdentifier:@"wifilistViewController"];
     
-    //WifilistViewController.selectType = @"wifi";
+    WifilistViewController.selectType = @"wifi";
     
     WifilistViewController.modalTransitionStyle = UIModalTransitionStyleFlipHorizontal;
     
