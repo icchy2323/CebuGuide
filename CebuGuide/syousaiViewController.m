@@ -82,18 +82,31 @@
     NSLog(@"%@",strEvaluationList);
     NSLog(@"%@",strCommentList);
     
+    if ([strEvaluationList intValue] == 1) {
+        self.myImageView3.image = [UIImage imageNamed:@"star1.png"];
+    };
+    
+    if ([strEvaluationList intValue] == 2) {
+        self.myImageView3.image = [UIImage imageNamed:@"star2.png"];
+    };
+    
+    if ([strEvaluationList intValue] == 3) {
+        self.myImageView3.image = [UIImage imageNamed:@"star3.png"];
+    };
+    
+    if ([strEvaluationList intValue] == 4) {
+        self.myImageView3.image = [UIImage imageNamed:@"star4.png"];
+    };
+    
+    if ([strEvaluationList intValue] == 5) {
+        self.myImageView3.image = [UIImage imageNamed:@"star5.png"];
+    };
+
     self.myImageView.image = [UIImage imageNamed:commonDic[@"Picture"]];
     self.myImageView2.image = [UIImage imageNamed:commonDic[@"Genre"]];
     self.myLabel.text = strNameList;
     self.myLabel2.text = strAddressList;
-    self.myLabel3.text = strEvaluationList;
     self.myTextView.text = strCommentList;
-    
-//  self.myLabel.text = [NSString stringWithFormat:@"%@",_wifiArray[self.selectNum][@"Name"]];
-//  self.myLabel2.text = [NSString stringWithFormat:@"%@",_wifiArray[self.selectNum][@"Address"]];
-//  self.myLabel3.text = [NSString stringWithFormat:@"%@",_wifiArray[self.selectNum][@"Evaluation"]];
-//  self.myTextView.text = [NSString stringWithFormat:@"%@",_wifiArray[self.selectNum][@"Comment"]];
-    
 }
 
 
@@ -112,25 +125,8 @@
 }
 */
 
-//- (IBAction)tapBtn:(id)sender {
-//    //AlertViewの設定
-//    UIAlertView *alert= [[UIAlertView alloc] initWithTitle:@"Add to" message:@"Bookmark?" delegate:self cancelButtonTitle:@"cancel" otherButtonTitles:@"OK", nil];
-//    
-//    //設定したAlertViewを表示
-//    [alert show];
-//}
-
 - (IBAction)tapBtn2:(id)sender {
     [self dismissViewControllerAnimated:YES completion:nil];
 }
-
-////ボタンがクリックされた時に、どのボタンが押されたか認識できるメソッド
-//- (void)alertView:(UIAlertView *)alertView clickedButtonAtIndex:(NSInteger)buttonIndex{
-//    if (buttonIndex == 1) {
-//        NSLog(@"OK");
-//    } else {
-//        NSLog(@"Cancel");
-//    }
-//}
 
 @end

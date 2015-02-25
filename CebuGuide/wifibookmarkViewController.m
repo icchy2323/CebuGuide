@@ -99,12 +99,31 @@
     
     NSDictionary *wifiDic = (NSDictionary *)_wifiArray[indexPath.row][@"wifilist"];
     
-    //cell.textLabel.text = [NSString stringWithFormat:@"%@",wifiDic[@"Name"]];
-    
     cell.myLabel.text = [NSString stringWithFormat:@"%@",wifiDic[@"Name"]];
-    cell.myLabel2.text = [NSString stringWithFormat:@"%@",wifiDic[@"Evaluation"]];
     cell.myImageView.image = [UIImage imageNamed:wifiDic[@"Picture"]];
     
+    NSString *strEvaluationList = wifiDic[@"Evaluation"];
+    
+    if ([strEvaluationList intValue] == 1) {
+        cell.myImageView2.image = [UIImage imageNamed:@"star1.png"];
+    };
+    
+    if ([strEvaluationList intValue] == 2) {
+        cell.myImageView2.image = [UIImage imageNamed:@"star2.png"];
+    };
+    
+    if ([strEvaluationList intValue] == 3) {
+        cell.myImageView2.image = [UIImage imageNamed:@"star3.png"];
+    };
+    
+    if ([strEvaluationList intValue] == 4) {
+        cell.myImageView2.image = [UIImage imageNamed:@"star4.png"];
+    };
+    
+    if ([strEvaluationList intValue] == 5) {
+        cell.myImageView2.image = [UIImage imageNamed:@"star5.png"];
+    };
+
     return cell;
 }
 

@@ -12,7 +12,7 @@
 
 @property (weak, nonatomic) IBOutlet UIImageView *myImageView;
 @property (weak, nonatomic) IBOutlet UILabel *myLabel;
-@property (weak, nonatomic) IBOutlet UILabel *myLabel2;
+@property (weak, nonatomic) IBOutlet UIImageView *myImageView2;
 
 + (CGFloat)rowHeight;
 

@@ -84,11 +84,30 @@
     NSLog(@"%@",strEvaluationList);
     NSLog(@"%@",strCommentList);
     
+    if ([strEvaluationList intValue] == 1) {
+        self.myImageView3.image = [UIImage imageNamed:@"star1.png"];
+    };
+    
+    if ([strEvaluationList intValue] == 2) {
+        self.myImageView3.image = [UIImage imageNamed:@"star2.png"];
+    };
+    
+    if ([strEvaluationList intValue] == 3) {
+        self.myImageView3.image = [UIImage imageNamed:@"star3.png"];
+    };
+    
+    if ([strEvaluationList intValue] == 4) {
+        self.myImageView3.image = [UIImage imageNamed:@"star4.png"];
+    };
+    
+    if ([strEvaluationList intValue] == 5) {
+        self.myImageView3.image = [UIImage imageNamed:@"star5.png"];
+    };
+
     self.myImageView.image = [UIImage imageNamed:commonDic[@"Picture"]];
     self.myImageView2.image = [UIImage imageNamed:commonDic[@"Genre"]];
     self.myLabel.text = strNameList;
     self.myLabel2.text = strAddressList;
-    self.myLabel3.text = strEvaluationList;
     self.myTextView.text = strCommentList;
 
 }

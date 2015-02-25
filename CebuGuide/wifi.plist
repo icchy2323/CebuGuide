@@ -18,7 +18,7 @@
 				<key>Address</key>
 				<string>aaa</string>
 				<key>Evaluation</key>
-				<string>⭐︎</string>
+				<string>1</string>
 				<key>Comment</key>
 				<string>AAA</string>
 			</dict>
@@ -37,7 +37,7 @@
 				<key>Address</key>
 				<string>bbb</string>
 				<key>Evaluation</key>
-				<string>⭐︎⭐︎</string>
+				<string>2</string>
 				<key>Comment</key>
 				<string>BBB</string>
 			</dict>
@@ -56,7 +56,7 @@
 				<key>Address</key>
 				<string>ccc</string>
 				<key>Evaluation</key>
-				<string>⭐︎⭐︎⭐︎</string>
+				<string>3</string>
 				<key>Comment</key>
 				<string>CCC</string>
 			</dict>

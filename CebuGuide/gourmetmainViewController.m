@@ -163,6 +163,7 @@
     
     [self presentViewController:GourmetlistViewController animated:YES completion:nil];
 
+    //[self.navigationController pushViewController:GourmetlistViewController animated:YES];
 }
 
 - (void)didReceiveMemoryWarning {

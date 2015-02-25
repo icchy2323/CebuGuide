@@ -111,18 +111,6 @@
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Address・mark" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="SXp-Go-dXd">
-                                <rect key="frame" x="16" y="251" width="190" height="25"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Evaluation" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7WR-Ae-9Pe">
-                                <rect key="frame" x="16" y="318" width="190" height="25"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" text="Comment" translatesAutoresizingMaskIntoConstraints="NO" id="eJF-Hf-DiS">
                                 <rect key="frame" x="16" y="376" width="250" height="80"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -153,15 +141,24 @@
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="ZJz-RX-YsO">
                                 <rect key="frame" x="149" y="148" width="50" height="50"/>
                             </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="a8Z-VS-JBR">
+                                <rect key="frame" x="10" y="315" width="240" height="40"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Address・mark" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7WR-Ae-9Pe">
+                                <rect key="frame" x="16" y="250" width="190" height="25"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
                     <connections>
                         <outlet property="myImageView" destination="Rjv-gM-sPM" id="Xba-hb-VSE"/>
                         <outlet property="myImageView2" destination="ZJz-RX-YsO" id="cLH-uE-Yjg"/>
+                        <outlet property="myImageView3" destination="a8Z-VS-JBR" id="R4l-4o-vR8"/>
                         <outlet property="myLabel" destination="e1h-fj-W0l" id="kJT-oR-fZd"/>
-                        <outlet property="myLabel2" destination="SXp-Go-dXd" id="q2k-uV-Pg4"/>
-                        <outlet property="myLabel3" destination="7WR-Ae-9Pe" id="XGZ-ZD-9fW"/>
+                        <outlet property="myLabel2" destination="7WR-Ae-9Pe" id="7DI-dV-hcC"/>
                         <outlet property="myTextView" destination="eJF-Hf-DiS" id="rjf-Do-IpU"/>
                     </connections>
                 </viewController>
@@ -202,12 +199,6 @@
                                     <action selector="tapBtn2:" destination="QhH-Zg-VwR" eventType="touchUpInside" id="Q6w-by-haZ"/>
                                 </connections>
                             </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Evaluation" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3Pe-8r-HTE">
-                                <rect key="frame" x="16" y="289" width="200" height="25"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Store name" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="n7f-8E-P2I">
                                 <rect key="frame" x="150" y="99" width="190" height="25"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
@@ -220,6 +211,9 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="BMe-9N-1MG">
+                                <rect key="frame" x="8" y="286" width="240" height="40"/>
+                            </imageView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
@@ -227,9 +221,9 @@
                     <connections>
                         <outlet property="myImageView" destination="RkP-h6-Alq" id="vDi-R9-fhR"/>
                         <outlet property="myImageView2" destination="uF0-F7-ytq" id="Ml9-SL-RcL"/>
+                        <outlet property="myImageView3" destination="BMe-9N-1MG" id="rkL-vz-OSs"/>
                         <outlet property="myLabel" destination="n7f-8E-P2I" id="vbx-t4-zMX"/>
                         <outlet property="myLabel2" destination="wSi-Ih-IgM" id="wng-ej-SJt"/>
-                        <outlet property="myLabel3" destination="3Pe-8r-HTE" id="iBQ-wq-vvz"/>
                         <outlet property="myTextView" destination="IMn-4Q-e2w" id="GtP-J3-PSk"/>
                     </connections>
                 </viewController>

@@ -93,18 +93,34 @@
     
     customTableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:CellIdentifier];
     
-//    if (cell == nil) {
-//       cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:CellIdentifier];
-//    }
-    
     NSDictionary *gourmetDic2 = (NSDictionary *)_gourmetArray[indexPath.row][@"gourmetlist"];
     
-    //cell.textLabel.text = [NSString stringWithFormat:@"%@",gourmetDic[@"Name"]];
-    
     cell.myLabel.text =[NSString stringWithFormat:@"%@",gourmetDic2[@"Name"]];
-    cell.myLabel2.text =[NSString stringWithFormat:@"%@",gourmetDic2[@"Evaluation"]];
+    //cell.myLabel2.text =[NSString stringWithFormat:@"%@",gourmetDic2[@"Evaluation"]];
     cell.myImageView.image = [UIImage imageNamed:gourmetDic2[@"Picture"]];
     
+    NSString *strEvaluationList = gourmetDic2[@"Evaluation"];
+    
+    if ([strEvaluationList intValue] == 1) {
+        cell.myImageView2.image = [UIImage imageNamed:@"star1.png"];
+    };
+    
+    if ([strEvaluationList intValue] == 2) {
+        cell.myImageView2.image = [UIImage imageNamed:@"star2.png"];
+    };
+    
+    if ([strEvaluationList intValue] == 3) {
+        cell.myImageView2.image = [UIImage imageNamed:@"star3.png"];
+    };
+    
+    if ([strEvaluationList intValue] == 4) {
+        cell.myImageView2.image = [UIImage imageNamed:@"star4.png"];
+    };
+    
+    if ([strEvaluationList intValue] == 5) {
+        cell.myImageView2.image = [UIImage imageNamed:@"star5.png"];
+    };
+
     return cell;
 }
 
