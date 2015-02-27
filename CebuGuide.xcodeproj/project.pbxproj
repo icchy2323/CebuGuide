@@ -185,11 +185,6 @@
 				58AF3FFD1A78A61F0075BAC3 /* Images.xcassets */,
 				58AF3FFF1A78A61F0075BAC3 /* LaunchScreen.xib */,
 				58AF3FF01A78A61F0075BAC3 /* Supporting Files */,
-				5855E5961A847BE90097A581 /* TableViewCustomCell.xib */,
-				5855E5981A847C9F0097A581 /* customTableViewCell.h */,
-				5855E5991A847C9F0097A581 /* customTableViewCell.m */,
-				5821210C1A8C630300B2CDF7 /* gourmet.plist */,
-				5821210E1A8C6C2700B2CDF7 /* wifi.plist */,
 			);
 			path = CebuGuide;
 			sourceTree = "<group>";
@@ -197,9 +192,14 @@
 		58AF3FF01A78A61F0075BAC3 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
-				582FE2BE1A9D96B0004DB600 /* image */,
+				5821210C1A8C630300B2CDF7 /* gourmet.plist */,
+				5821210E1A8C6C2700B2CDF7 /* wifi.plist */,
+				5855E5961A847BE90097A581 /* TableViewCustomCell.xib */,
+				5855E5981A847C9F0097A581 /* customTableViewCell.h */,
+				5855E5991A847C9F0097A581 /* customTableViewCell.m */,
 				58C27E5E1A89BE6600D62C58 /* Info.plist */,
 				58C27E5F1A89BE6600D62C58 /* main.m */,
+				582FE2BE1A9D96B0004DB600 /* image */,
 				58C081091A96FCCA009E009F /* icon */,
 			);
 			name = "Supporting Files";

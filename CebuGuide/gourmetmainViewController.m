@@ -43,7 +43,7 @@
         self.locationManager.desiredAccuracy = kCLLocationAccuracyNearestTenMeters;
         //最小移動間隔
         self.locationManager.distanceFilter = 100.0;                    //100m 移動ごとに通知
-        //        self.locationManager.distanceFilter = kCLDistanceFilterNone;    //全ての動きを通知（デフォルト）
+        //self.locationManager.distanceFilter = kCLDistanceFilterNone;    //全ての動きを通知（デフォルト）
         
         //測位開始
         [self.locationManager startUpdatingLocation];
@@ -62,7 +62,76 @@
     //現在地を表示
     _mapView.showsUserLocation = YES;
     
+    
+    
+    //プロジェクト内のファイルにアクセスできるオブジェクトを作成
+    NSBundle *bundle = [NSBundle mainBundle];
+    
+    //読み込むプロパティリストのファイルパス（場所）を指定
+    NSString *path = [bundle pathForResource:@"gourmet" ofType:@"plist"];
+    
+    //プロパティリストの中身のデータを取得
+    NSDictionary *dic = [NSDictionary dictionaryWithContentsOfFile:path];
+    
+    _gourmetArray = [dic objectForKey:@"Gourmetlist"];
+
+    //リストを表示する
+    NSString *strPictureList = @"";
+    NSString *strNameList = @"";
+    NSString *strGenreList = @"";
+    NSString *strAddressList = @"";
+    NSString *strEvaluationList = @"";
+    NSString *strCommentList = @"";
+    NSString *strLatitudeList = @"";
+    NSString *strLongitudeList = @"";
+    
+    //高速列挙でデータを取り出して文字列変数にセット
+    for (NSDictionary *gourmetDic in _gourmetArray) {
+        
+        strPictureList = @"";
+        strNameList = @"";
+        strGenreList = @"";
+        strAddressList = @"";
+        strEvaluationList = @"";
+        strCommentList = @"";
+        strLatitudeList = @"";
+        strLongitudeList = @"";
+
+        strPictureList = [strPictureList stringByAppendingString:gourmetDic[@"gourmetlist"][@"Picture"]];
+        strPictureList = [strPictureList stringByAppendingString:@"\n"];
+        
+        strNameList = [strNameList stringByAppendingString:gourmetDic[@"gourmetlist"][@"Name"]];
+        strNameList = [strNameList stringByAppendingString:@"\n"];
+        
+        strGenreList = [strGenreList stringByAppendingString:gourmetDic[@"gourmetlist"][@"Genre"]];
+        strGenreList = [strGenreList stringByAppendingString:@"\n"];
+        
+        strAddressList = [strAddressList stringByAppendingString:gourmetDic[@"gourmetlist"][@"Address"]];
+        strAddressList = [strAddressList stringByAppendingString:@"\n"];
+        
+        strEvaluationList = [strEvaluationList stringByAppendingString:gourmetDic[@"gourmetlist"][@"Evaluation"]];
+        strEvaluationList = [strEvaluationList stringByAppendingString:@"\n"];
+        
+        strCommentList = [strCommentList stringByAppendingString:gourmetDic[@"gourmetlist"][@"Comment"]];
+        strCommentList = [strCommentList stringByAppendingString:@"\n"];
+        
+        strLatitudeList = [strLatitudeList stringByAppendingString:gourmetDic[@"gourmetlist"][@"Latitude"]];
+        
+        strLongitudeList = [strLongitudeList stringByAppendingString:gourmetDic[@"gourmetlist"][@"Longitude"]];
+        
+        CLLocationCoordinate2D co;
+        
+        co.latitude =[strLatitudeList doubleValue];
+        co.longitude =[strLongitudeList doubleValue];
+        
+        MKPointAnnotation *pin = [self createdPin:co Title:gourmetDic[@"gourmetlist"][@"Name"] Subtitle:gourmetDic[@"gourmetlist"][@"StarEvaluation"]];
+        
+        [_mapView addAnnotation:pin];
+
+    }
+
     [self.view addSubview:_mapView];
+    
 }
 
 //位置情報更新時に呼ばれる
@@ -75,7 +144,7 @@
     CLLocation *currentLocation = locations.lastObject;
     CLLocationCoordinate2D centerCoordinate = currentLocation.coordinate;
     //縮尺度を指定
-    MKCoordinateSpan coordinateSpan = MKCoordinateSpanMake(0.03, 0.03); //数が小さいほど拡大率アップ
+    MKCoordinateSpan coordinateSpan = MKCoordinateSpanMake(0.05, 0.05); //数が小さいほど拡大率アップ
     
     //設定した縮尺で現在地を中心としたマップをセット（初回1回のみ）
     if (_alreadyStartingCoordinateSet == NO) {
@@ -88,7 +157,43 @@
 
 //測位失敗時・位置情報の利用をユーザーが「不許可」とした場合などに呼ばれる
 -(void)locationManager:(CLLocationManager *)manager didFailWithError:(NSError *)error{
-    NSLog(@"didFailWithError.");
+    NSLog(@"測位失敗");
+}
+
+//ピンを立てる自作メソッド
+-(MKPointAnnotation *)createdPin:(CLLocationCoordinate2D)co Title:(NSString *)title Subtitle:(NSString *)subtitle{
+    
+    MKPointAnnotation *pin = [[MKPointAnnotation alloc] init];
+    pin.coordinate = co;
+    pin.title = title;
+    pin.subtitle = subtitle;
+    
+    return pin;
+}
+
+- (MKAnnotationView *)mapView:(MKMapView *)mapView viewForAnnotation:(id<MKAnnotation>)annotation
+{
+    static NSString *pinIndentifier = @"PinAnnotationID";
+    
+    //ピン情報の再利用
+    MKPinAnnotationView *pinView = (MKPinAnnotationView *)[mapView dequeueReusableAnnotationViewWithIdentifier:pinIndentifier];
+    
+    if (pinView == nil){
+        pinView = [[MKPinAnnotationView alloc] initWithAnnotation:annotation reuseIdentifier:pinIndentifier];
+        pinView.animatesDrop = YES;
+        pinView.canShowCallout = YES;
+        
+        pinView.rightCalloutAccessoryView = [UIButton buttonWithType:UIButtonTypeDetailDisclosure];
+    }
+    
+    return pinView;
+}
+
+- (void) mapView:(MKMapView *)mapView annotationView:(MKAnnotationView *)view calloutAccessoryControlTapped:(UIControl *)control
+{
+    //iボタンをタップした時にしたい動作を記述するメソッド
+    NSLog(@"%@",view.annotation.title);
+    
 }
 
 
@@ -149,8 +254,8 @@
 //    
 //}
 
-//-(IBAction)returnMain:(UIStoryboardSegue *)segue {
-//}
+-(IBAction)returnMain:(UIStoryboardSegue *)segue {
+}
 
 - (IBAction)tapBtn:(id)sender {
     gourmetlistViewController *GourmetlistViewController;

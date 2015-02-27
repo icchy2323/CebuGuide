@@ -30,8 +30,6 @@
 @property (nonatomic,strong) NSArray *gourmetlist;
 @property (nonatomic,strong) NSString *gourmetString;
 
-
-- (IBAction)tapBtn:(id)sender;
 - (IBAction)tapBtn2:(id)sender;
 
 @end

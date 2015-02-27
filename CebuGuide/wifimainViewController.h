@@ -10,15 +10,21 @@
 #import <MapKit/MapKit.h>
 #import "wifilistViewController.h"
 
-@interface wifimainViewController : UIViewController<CLLocationManagerDelegate>
-{
+@interface wifimainViewController : UIViewController<CLLocationManagerDelegate>{
     MKMapView *_mapView;
     BOOL _alreadyStartingCoordinateSet;
-
+    NSArray *_wifiArray;
 }
+
 @property (nonatomic) CLLocationManager *locationManager;
 
 @property (nonatomic,strong) NSString *selectType;
+
+@property (nonatomic,assign) int selectNum;
+
+@property (nonatomic,strong)NSArray *wifilist;
+@property (nonatomic,strong)NSString *wifiString;
+
 
 @property (weak, nonatomic) IBOutlet UILabel *myLabel;
 @property (weak, nonatomic) IBOutlet UIButton *myButton;

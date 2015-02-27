@@ -42,7 +42,7 @@
         self.locationManager.desiredAccuracy = kCLLocationAccuracyNearestTenMeters;
         //最小移動間隔
         self.locationManager.distanceFilter = 100.0;                    //100m 移動ごとに通知
-        //        self.locationManager.distanceFilter = kCLDistanceFilterNone;    //全ての動きを通知（デフォルト）
+        //self.locationManager.distanceFilter = kCLDistanceFilterNone;    //全ての動きを通知（デフォルト）
         
         //測位開始
         [self.locationManager startUpdatingLocation];
@@ -61,7 +61,75 @@
         //現在地を表示
         _mapView.showsUserLocation = YES;
     
-        [self.view addSubview:_mapView];
+    
+    
+    //プロジェクト内のファイルにアクセスできるオブジェクトを作成
+    NSBundle *bundle = [NSBundle mainBundle];
+    
+    //読み込むプロパティリストのファイルパス（場所）を指定
+    NSString *path = [bundle pathForResource:@"wifi" ofType:@"plist"];
+    
+    //プロパティリストの中身のデータを取得
+    NSDictionary *dic = [NSDictionary dictionaryWithContentsOfFile:path];
+    
+    _wifiArray = [dic objectForKey:@"Wifilist"];
+    
+    //リストを表示する
+    NSString *strPictureList = @"";
+    NSString *strNameList = @"";
+    NSString *strGenreList = @"";
+    NSString *strAddressList = @"";
+    NSString *strEvaluationList = @"";
+    NSString *strCommentList = @"";
+    NSString *strLatitudeList = @"";
+    NSString *strLongitudeList = @"";
+    
+    //高速列挙でデータを取り出して文字列変数にセット
+    for (NSDictionary *wifiDic in _wifiArray) {
+        
+        strPictureList = @"";
+        strNameList = @"";
+        strGenreList = @"";
+        strAddressList = @"";
+        strEvaluationList = @"";
+        strCommentList = @"";
+        strLatitudeList = @"";
+        strLongitudeList = @"";
+        
+        strPictureList = [strPictureList stringByAppendingString:wifiDic[@"wifilist"][@"Picture"]];
+        strPictureList = [strPictureList stringByAppendingString:@"\n"];
+        
+        strNameList = [strNameList stringByAppendingString:wifiDic[@"wifilist"][@"Name"]];
+        strNameList = [strNameList stringByAppendingString:@"\n"];
+        
+        strGenreList = [strGenreList stringByAppendingString:wifiDic[@"wifilist"][@"Genre"]];
+        strGenreList = [strGenreList stringByAppendingString:@"\n"];
+        
+        strAddressList = [strAddressList stringByAppendingString:wifiDic[@"wifilist"][@"Address"]];
+        strAddressList = [strAddressList stringByAppendingString:@"\n"];
+        
+        strEvaluationList = [strEvaluationList stringByAppendingString:wifiDic[@"wifilist"][@"Evaluation"]];
+        strEvaluationList = [strEvaluationList stringByAppendingString:@"\n"];
+        
+        strCommentList = [strCommentList stringByAppendingString:wifiDic[@"wifilist"][@"Comment"]];
+        strCommentList = [strCommentList stringByAppendingString:@"\n"];
+        
+        strLatitudeList = [strLatitudeList stringByAppendingString:wifiDic[@"wifilist"][@"Latitude"]];
+        
+        strLongitudeList = [strLongitudeList stringByAppendingString:wifiDic[@"wifilist"][@"Longitude"]];
+        
+        CLLocationCoordinate2D co;
+        
+        co.latitude =[strLatitudeList doubleValue];
+        co.longitude =[strLongitudeList doubleValue];
+        
+        MKPointAnnotation *pin = [self createdPin:co Title:wifiDic[@"wifilist"][@"Name"] Subtitle:wifiDic[@"wifilist"][@"StarEvaluation"]];
+        
+        [_mapView addAnnotation:pin];
+        
+    }
+    
+    [self.view addSubview:_mapView];
 }
 
     //位置情報更新時に呼ばれる
@@ -74,7 +142,7 @@
         CLLocation *currentLocation = locations.lastObject;
         CLLocationCoordinate2D centerCoordinate = currentLocation.coordinate;
         //縮尺度を指定
-        MKCoordinateSpan coordinateSpan = MKCoordinateSpanMake(0.03, 0.03); //数が小さいほど拡大率アップ
+        MKCoordinateSpan coordinateSpan = MKCoordinateSpanMake(0.05, 0.05); //数が小さいほど拡大率アップ
         
         //設定した縮尺で現在地を中心としたマップをセット（初回1回のみ）
         if (_alreadyStartingCoordinateSet == NO) {
@@ -87,46 +155,46 @@
 
     //測位失敗時・位置情報の利用をユーザーが「不許可」とした場合などに呼ばれる
 -(void)locationManager:(CLLocationManager *)manager didFailWithError:(NSError *)error{
-        NSLog(@"didFailWithError.");
+        NSLog(@"測位失敗");
 }
+
+//ピンを立てる自作メソッド
+-(MKPointAnnotation *)createdPin:(CLLocationCoordinate2D)co Title:(NSString *)title Subtitle:(NSString *)subtitle{
     
+    MKPointAnnotation *pin = [[MKPointAnnotation alloc] init];
+    pin.coordinate = co;
+    pin.title = title;
+    pin.subtitle = subtitle;
+    
+    return pin;
+}
+
+- (MKAnnotationView *)mapView:(MKMapView *)mapView viewForAnnotation:(id<MKAnnotation>)annotation
+{
+    static NSString *pinIndentifier = @"PinAnnotationID";
+    
+    //ピン情報の再利用
+    MKPinAnnotationView *pinView = (MKPinAnnotationView *)[mapView dequeueReusableAnnotationViewWithIdentifier:pinIndentifier];
+    
+    if (pinView == nil){
+        pinView = [[MKPinAnnotationView alloc] initWithAnnotation:annotation reuseIdentifier:pinIndentifier];
+        pinView.animatesDrop = YES;
+        pinView.canShowCallout = YES;
+        
+        pinView.rightCalloutAccessoryView = [UIButton buttonWithType:UIButtonTypeDetailDisclosure];
+    }
+    
+    return pinView;
+}
+
+- (void) mapView:(MKMapView *)mapView annotationView:(MKAnnotationView *)view calloutAccessoryControlTapped:(UIControl *)control
+{
+    //iボタンをタップした時にしたい動作を記述するメソッド
+    NSLog(@"%@",view.annotation.title);
+    
+}
 
     
-//    // 地図の表示
-//    MKMapView *mapView = [[MKMapView alloc] init];
-//    
-//    mapView.delegate = self;
-//    
-//    mapView.frame = CGRectMake(0, 60, self.view.bounds.size.width, self.view.bounds.size.height - 130);
-//    
-//    [self.view addSubview:mapView];
-//    
-//    [mapView.userLocation addObserver:self
-//                           forKeyPath:@"location"
-//                              options:0
-//                              context:NULL];
-//}
-//
-//-(void)observeValueForKeyPath:(NSString *)keyPath
-//ofObject:(id)object
-//change:(NSDictionary *)change
-//context:(void *)context
-//{
-//    
-//    MKMapView *mapView = [[MKMapView alloc] init];
-//    // 地図の中心座標に現在地を設定
-//    mapView.centerCoordinate = mapView.userLocation.location.coordinate;
-//    // 表示倍率の設定
-//    MKCoordinateSpan span = MKCoordinateSpanMake(0.01, 0.01);
-//    MKCoordinateRegion region = MKCoordinateRegionMake(mapView.userLocation.coordinate, span);
-//    [mapView setRegion:region animated:YES];
-//    
-//    // 一度しか更新しない場合はremoveする 
-//    [mapView.userLocation removeObserver:self forKeyPath:@"location"];
-//    
-//}
-
-
 -(IBAction)returnMain:(UIStoryboardSegue *)segue{
 }
 

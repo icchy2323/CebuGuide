@@ -12,15 +12,21 @@
 				<key>Picture</key>
 				<string></string>
 				<key>Name</key>
-				<string>gourmet1</string>
+				<string>ayala</string>
 				<key>Genre</key>
 				<string></string>
 				<key>Address</key>
-				<string>AAA</string>
+				<string>Cebu Business Park,Archbishop Reyes Avenue,Cebu City 6000,Metro Cebu, Cardinal Rosales Ave, Cebu City, Cebu</string>
 				<key>Evaluation</key>
 				<string>1</string>
 				<key>Comment</key>
-				<string>aaa</string>
+				<string>delicious</string>
+				<key>Latitude</key>
+				<string>10.317347 </string>
+				<key>Longitude</key>
+				<string>123.905759 </string>
+				<key>StarEvaluation</key>
+				<string>⭐︎</string>
 			</dict>
 		</dict>
 		<dict>
@@ -40,6 +46,12 @@
 				<string>2</string>
 				<key>Comment</key>
 				<string>bbb</string>
+				<key>Latitude</key>
+				<string>10.311715</string>
+				<key>Longitude</key>
+				<string>123.918332</string>
+				<key>StarEvaluation</key>
+				<string>⭐︎⭐︎</string>
 			</dict>
 		</dict>
 		<dict>
@@ -59,6 +71,12 @@
 				<string>3</string>
 				<key>Comment</key>
 				<string>ccc</string>
+				<key>Latitude</key>
+				<string>10.313841</string>
+				<key>Longitude</key>
+				<string>123.905548</string>
+				<key>StarEvaluation</key>
+				<string>⭐︎⭐︎⭐︎</string>
 			</dict>
 		</dict>
 	</array>

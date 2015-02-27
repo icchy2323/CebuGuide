@@ -10,14 +10,20 @@
 #import <MapKit/MapKit.h>
 #import "gourmetlistViewController.h"
 
-@interface gourmetmainViewController : UIViewController<MKMapViewDelegate>{
+@interface gourmetmainViewController : UIViewController<CLLocationManagerDelegate>{
     MKMapView *_mapView;
     BOOL _alreadyStartingCoordinateSet;
+    NSArray *_gourmetArray;
 }
 
 @property (nonatomic) CLLocationManager *locationManager;
 
 @property (nonatomic,strong) NSString *selectType;
+
+@property (nonatomic,assign) int selectNum;
+
+@property (nonatomic,strong)NSArray *gourmetlist;
+@property (nonatomic,strong)NSString *gourmetString;
 
 @property (weak, nonatomic) IBOutlet UILabel *myLabel;
 @property (weak, nonatomic) IBOutlet UIButton *myButton;
