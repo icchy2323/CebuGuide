@@ -84,6 +84,9 @@
     NSString *strLatitudeList = @"";
     NSString *strLongitudeList = @"";
     
+    //今何番目か番号を保持しておく
+    int index = 0;
+    
     //高速列挙でデータを取り出して文字列変数にセット
     for (NSDictionary *wifiDic in _wifiArray) {
         
@@ -123,9 +126,11 @@
         co.latitude =[strLatitudeList doubleValue];
         co.longitude =[strLongitudeList doubleValue];
         
-        MKPointAnnotation *pin = [self createdPin:co Title:wifiDic[@"wifilist"][@"Name"] Subtitle:wifiDic[@"wifilist"][@"StarEvaluation"]];
+        annotationWithNumber *pin = [self createdPin:co Title:wifiDic[@"wifilist"][@"Name"] Subtitle:wifiDic[@"wifilist"][@"StarEvaluation"] PinNumber:index];
         
         [_mapView addAnnotation:pin];
+        
+        index++;
         
     }
     
@@ -159,12 +164,13 @@
 }
 
 //ピンを立てる自作メソッド
--(MKPointAnnotation *)createdPin:(CLLocationCoordinate2D)co Title:(NSString *)title Subtitle:(NSString *)subtitle{
+-(annotationWithNumber *)createdPin:(CLLocationCoordinate2D)co Title:(NSString *)title Subtitle:(NSString *)subtitle PinNumber:(int)pinnumber{
     
-    MKPointAnnotation *pin = [[MKPointAnnotation alloc] init];
+    annotationWithNumber *pin = [[annotationWithNumber alloc] init];
     pin.coordinate = co;
     pin.title = title;
     pin.subtitle = subtitle;
+    pin.pinNumber = [NSString stringWithFormat:@"%d",pinnumber];
     
     return pin;
 }
@@ -191,6 +197,16 @@
 {
     //iボタンをタップした時にしたい動作を記述するメソッド
     NSLog(@"%@",view.annotation.title);
+    
+    SyousaitwoViewController = [self.storyboard instantiateViewControllerWithIdentifier:@"syousaitwoViewController"];
+    
+    annotationWithNumber *currentPin = (annotationWithNumber *)view.annotation;
+    
+    SyousaitwoViewController.selectNum = [currentPin.pinNumber intValue];
+    
+    SyousaitwoViewController.selectType = @"wifi";
+    
+    [self presentViewController:SyousaitwoViewController animated:NO completion:nil];
     
 }
 

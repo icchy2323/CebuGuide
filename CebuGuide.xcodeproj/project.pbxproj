@@ -17,6 +17,7 @@
 		582FE2C81A9D96B0004DB600 /* star5.png in Resources */ = {isa = PBXBuildFile; fileRef = 582FE2C31A9D96B0004DB600 /* star5.png */; };
 		583BC51B1A886E460087730B /* syousaiViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 583BC51A1A886E460087730B /* syousaiViewController.m */; };
 		583BC51F1A889D360087730B /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 583BC51E1A889D360087730B /* Default-568h@2x.png */; };
+		583F96B01AA0388D002447C3 /* annotationWithNumber.m in Sources */ = {isa = PBXBuildFile; fileRef = 583F96AF1AA0388D002447C3 /* annotationWithNumber.m */; };
 		5855E5951A847BA00097A581 /* TableViewConst.m in Sources */ = {isa = PBXBuildFile; fileRef = 5855E5941A847BA00097A581 /* TableViewConst.m */; };
 		5855E5971A847BE90097A581 /* TableViewCustomCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5855E5961A847BE90097A581 /* TableViewCustomCell.xib */; };
 		5855E59A1A847C9F0097A581 /* customTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 5855E5991A847C9F0097A581 /* customTableViewCell.m */; };
@@ -60,6 +61,8 @@
 		583BC5191A886E460087730B /* syousaiViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = syousaiViewController.h; sourceTree = "<group>"; };
 		583BC51A1A886E460087730B /* syousaiViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = syousaiViewController.m; sourceTree = "<group>"; };
 		583BC51E1A889D360087730B /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
+		583F96AE1AA0388C002447C3 /* annotationWithNumber.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = annotationWithNumber.h; sourceTree = "<group>"; };
+		583F96AF1AA0388D002447C3 /* annotationWithNumber.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = annotationWithNumber.m; sourceTree = "<group>"; };
 		5855E5931A847BA00097A581 /* TableViewConst.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TableViewConst.h; sourceTree = "<group>"; };
 		5855E5941A847BA00097A581 /* TableViewConst.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TableViewConst.m; sourceTree = "<group>"; };
 		5855E5961A847BE90097A581 /* TableViewCustomCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TableViewCustomCell.xib; sourceTree = "<group>"; };
@@ -181,6 +184,8 @@
 				583BC51A1A886E460087730B /* syousaiViewController.m */,
 				58BB8C171A94639B001BF443 /* syousaitwoViewController.h */,
 				58BB8C181A94639B001BF443 /* syousaitwoViewController.m */,
+				583F96AE1AA0388C002447C3 /* annotationWithNumber.h */,
+				583F96AF1AA0388D002447C3 /* annotationWithNumber.m */,
 				58218A391A9712CA0057BB2D /* Main.storyboard */,
 				58AF3FFD1A78A61F0075BAC3 /* Images.xcassets */,
 				58AF3FFF1A78A61F0075BAC3 /* LaunchScreen.xib */,
@@ -348,6 +353,7 @@
 				58AF3FF61A78A61F0075BAC3 /* AppDelegate.m in Sources */,
 				5855E5951A847BA00097A581 /* TableViewConst.m in Sources */,
 				58BC089A1A7F30BB000CF949 /* bookmarkViewController.m in Sources */,
+				583F96B01AA0388D002447C3 /* annotationWithNumber.m in Sources */,
 				58BC08DB1A808AEF000CF949 /* wifibookmarkViewController.m in Sources */,
 				58BC08A31A7F4CE9000CF949 /* wifilistViewController.m in Sources */,
 				58C27E611A89BE6600D62C58 /* main.m in Sources */,

@@ -9,11 +9,14 @@
 #import <UIKit/UIKit.h>
 #import <MapKit/MapKit.h>
 #import "wifilistViewController.h"
+#import "syousaitwoViewController.h"
+#import "annotationWithNumber.h"
 
 @interface wifimainViewController : UIViewController<CLLocationManagerDelegate>{
     MKMapView *_mapView;
     BOOL _alreadyStartingCoordinateSet;
     NSArray *_wifiArray;
+    syousaitwoViewController *SyousaitwoViewController;
 }
 
 @property (nonatomic) CLLocationManager *locationManager;

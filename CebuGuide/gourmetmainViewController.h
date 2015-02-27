@@ -9,11 +9,14 @@
 #import <UIKit/UIKit.h>
 #import <MapKit/MapKit.h>
 #import "gourmetlistViewController.h"
+#import "syousaitwoViewController.h"
+#import "annotationWithNumber.h"
 
 @interface gourmetmainViewController : UIViewController<CLLocationManagerDelegate>{
     MKMapView *_mapView;
     BOOL _alreadyStartingCoordinateSet;
     NSArray *_gourmetArray;
+    syousaitwoViewController *SyousaitwoViewController;
 }
 
 @property (nonatomic) CLLocationManager *locationManager;
