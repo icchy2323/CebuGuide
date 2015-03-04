@@ -38,42 +38,66 @@
     //ナビゲーションコントローラのタイトル設定
     self.navigationItem.title = [NSString stringWithFormat:@"Gourmet"];
     
-    //リストを表示する
-    NSString *strPictureList = @"";
-    NSString *strNameList = @"";
-    NSString *strGenreList = @"";
-    NSString *strAddressList = @"";
-    NSString *strEvaluationList = @"";
-    NSString *strCommentList = @"";
+    //UserDefaultObjectを用意する
+    NSUserDefaults *defaults = [NSUserDefaults standardUserDefaults];
     
-    //高速列挙でデータを取り出して文字列変数にセット
-    for (NSDictionary *gourmetDic in self.gourmetlist) {
-        strPictureList = [strPictureList stringByAppendingString:gourmetDic[@"Picture"]];
-        strPictureList = [strPictureList stringByAppendingString:@"\n"];
-        
-        strNameList = [strNameList stringByAppendingString:gourmetDic[@"Name"]];
-        strNameList = [strNameList stringByAppendingString:@"\n"];
-        
-        strGenreList = [strGenreList stringByAppendingString:gourmetDic[@"Genre"]];
-        strGenreList = [strGenreList stringByAppendingString:@"\n"];
-        
-        strAddressList = [strAddressList stringByAppendingString:gourmetDic[@"Address"]];
-        strAddressList = [strAddressList stringByAppendingString:@"\n"];
-        
-        strEvaluationList = [strEvaluationList stringByAppendingString:gourmetDic[@"Evaluation"]];
-        strEvaluationList = [strEvaluationList stringByAppendingString:@"\n"];
-        
-        strCommentList = [strCommentList stringByAppendingString:gourmetDic[@"Comment"]];
-        strCommentList = [strCommentList stringByAppendingString:@"\n"];
-        
+    //一旦配列に取り出す
+    NSMutableArray *gourmetArray = [[defaults objectForKey:@"gourmetArray"] mutableCopy];
+    
+    NSMutableArray *tmpArray = [NSMutableArray new];
+    
+    for (NSString *favorite_no in gourmetArray) {
+        for (NSDictionary *shopdic in _gourmetArray) {
+            if ([favorite_no intValue] == [shopdic[@"NO"] intValue]){
+            
+                //tmpArray に追加
+                [tmpArray addObject:shopdic];
+                
+                break;
+            }
+        }
     }
     
-    NSLog(@"%@",strPictureList);
-    NSLog(@"%@",strNameList);
-    NSLog(@"%@",strGenreList);
-    NSLog(@"%@",strAddressList);
-    NSLog(@"%@",strEvaluationList);
-    NSLog(@"%@",strCommentList);
+    
+    _favoriteArray = tmpArray;
+    
+    
+//    //リストを表示する
+//    NSString *strPictureList = @"";
+//    NSString *strNameList = @"";
+//    NSString *strGenreList = @"";
+//    NSString *strAddressList = @"";
+//    NSString *strEvaluationList = @"";
+//    NSString *strCommentList = @"";
+//    
+//    //高速列挙でデータを取り出して文字列変数にセット
+//    for (NSDictionary *gourmetDic in self.gourmetlist) {
+//        strPictureList = [strPictureList stringByAppendingString:gourmetDic[@"Picture"]];
+//        strPictureList = [strPictureList stringByAppendingString:@"\n"];
+//        
+//        strNameList = [strNameList stringByAppendingString:gourmetDic[@"Name"]];
+//        strNameList = [strNameList stringByAppendingString:@"\n"];
+//        
+//        strGenreList = [strGenreList stringByAppendingString:gourmetDic[@"Genre"]];
+//        strGenreList = [strGenreList stringByAppendingString:@"\n"];
+//        
+//        strAddressList = [strAddressList stringByAppendingString:gourmetDic[@"Address"]];
+//        strAddressList = [strAddressList stringByAppendingString:@"\n"];
+//        
+//        strEvaluationList = [strEvaluationList stringByAppendingString:gourmetDic[@"Evaluation"]];
+//        strEvaluationList = [strEvaluationList stringByAppendingString:@"\n"];
+//        
+//        strCommentList = [strCommentList stringByAppendingString:gourmetDic[@"Comment"]];
+//        strCommentList = [strCommentList stringByAppendingString:@"\n"];
+//        
+//    }
+//    
+//    NSLog(@"%@",strPictureList);
+//    NSLog(@"%@",strNameList);
+//    NSLog(@"%@",strGenreList);
+//    NSLog(@"%@",strAddressList);
+//    NSLog(@"%@",strEvaluationList);
+//    NSLog(@"%@",strCommentList);
     
     UINib *nib = [UINib nibWithNibName:@"TableViewCustomCell" bundle:nil];
     [self.myTableView registerNib:nib forCellReuseIdentifier:@"cell"];
@@ -85,19 +109,19 @@
 }
 
 -(NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section{
-    return _gourmetArray.count;
+    return _favoriteArray.count;
 }
 
 -(UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath{
     static NSString *CellIdentifier = @"cell";
     
     customTableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:CellIdentifier];
+ 
     
-    NSDictionary *gourmetDic2 = (NSDictionary *)_gourmetArray[indexPath.row][@"gourmetlist"];
+    NSDictionary *gourmetDic2 = (NSDictionary *)_favoriteArray[indexPath.row][@"gourmetlist"];
     
     cell.myLabel.text =[NSString stringWithFormat:@"%@",gourmetDic2[@"Name"]];
-    //cell.myLabel2.text =[NSString stringWithFormat:@"%@",gourmetDic2[@"Evaluation"]];
-    cell.myImageView.image = [UIImage imageNamed:gourmetDic2[@"Picture"]];
+    cell.myImageView.image = [UIImage imageNamed:gourmetDic2[@"Genre"]];
     
     NSString *strEvaluationList = gourmetDic2[@"Evaluation"];
     
@@ -134,7 +158,17 @@
     
     if ( [[segue identifier] isEqualToString:@"move2"] ) {
         syousaiViewController *dvc = [segue destinationViewController];
-        dvc.selectNum = (int)self.myTableView.indexPathForSelectedRow.row;
+        
+        //UserDefaultObjectを用意する
+        NSUserDefaults *defaults = [NSUserDefaults standardUserDefaults];
+        
+        //一旦配列に取り出す
+        NSMutableArray *gourmetArray = [[defaults objectForKey:@"gourmetArray"] mutableCopy];
+    
+        NSLog(@"%ld",(long)self.myTableView.indexPathForSelectedRow.row);
+        
+        dvc.selectNum = [gourmetArray[(long)self.myTableView.indexPathForSelectedRow.row] intValue];
+        
         dvc.selectType = @"gourmet";
     }
 }

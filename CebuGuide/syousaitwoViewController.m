@@ -109,6 +109,45 @@
     self.myLabel.text = strNameList;
     self.myLabel2.text = strAddressList;
     self.myTextView.text = strCommentList;
+    
+    //UserDefaultObjectを用意する
+    NSUserDefaults *defaults = [NSUserDefaults standardUserDefaults];
+    
+    //一旦配列に取り出す
+    NSMutableArray *gourmetArray = [[defaults objectForKey:@"gourmetArray"] mutableCopy];
+    
+//    for (NSString *favorite_no in gourmetArray) {
+//        for (NSDictionary *shopdic in _gourmetArray) {
+//            if ([favorite_no intValue] == [shopdic[@"NO"] intValue]){
+    
+    for (NSString *favorite_no in gourmetArray) {
+        if ([favorite_no intValue] == self.selectNum){
+    
+                self.myButton.enabled = NO;
+                self.myButton.alpha = 0.0;
+                
+                break;
+            }
+        //}
+    }
+    
+//    //一旦配列に取り出す
+//    NSMutableArray *wifiArray = [[defaults objectForKey:@"wifiArray"] mutableCopy];
+//    
+//    for (NSString *favorite_no in wifiArray) {
+//        for (NSDictionary *shopdic in _wifiArray) {
+//            if ([favorite_no intValue] == [shopdic[@"NO"] intValue]){
+//
+////    for (NSString *favorite_no in wifiArray) {
+////        if ([favorite_no intValue] == self.selectNum){
+//    
+//                self.myButton.enabled = NO;
+//                self.myButton.alpha = 0.0;
+//            
+//                break;
+//            }
+//        }
+//    }
 
 }
 
@@ -143,8 +182,72 @@
 - (void)alertView:(UIAlertView *)alertView clickedButtonAtIndex:(NSInteger)buttonIndex{
     if (buttonIndex == 1) {
         NSLog(@"OK");
-    } else {
+        
+        //UserDefaultObjectを用意する
+        NSUserDefaults *defaults = [NSUserDefaults standardUserDefaults];
+        
+        if ([self.selectType isEqualToString:@"wifi"]) {
+            //一旦配列に取り出す
+            NSMutableArray *wifiArray = [[defaults objectForKey:@"wifiArray"] mutableCopy];
+            
+            if (wifiArray == nil) {
+                
+                wifiArray = [NSMutableArray new];
+                
+                //配列に新しいデータを追加
+                [wifiArray addObject:[NSString stringWithFormat:@"%d",self.selectNum]];
+                
+                //wifiArrayを保存
+                [defaults setObject:wifiArray forKey:@"wifiArray"];
+                
+                [defaults synchronize];
+                
+            }else {
+                
+                //配列に新しいデータを追加
+                [wifiArray addObject:[NSString stringWithFormat:@"%d",self.selectNum]];
+                
+                //wifiArrayを保存
+                [defaults setObject:wifiArray forKey:@"wifiArray"];
+                
+                [defaults synchronize];
+            }
+            
+        }else{
+            
+            //gourmet
+            //一旦配列に取り出す
+            NSMutableArray *gourmetArray = [[defaults objectForKey:@"gourmetArray"] mutableCopy];
+            
+            if (gourmetArray == nil) {
+                
+                gourmetArray = [NSMutableArray new];
+                
+                //配列に新しいデータを追加
+                [gourmetArray addObject:[NSString stringWithFormat:@"%d",self.selectNum]];
+                
+                //gourmetArrayを保存
+                [defaults setObject:gourmetArray forKey:@"gourmetArray"];
+                
+                [defaults synchronize];
+                
+            }else {
+                
+                //配列に新しいデータを追加
+                [gourmetArray addObject:[NSString stringWithFormat:@"%d",self.selectNum]];
+                
+                //gourmetArrayを保存
+                [defaults setObject:gourmetArray forKey:@"gourmetArray"];
+                
+                [defaults synchronize];
+
+            }
+        }
+
+    }else{
+        
         NSLog(@"Cancel");
+        
     }
 }
 

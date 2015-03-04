@@ -10,6 +10,7 @@
 
 @interface wifibookmarkViewController : UIViewController<UITableViewDelegate,UITableViewDataSource>{
     NSArray *_wifiArray;
+    NSArray *_favoriteArray;
 }
 
 @property (nonatomic,assign) int selectNum;

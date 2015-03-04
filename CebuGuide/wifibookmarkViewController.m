@@ -38,42 +38,66 @@
     //ナビゲーションコントローラのタイトル設定
     self.navigationItem.title = [NSString stringWithFormat:@"Wi-Fi"];
     
-    //リストを表示する
-    NSString *strPictureList = @"";
-    NSString *strNameList = @"";
-    NSString *strGenreList = @"";
-    NSString *strAddressList = @"";
-    NSString *strEvaluationList = @"";
-    NSString *strCommentList = @"";
+    //UserDefaultObjectを用意する
+    NSUserDefaults *defaults = [NSUserDefaults standardUserDefaults];
     
-    //高速列挙でデータを取り出して文字列変数にセット
-    for (NSDictionary *wifiDic in self.wifilist) {
-        strPictureList = [strPictureList stringByAppendingString:wifiDic[@"Picture"]];
-        strPictureList = [strPictureList stringByAppendingString:@"\n"];
-        
-        strNameList = [strNameList stringByAppendingString:wifiDic[@"Name"]];
-        strNameList = [strNameList stringByAppendingString:@"\n"];
-        
-        strGenreList = [strGenreList stringByAppendingString:wifiDic[@"Genre"]];
-        strGenreList = [strGenreList stringByAppendingString:@"\n"];
-        
-        strAddressList = [strAddressList stringByAppendingString:wifiDic[@"Address"]];
-        strAddressList = [strAddressList stringByAppendingString:@"\n"];
-        
-        strEvaluationList = [strEvaluationList stringByAppendingString:wifiDic[@"Evaluation"]];
-        strEvaluationList = [strEvaluationList stringByAppendingString:@"\n"];
-        
-        strCommentList = [strCommentList stringByAppendingString:wifiDic[@"Comment"]];
-        strCommentList = [strCommentList stringByAppendingString:@"\n"];
-        
+    //一旦配列に取り出す
+    NSMutableArray *wifiArray = [[defaults objectForKey:@"wifiArray"] mutableCopy];
+    
+    NSMutableArray *tmpArray = [NSMutableArray new];
+    
+    for (NSString *favorite_no in wifiArray) {
+        for (NSDictionary *shopdic in _wifiArray) {
+            if ([favorite_no intValue] == [shopdic[@"NO"] intValue]){
+                
+                //tmpArray に追加
+                [tmpArray addObject:shopdic];
+                
+                break;
+            }
+        }
     }
     
-    NSLog(@"%@",strPictureList);
-    NSLog(@"%@",strNameList);
-    NSLog(@"%@",strGenreList);
-    NSLog(@"%@",strAddressList);
-    NSLog(@"%@",strEvaluationList);
-    NSLog(@"%@",strCommentList);
+    
+    _favoriteArray = tmpArray;
+
+    
+//    //リストを表示する
+//    NSString *strPictureList = @"";
+//    NSString *strNameList = @"";
+//    NSString *strGenreList = @"";
+//    NSString *strAddressList = @"";
+//    NSString *strEvaluationList = @"";
+//    NSString *strCommentList = @"";
+//    
+//    //高速列挙でデータを取り出して文字列変数にセット
+//    for (NSDictionary *wifiDic in self.wifilist) {
+//        strPictureList = [strPictureList stringByAppendingString:wifiDic[@"Picture"]];
+//        strPictureList = [strPictureList stringByAppendingString:@"\n"];
+//        
+//        strNameList = [strNameList stringByAppendingString:wifiDic[@"Name"]];
+//        strNameList = [strNameList stringByAppendingString:@"\n"];
+//        
+//        strGenreList = [strGenreList stringByAppendingString:wifiDic[@"Genre"]];
+//        strGenreList = [strGenreList stringByAppendingString:@"\n"];
+//        
+//        strAddressList = [strAddressList stringByAppendingString:wifiDic[@"Address"]];
+//        strAddressList = [strAddressList stringByAppendingString:@"\n"];
+//        
+//        strEvaluationList = [strEvaluationList stringByAppendingString:wifiDic[@"Evaluation"]];
+//        strEvaluationList = [strEvaluationList stringByAppendingString:@"\n"];
+//        
+//        strCommentList = [strCommentList stringByAppendingString:wifiDic[@"Comment"]];
+//        strCommentList = [strCommentList stringByAppendingString:@"\n"];
+//        
+//    }
+//    
+//    NSLog(@"%@",strPictureList);
+//    NSLog(@"%@",strNameList);
+//    NSLog(@"%@",strGenreList);
+//    NSLog(@"%@",strAddressList);
+//    NSLog(@"%@",strEvaluationList);
+//    NSLog(@"%@",strCommentList);
     
     UINib *nib = [UINib nibWithNibName:@"TableViewCustomCell" bundle:nil];
     [self.myTableView registerNib:nib forCellReuseIdentifier:@"cell"];
@@ -85,7 +109,7 @@
 }
 
 -(NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section{
-    return _wifiArray.count;
+    return _favoriteArray.count;
 }
 
 -(UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath{
@@ -93,14 +117,10 @@
     
     customTableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:CellIdentifier];
     
-//    if (cell == nil) {
-//        cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:CellIdentifier];
-//    }
-    
-    NSDictionary *wifiDic = (NSDictionary *)_wifiArray[indexPath.row][@"wifilist"];
+    NSDictionary *wifiDic = (NSDictionary *)_favoriteArray[indexPath.row][@"wifilist"];
     
     cell.myLabel.text = [NSString stringWithFormat:@"%@",wifiDic[@"Name"]];
-    cell.myImageView.image = [UIImage imageNamed:wifiDic[@"Picture"]];
+    cell.myImageView.image = [UIImage imageNamed:wifiDic[@"Genre"]];
     
     NSString *strEvaluationList = wifiDic[@"Evaluation"];
     
@@ -137,8 +157,19 @@
     
     if ( [[segue identifier] isEqualToString:@"move"] ) {
     syousaiViewController *dvc = [segue destinationViewController];
-    dvc.selectNum = (int)self.myTableView.indexPathForSelectedRow.row;
+        
+    //UserDefaultObjectを用意する
+    NSUserDefaults *defaults = [NSUserDefaults standardUserDefaults];
+        
+    //一旦配列に取り出す
+    NSMutableArray *wifiArray = [[defaults objectForKey:@"wifiArray"] mutableCopy];
+        
+    NSLog(@"%ld",(long)self.myTableView.indexPathForSelectedRow.row);
+        
+    dvc.selectNum = [wifiArray[(long)self.myTableView.indexPathForSelectedRow.row] intValue];
+    
     dvc.selectType = @"wifi";
+        
      }
 }
 

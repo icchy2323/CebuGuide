@@ -10,6 +10,7 @@
 
 @interface gourmetbookmarkViewController : UIViewController<UITableViewDelegate,UITableViewDataSource>{
     NSArray *_gourmetArray;
+    NSArray *_favoriteArray;
 }
 
 @property (nonatomic,assign) int selectNum;

@@ -80,7 +80,9 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstItem="LMC-Tn-byu" firstAttribute="leading" secondItem="OPr-ue-vXA" secondAttribute="leading" id="90U-o5-Qgd"/>
+                            <constraint firstItem="LMC-Tn-byu" firstAttribute="leading" secondItem="OPr-ue-vXA" secondAttribute="leading" id="PMm-UE-2EP"/>
                             <constraint firstAttribute="trailing" secondItem="LMC-Tn-byu" secondAttribute="trailing" id="Zkk-hR-Mua"/>
+                            <constraint firstAttribute="trailing" secondItem="LMC-Tn-byu" secondAttribute="trailing" id="c4e-kT-TI4"/>
                             <constraint firstItem="LMC-Tn-byu" firstAttribute="leading" secondItem="OPr-ue-vXA" secondAttribute="leading" id="hZQ-fd-C9D"/>
                             <constraint firstAttribute="trailing" secondItem="LMC-Tn-byu" secondAttribute="trailing" id="tkY-lC-q5Q"/>
                         </constraints>
@@ -156,6 +158,7 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
                     <connections>
+                        <outlet property="myButton" destination="kia-R9-a5O" id="BoY-HQ-D4a"/>
                         <outlet property="myImageView" destination="Rjv-gM-sPM" id="Xba-hb-VSE"/>
                         <outlet property="myImageView2" destination="ZJz-RX-YsO" id="cLH-uE-Yjg"/>
                         <outlet property="myImageView3" destination="a8Z-VS-JBR" id="R4l-4o-vR8"/>

@@ -149,7 +149,7 @@
     CLLocation *currentLocation = locations.lastObject;
     CLLocationCoordinate2D centerCoordinate = currentLocation.coordinate;
     //縮尺度を指定
-    MKCoordinateSpan coordinateSpan = MKCoordinateSpanMake(0.05, 0.05); //数が小さいほど拡大率アップ
+    MKCoordinateSpan coordinateSpan = MKCoordinateSpanMake(0.01, 0.01); //数が小さいほど拡大率アップ
     
     //設定した縮尺で現在地を中心としたマップをセット（初回1回のみ）
     if (_alreadyStartingCoordinateSet == NO) {
