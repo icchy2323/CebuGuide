@@ -46,9 +46,45 @@
     NSDictionary *commonDic = [[NSDictionary alloc]init];
     
     if ([self.selectType isEqualToString:@"wifi"]) {
+        
         commonDic = wifiDic[@"wifilist"];
+        
+        //UserDefaultObjectを用意する
+        NSUserDefaults *defaults = [NSUserDefaults standardUserDefaults];
+        
+        //一旦配列に取り出す
+        NSMutableArray *wifiArray = [[defaults objectForKey:@"wifiArray"] mutableCopy];
+        
+        for (NSString *favorite_no in wifiArray) {
+            if ([favorite_no intValue] == self.selectNum){
+                    
+                    self.myButton.enabled = NO;
+                    self.myButton.alpha = 0.0;
+                    
+                    break;
+                }
+            }
+
     } else {
         commonDic = gourmetDic[@"gourmetlist"];
+        
+        //UserDefaultObjectを用意する
+        NSUserDefaults *defaults = [NSUserDefaults standardUserDefaults];
+        
+        //一旦配列に取り出す
+        NSMutableArray *gourmetArray = [[defaults objectForKey:@"gourmetArray"] mutableCopy];
+        
+        for (NSString *favorite_no in gourmetArray) {
+            if ([favorite_no intValue] == self.selectNum){
+                
+                self.myButton.enabled = NO;
+                self.myButton.alpha = 0.0;
+                
+                break;
+            }
+        
+        }
+
     }
     
     //リストを表示する
@@ -109,46 +145,6 @@
     self.myLabel.text = strNameList;
     self.myLabel2.text = strAddressList;
     self.myTextView.text = strCommentList;
-    
-    //UserDefaultObjectを用意する
-    NSUserDefaults *defaults = [NSUserDefaults standardUserDefaults];
-    
-    //一旦配列に取り出す
-    NSMutableArray *gourmetArray = [[defaults objectForKey:@"gourmetArray"] mutableCopy];
-    
-//    for (NSString *favorite_no in gourmetArray) {
-//        for (NSDictionary *shopdic in _gourmetArray) {
-//            if ([favorite_no intValue] == [shopdic[@"NO"] intValue]){
-    
-    for (NSString *favorite_no in gourmetArray) {
-        if ([favorite_no intValue] == self.selectNum){
-    
-                self.myButton.enabled = NO;
-                self.myButton.alpha = 0.0;
-                
-                break;
-            }
-        //}
-    }
-    
-//    //一旦配列に取り出す
-//    NSMutableArray *wifiArray = [[defaults objectForKey:@"wifiArray"] mutableCopy];
-//    
-//    for (NSString *favorite_no in wifiArray) {
-//        for (NSDictionary *shopdic in _wifiArray) {
-//            if ([favorite_no intValue] == [shopdic[@"NO"] intValue]){
-//
-////    for (NSString *favorite_no in wifiArray) {
-////        if ([favorite_no intValue] == self.selectNum){
-//    
-//                self.myButton.enabled = NO;
-//                self.myButton.alpha = 0.0;
-//            
-//                break;
-//            }
-//        }
-//    }
-
 }
 
 - (void)didReceiveMemoryWarning {
