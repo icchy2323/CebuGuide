@@ -312,6 +312,8 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstAttribute="trailing" secondItem="vv7-xO-njE" secondAttribute="trailing" id="DUx-52-vXz"/>
+                            <constraint firstAttribute="trailing" secondItem="vv7-xO-njE" secondAttribute="trailing" id="FUs-ru-ghk"/>
+                            <constraint firstItem="vv7-xO-njE" firstAttribute="leading" secondItem="qOf-Mr-C6A" secondAttribute="leading" id="JuT-w9-a0u"/>
                             <constraint firstItem="vv7-xO-njE" firstAttribute="leading" secondItem="qOf-Mr-C6A" secondAttribute="leading" id="iSY-xC-pZg"/>
                         </constraints>
                     </view>
