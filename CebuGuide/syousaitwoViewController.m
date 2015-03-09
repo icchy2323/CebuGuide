@@ -36,8 +36,9 @@
     _wifiArray = [dic objectForKey:@"Wifilist"];
     _gourmetArray = [dic2 objectForKey:@"Gourmetlist"];
     
-    NSDictionary *wifiDic = _wifiArray[self.selectNum];
-    NSDictionary *gourmetDic = _gourmetArray[self.selectNum];
+    //if文の中に移動
+//    NSDictionary *wifiDic = _wifiArray[self.selectNum];
+//    NSDictionary *gourmetDic = _gourmetArray[self.selectNum];
     
     //ナビゲーションコントローラのタイトル設定
     self.navigationItem.title = [NSString stringWithFormat:@"Wi-Fi"];
@@ -46,6 +47,7 @@
     NSDictionary *commonDic = [[NSDictionary alloc]init];
     
     if ([self.selectType isEqualToString:@"wifi"]) {
+        NSDictionary *wifiDic = _wifiArray[self.selectNum];
         
         commonDic = wifiDic[@"wifilist"];
         
@@ -66,6 +68,8 @@
             }
 
     } else {
+        NSDictionary *gourmetDic = _gourmetArray[self.selectNum];
+        
         commonDic = gourmetDic[@"gourmetlist"];
         
         //UserDefaultObjectを用意する
