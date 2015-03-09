@@ -45,6 +45,7 @@
 		587012891AAD564F00004817 /* TRL.png in Resources */ = {isa = PBXBuildFile; fileRef = 5870126C1AAD564F00004817 /* TRL.png */; };
 		5870128A1AAD564F00004817 /* UKP.png in Resources */ = {isa = PBXBuildFile; fileRef = 5870126D1AAD564F00004817 /* UKP.png */; };
 		5870128B1AAD564F00004817 /* USD.png in Resources */ = {isa = PBXBuildFile; fileRef = 5870126E1AAD564F00004817 /* USD.png */; };
+		5870128D1AAD5D6E00004817 /* gourmet.plist in Resources */ = {isa = PBXBuildFile; fileRef = 5870128C1AAD5D6E00004817 /* gourmet.plist */; };
 		58AF3FF61A78A61F0075BAC3 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 58AF3FF51A78A61F0075BAC3 /* AppDelegate.m */; };
 		58AF3FF91A78A61F0075BAC3 /* wifimainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 58AF3FF81A78A61F0075BAC3 /* wifimainViewController.m */; };
 		58AF3FFE1A78A61F0075BAC3 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 58AF3FFD1A78A61F0075BAC3 /* Images.xcassets */; };
@@ -62,7 +63,6 @@
 		58C27E611A89BE6600D62C58 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 58C27E5F1A89BE6600D62C58 /* main.m */; };
 		58C27E631A89C51C00D62C58 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 58C27E621A89C51C00D62C58 /* CoreLocation.framework */; };
 		58C556151AAAE21A004DA122 /* testgourmet.plist in Resources */ = {isa = PBXBuildFile; fileRef = 58C556141AAAE21A004DA122 /* testgourmet.plist */; };
-		58C556171AAAF6E3004DA122 /* gourmet.plist in Resources */ = {isa = PBXBuildFile; fileRef = 58C556161AAAF6E3004DA122 /* gourmet.plist */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -118,6 +118,7 @@
 		5870126C1AAD564F00004817 /* TRL.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = TRL.png; sourceTree = "<group>"; };
 		5870126D1AAD564F00004817 /* UKP.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = UKP.png; sourceTree = "<group>"; };
 		5870126E1AAD564F00004817 /* USD.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = USD.png; sourceTree = "<group>"; };
+		5870128C1AAD5D6E00004817 /* gourmet.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = gourmet.plist; sourceTree = "<group>"; };
 		58AF3FED1A78A61F0075BAC3 /* CebuGuide.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CebuGuide.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		58AF3FF41A78A61F0075BAC3 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		58AF3FF51A78A61F0075BAC3 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -147,7 +148,6 @@
 		58C27E5F1A89BE6600D62C58 /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		58C27E621A89C51C00D62C58 /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
 		58C556141AAAE21A004DA122 /* testgourmet.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = testgourmet.plist; path = ../../../Downloads/testgourmet.plist; sourceTree = "<group>"; };
-		58C556161AAAF6E3004DA122 /* gourmet.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = gourmet.plist; path = ../../../Downloads/gourmet.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -273,7 +273,7 @@
 		58AF3FF01A78A61F0075BAC3 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
-				58C556161AAAF6E3004DA122 /* gourmet.plist */,
+				5870128C1AAD5D6E00004817 /* gourmet.plist */,
 				5821210E1A8C6C2700B2CDF7 /* wifi.plist */,
 				587012511AAD564F00004817 /* image */,
 				5855E5961A847BE90097A581 /* TableViewCustomCell.xib */,
@@ -397,7 +397,6 @@
 				587012701AAD564F00004817 /* AUD.png in Resources */,
 				5870127F1AAD564F00004817 /* NZD.png in Resources */,
 				587012811AAD564F00004817 /* PHP.png in Resources */,
-				58C556171AAAF6E3004DA122 /* gourmet.plist in Resources */,
 				5870128B1AAD564F00004817 /* USD.png in Resources */,
 				587012861AAD564F00004817 /* star4.png in Resources */,
 				587012891AAD564F00004817 /* TRL.png in Resources */,
@@ -431,6 +430,7 @@
 				587012821AAD564F00004817 /* RUB.png in Resources */,
 				5821210D1A8C630300B2CDF7 /* kyuugourmet.plist in Resources */,
 				58AF3FFE1A78A61F0075BAC3 /* Images.xcassets in Resources */,
+				5870128D1AAD5D6E00004817 /* gourmet.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
