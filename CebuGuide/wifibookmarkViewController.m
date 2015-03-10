@@ -10,6 +10,7 @@
 #import "customTableViewCell.h"
 #import "TableViewConst.h"
 #import "syousaiViewController.h"
+#import "annotationWithNumber.h"
 
 @interface wifibookmarkViewController ()
 

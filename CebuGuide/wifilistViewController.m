@@ -103,7 +103,7 @@
     
     cell.myLabel.text =[NSString stringWithFormat:@"%@",wifiDic[@"Name"]];
     //cell.myLabel2.text =[NSString stringWithFormat:@"%@",wifiDic[@"Evaluation"]];
-    cell.myImageView.image = [UIImage imageNamed:wifiDic[@"Picture"]];
+    cell.myImageView.image = [UIImage imageNamed:wifiDic[@"Genre"]];
     
     NSString *strEvaluationList = wifiDic[@"Evaluation"];
     

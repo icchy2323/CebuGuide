@@ -9,6 +9,7 @@
 #import "syousaiViewController.h"
 #import "wifibookmarkViewController.h"
 #import "gourmetbookmarkViewController.h"
+#import "syousaitwoViewController.h"
 
 @interface syousaiViewController ()
 
@@ -33,20 +34,46 @@
     
     _wifiArray = [dic objectForKey:@"Wifilist"];
     _gourmetArray = [dic2 objectForKey:@"Gourmetlist"];
+   
+//    //if文の中に移動
+//    NSDictionary *wifiDic = _wifiArray[self.selectNum];
+//    NSDictionary *gourmetDic = _gourmetArray[self.selectNum];
     
-    NSDictionary *wifiDic = _wifiArray[self.selectNum];
-    NSDictionary *gourmetDic = _gourmetArray[self.selectNum];
-    
-    //ナビゲーションコントローラのタイトル設定
-    self.navigationItem.title = [NSString stringWithFormat:@"Wi-Fi"];
+//    //ナビゲーションコントローラのタイトル設定
+//    self.navigationItem.title = [NSString stringWithFormat:@"Wi-Fi"];
 
     //wifi,gourmetどちらから来たか判定する
     NSDictionary *commonDic = [[NSDictionary alloc]init];
     
     if ([self.selectType isEqualToString:@"wifi"]) {
+        
+//        //UserDefaultObjectを用意する
+//        NSUserDefaults *defaults = [NSUserDefaults standardUserDefaults];
+//        
+//        //一旦配列に取り出す
+//        NSMutableArray *wifiArray = [[defaults objectForKey:@"wifiArray"] mutableCopy];
+//
+//        _ListNO = [wifiArray[self.selectNum] intValue];
+        
+        NSDictionary *wifiDic = _wifiArray[self.selectNum -1];
+        
         commonDic = wifiDic[@"wifilist"];
+        
+        
     } else {
+        
+//        //UserDefaultObjectを用意する
+//        NSUserDefaults *defaults = [NSUserDefaults standardUserDefaults];
+//        
+//        //一旦配列に取り出す
+//        NSMutableArray *gourmetArray = [[defaults objectForKey:@"gourmetArray"] mutableCopy];
+//        
+//        _ListNO = [gourmetArray[self.selectNum] intValue];
+
+        NSDictionary *gourmetDic = _gourmetArray[self.selectNum -1];
+        
         commonDic = gourmetDic[@"gourmetlist"];
+
     }
     
     //リストを表示する

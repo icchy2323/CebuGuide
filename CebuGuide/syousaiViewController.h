@@ -11,6 +11,7 @@
 @interface syousaiViewController : UIViewController{
     NSArray *_gourmetArray;
     NSArray *_wifiArray;
+    int _ListNO;
 }
 
 @property (weak, nonatomic) IBOutlet UIImageView *myImageView;

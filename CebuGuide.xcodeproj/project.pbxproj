@@ -16,25 +16,7 @@
 		5855E5951A847BA00097A581 /* TableViewConst.m in Sources */ = {isa = PBXBuildFile; fileRef = 5855E5941A847BA00097A581 /* TableViewConst.m */; };
 		5855E5971A847BE90097A581 /* TableViewCustomCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5855E5961A847BE90097A581 /* TableViewCustomCell.xib */; };
 		5855E59A1A847C9F0097A581 /* customTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 5855E5991A847C9F0097A581 /* customTableViewCell.m */; };
-		5870128D1AAD5D6E00004817 /* gourmet.plist in Resources */ = {isa = PBXBuildFile; fileRef = 5870128C1AAD5D6E00004817 /* gourmet.plist */; };
 		5870128F1AAD853A00004817 /* wifi.plist in Resources */ = {isa = PBXBuildFile; fileRef = 5870128E1AAD853A00004817 /* wifi.plist */; };
-		587012A21AAD85A400004817 /* America.png in Resources */ = {isa = PBXBuildFile; fileRef = 587012911AAD85A400004817 /* America.png */; };
-		587012A31AAD85A400004817 /* BRL.png in Resources */ = {isa = PBXBuildFile; fileRef = 587012921AAD85A400004817 /* BRL.png */; };
-		587012A41AAD85A400004817 /* China.png in Resources */ = {isa = PBXBuildFile; fileRef = 587012931AAD85A400004817 /* China.png */; };
-		587012A51AAD85A400004817 /* France.png in Resources */ = {isa = PBXBuildFile; fileRef = 587012941AAD85A400004817 /* France.png */; };
-		587012A61AAD85A400004817 /* Germany.png in Resources */ = {isa = PBXBuildFile; fileRef = 587012951AAD85A400004817 /* Germany.png */; };
-		587012A71AAD85A400004817 /* INR.png in Resources */ = {isa = PBXBuildFile; fileRef = 587012961AAD85A400004817 /* INR.png */; };
-		587012A81AAD85A400004817 /* Italy.png in Resources */ = {isa = PBXBuildFile; fileRef = 587012971AAD85A400004817 /* Italy.png */; };
-		587012A91AAD85A400004817 /* Japan.png in Resources */ = {isa = PBXBuildFile; fileRef = 587012981AAD85A400004817 /* Japan.png */; };
-		587012AA1AAD85A400004817 /* Korea.png in Resources */ = {isa = PBXBuildFile; fileRef = 587012991AAD85A400004817 /* Korea.png */; };
-		587012AB1AAD85A400004817 /* Pilippine.png in Resources */ = {isa = PBXBuildFile; fileRef = 5870129A1AAD85A400004817 /* Pilippine.png */; };
-		587012AC1AAD85A400004817 /* star1.png in Resources */ = {isa = PBXBuildFile; fileRef = 5870129B1AAD85A400004817 /* star1.png */; };
-		587012AD1AAD85A400004817 /* star2.png in Resources */ = {isa = PBXBuildFile; fileRef = 5870129C1AAD85A400004817 /* star2.png */; };
-		587012AE1AAD85A400004817 /* star3.png in Resources */ = {isa = PBXBuildFile; fileRef = 5870129D1AAD85A400004817 /* star3.png */; };
-		587012AF1AAD85A400004817 /* star4.png in Resources */ = {isa = PBXBuildFile; fileRef = 5870129E1AAD85A400004817 /* star4.png */; };
-		587012B01AAD85A400004817 /* star5.png in Resources */ = {isa = PBXBuildFile; fileRef = 5870129F1AAD85A400004817 /* star5.png */; };
-		587012B11AAD85A400004817 /* Thailand.png in Resources */ = {isa = PBXBuildFile; fileRef = 587012A01AAD85A400004817 /* Thailand.png */; };
-		587012B21AAD85A400004817 /* Vietnam.png in Resources */ = {isa = PBXBuildFile; fileRef = 587012A11AAD85A400004817 /* Vietnam.png */; };
 		58AF3FF61A78A61F0075BAC3 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 58AF3FF51A78A61F0075BAC3 /* AppDelegate.m */; };
 		58AF3FF91A78A61F0075BAC3 /* wifimainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 58AF3FF81A78A61F0075BAC3 /* wifimainViewController.m */; };
 		58AF3FFE1A78A61F0075BAC3 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 58AF3FFD1A78A61F0075BAC3 /* Images.xcassets */; };
@@ -52,6 +34,28 @@
 		58C27E611A89BE6600D62C58 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 58C27E5F1A89BE6600D62C58 /* main.m */; };
 		58C27E631A89C51C00D62C58 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 58C27E621A89C51C00D62C58 /* CoreLocation.framework */; };
 		58C556151AAAE21A004DA122 /* testgourmet.plist in Resources */ = {isa = PBXBuildFile; fileRef = 58C556141AAAE21A004DA122 /* testgourmet.plist */; };
+		58DD16B41AAED27D002DC0BC /* America.png in Resources */ = {isa = PBXBuildFile; fileRef = 58DD169F1AAED27D002DC0BC /* America.png */; };
+		58DD16B51AAED27D002DC0BC /* Building.png in Resources */ = {isa = PBXBuildFile; fileRef = 58DD16A01AAED27D002DC0BC /* Building.png */; };
+		58DD16B61AAED27D002DC0BC /* Cafe.png in Resources */ = {isa = PBXBuildFile; fileRef = 58DD16A11AAED27D002DC0BC /* Cafe.png */; };
+		58DD16B71AAED27D002DC0BC /* China.png in Resources */ = {isa = PBXBuildFile; fileRef = 58DD16A21AAED27D002DC0BC /* China.png */; };
+		58DD16B81AAED27D002DC0BC /* France.png in Resources */ = {isa = PBXBuildFile; fileRef = 58DD16A31AAED27D002DC0BC /* France.png */; };
+		58DD16B91AAED27D002DC0BC /* Germany.png in Resources */ = {isa = PBXBuildFile; fileRef = 58DD16A41AAED27D002DC0BC /* Germany.png */; };
+		58DD16BA1AAED27D002DC0BC /* Hotel.png in Resources */ = {isa = PBXBuildFile; fileRef = 58DD16A51AAED27D002DC0BC /* Hotel.png */; };
+		58DD16BB1AAED27D002DC0BC /* Italy.png in Resources */ = {isa = PBXBuildFile; fileRef = 58DD16A61AAED27D002DC0BC /* Italy.png */; };
+		58DD16BC1AAED27D002DC0BC /* Japan.png in Resources */ = {isa = PBXBuildFile; fileRef = 58DD16A71AAED27D002DC0BC /* Japan.png */; };
+		58DD16BD1AAED27D002DC0BC /* Korea.png in Resources */ = {isa = PBXBuildFile; fileRef = 58DD16A81AAED27D002DC0BC /* Korea.png */; };
+		58DD16BE1AAED27D002DC0BC /* Mexico.png in Resources */ = {isa = PBXBuildFile; fileRef = 58DD16A91AAED27D002DC0BC /* Mexico.png */; };
+		58DD16BF1AAED27D002DC0BC /* Philippines.png in Resources */ = {isa = PBXBuildFile; fileRef = 58DD16AA1AAED27D002DC0BC /* Philippines.png */; };
+		58DD16C01AAED27D002DC0BC /* Restaurant.png in Resources */ = {isa = PBXBuildFile; fileRef = 58DD16AB1AAED27D002DC0BC /* Restaurant.png */; };
+		58DD16C11AAED27D002DC0BC /* Spain.png in Resources */ = {isa = PBXBuildFile; fileRef = 58DD16AC1AAED27D002DC0BC /* Spain.png */; };
+		58DD16C21AAED27D002DC0BC /* star1.png in Resources */ = {isa = PBXBuildFile; fileRef = 58DD16AD1AAED27D002DC0BC /* star1.png */; };
+		58DD16C31AAED27D002DC0BC /* star2.png in Resources */ = {isa = PBXBuildFile; fileRef = 58DD16AE1AAED27D002DC0BC /* star2.png */; };
+		58DD16C41AAED27D002DC0BC /* star3.png in Resources */ = {isa = PBXBuildFile; fileRef = 58DD16AF1AAED27D002DC0BC /* star3.png */; };
+		58DD16C51AAED27D002DC0BC /* star4.png in Resources */ = {isa = PBXBuildFile; fileRef = 58DD16B01AAED27D002DC0BC /* star4.png */; };
+		58DD16C61AAED27D002DC0BC /* star5.png in Resources */ = {isa = PBXBuildFile; fileRef = 58DD16B11AAED27D002DC0BC /* star5.png */; };
+		58DD16C71AAED27D002DC0BC /* Thailand.png in Resources */ = {isa = PBXBuildFile; fileRef = 58DD16B21AAED27D002DC0BC /* Thailand.png */; };
+		58DD16C81AAED27D002DC0BC /* Vietnam.png in Resources */ = {isa = PBXBuildFile; fileRef = 58DD16B31AAED27D002DC0BC /* Vietnam.png */; };
+		58DD16CA1AAED43C002DC0BC /* gourmet.plist in Resources */ = {isa = PBXBuildFile; fileRef = 58DD16C91AAED43C002DC0BC /* gourmet.plist */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -78,25 +82,7 @@
 		5855E5961A847BE90097A581 /* TableViewCustomCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TableViewCustomCell.xib; sourceTree = "<group>"; };
 		5855E5981A847C9F0097A581 /* customTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = customTableViewCell.h; sourceTree = "<group>"; };
 		5855E5991A847C9F0097A581 /* customTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = customTableViewCell.m; sourceTree = "<group>"; };
-		5870128C1AAD5D6E00004817 /* gourmet.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = gourmet.plist; sourceTree = "<group>"; };
 		5870128E1AAD853A00004817 /* wifi.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = wifi.plist; sourceTree = "<group>"; };
-		587012911AAD85A400004817 /* America.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = America.png; sourceTree = "<group>"; };
-		587012921AAD85A400004817 /* BRL.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = BRL.png; sourceTree = "<group>"; };
-		587012931AAD85A400004817 /* China.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = China.png; sourceTree = "<group>"; };
-		587012941AAD85A400004817 /* France.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = France.png; sourceTree = "<group>"; };
-		587012951AAD85A400004817 /* Germany.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Germany.png; sourceTree = "<group>"; };
-		587012961AAD85A400004817 /* INR.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = INR.png; sourceTree = "<group>"; };
-		587012971AAD85A400004817 /* Italy.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Italy.png; sourceTree = "<group>"; };
-		587012981AAD85A400004817 /* Japan.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Japan.png; sourceTree = "<group>"; };
-		587012991AAD85A400004817 /* Korea.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Korea.png; sourceTree = "<group>"; };
-		5870129A1AAD85A400004817 /* Pilippine.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Pilippine.png; sourceTree = "<group>"; };
-		5870129B1AAD85A400004817 /* star1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = star1.png; sourceTree = "<group>"; };
-		5870129C1AAD85A400004817 /* star2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = star2.png; sourceTree = "<group>"; };
-		5870129D1AAD85A400004817 /* star3.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = star3.png; sourceTree = "<group>"; };
-		5870129E1AAD85A400004817 /* star4.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = star4.png; sourceTree = "<group>"; };
-		5870129F1AAD85A400004817 /* star5.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = star5.png; sourceTree = "<group>"; };
-		587012A01AAD85A400004817 /* Thailand.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Thailand.png; sourceTree = "<group>"; };
-		587012A11AAD85A400004817 /* Vietnam.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Vietnam.png; sourceTree = "<group>"; };
 		58AF3FED1A78A61F0075BAC3 /* CebuGuide.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CebuGuide.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		58AF3FF41A78A61F0075BAC3 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		58AF3FF51A78A61F0075BAC3 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -126,6 +112,28 @@
 		58C27E5F1A89BE6600D62C58 /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		58C27E621A89C51C00D62C58 /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
 		58C556141AAAE21A004DA122 /* testgourmet.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = testgourmet.plist; path = ../../../Downloads/testgourmet.plist; sourceTree = "<group>"; };
+		58DD169F1AAED27D002DC0BC /* America.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = America.png; sourceTree = "<group>"; };
+		58DD16A01AAED27D002DC0BC /* Building.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Building.png; sourceTree = "<group>"; };
+		58DD16A11AAED27D002DC0BC /* Cafe.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Cafe.png; sourceTree = "<group>"; };
+		58DD16A21AAED27D002DC0BC /* China.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = China.png; sourceTree = "<group>"; };
+		58DD16A31AAED27D002DC0BC /* France.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = France.png; sourceTree = "<group>"; };
+		58DD16A41AAED27D002DC0BC /* Germany.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Germany.png; sourceTree = "<group>"; };
+		58DD16A51AAED27D002DC0BC /* Hotel.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Hotel.png; sourceTree = "<group>"; };
+		58DD16A61AAED27D002DC0BC /* Italy.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Italy.png; sourceTree = "<group>"; };
+		58DD16A71AAED27D002DC0BC /* Japan.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Japan.png; sourceTree = "<group>"; };
+		58DD16A81AAED27D002DC0BC /* Korea.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Korea.png; sourceTree = "<group>"; };
+		58DD16A91AAED27D002DC0BC /* Mexico.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Mexico.png; sourceTree = "<group>"; };
+		58DD16AA1AAED27D002DC0BC /* Philippines.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Philippines.png; sourceTree = "<group>"; };
+		58DD16AB1AAED27D002DC0BC /* Restaurant.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Restaurant.png; sourceTree = "<group>"; };
+		58DD16AC1AAED27D002DC0BC /* Spain.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Spain.png; sourceTree = "<group>"; };
+		58DD16AD1AAED27D002DC0BC /* star1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = star1.png; sourceTree = "<group>"; };
+		58DD16AE1AAED27D002DC0BC /* star2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = star2.png; sourceTree = "<group>"; };
+		58DD16AF1AAED27D002DC0BC /* star3.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = star3.png; sourceTree = "<group>"; };
+		58DD16B01AAED27D002DC0BC /* star4.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = star4.png; sourceTree = "<group>"; };
+		58DD16B11AAED27D002DC0BC /* star5.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = star5.png; sourceTree = "<group>"; };
+		58DD16B21AAED27D002DC0BC /* Thailand.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Thailand.png; sourceTree = "<group>"; };
+		58DD16B31AAED27D002DC0BC /* Vietnam.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Vietnam.png; sourceTree = "<group>"; };
+		58DD16C91AAED43C002DC0BC /* gourmet.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = gourmet.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -155,30 +163,6 @@
 				5855E5941A847BA00097A581 /* TableViewConst.m */,
 			);
 			name = Const;
-			sourceTree = "<group>";
-		};
-		587012901AAD85A400004817 /* image */ = {
-			isa = PBXGroup;
-			children = (
-				587012911AAD85A400004817 /* America.png */,
-				587012921AAD85A400004817 /* BRL.png */,
-				587012931AAD85A400004817 /* China.png */,
-				587012941AAD85A400004817 /* France.png */,
-				587012951AAD85A400004817 /* Germany.png */,
-				587012961AAD85A400004817 /* INR.png */,
-				587012971AAD85A400004817 /* Italy.png */,
-				587012981AAD85A400004817 /* Japan.png */,
-				587012991AAD85A400004817 /* Korea.png */,
-				5870129A1AAD85A400004817 /* Pilippine.png */,
-				5870129B1AAD85A400004817 /* star1.png */,
-				5870129C1AAD85A400004817 /* star2.png */,
-				5870129D1AAD85A400004817 /* star3.png */,
-				5870129E1AAD85A400004817 /* star4.png */,
-				5870129F1AAD85A400004817 /* star5.png */,
-				587012A01AAD85A400004817 /* Thailand.png */,
-				587012A11AAD85A400004817 /* Vietnam.png */,
-			);
-			path = image;
 			sourceTree = "<group>";
 		};
 		58AF3FE41A78A61F0075BAC3 = {
@@ -239,9 +223,9 @@
 		58AF3FF01A78A61F0075BAC3 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
-				5870128C1AAD5D6E00004817 /* gourmet.plist */,
+				58DD16C91AAED43C002DC0BC /* gourmet.plist */,
 				5870128E1AAD853A00004817 /* wifi.plist */,
-				587012901AAD85A400004817 /* image */,
+				58DD169E1AAED27D002DC0BC /* image */,
 				5855E5961A847BE90097A581 /* TableViewCustomCell.xib */,
 				5855E5981A847C9F0097A581 /* customTableViewCell.h */,
 				5855E5991A847C9F0097A581 /* customTableViewCell.m */,
@@ -277,6 +261,34 @@
 			children = (
 			);
 			path = icon;
+			sourceTree = "<group>";
+		};
+		58DD169E1AAED27D002DC0BC /* image */ = {
+			isa = PBXGroup;
+			children = (
+				58DD169F1AAED27D002DC0BC /* America.png */,
+				58DD16A01AAED27D002DC0BC /* Building.png */,
+				58DD16A11AAED27D002DC0BC /* Cafe.png */,
+				58DD16A21AAED27D002DC0BC /* China.png */,
+				58DD16A31AAED27D002DC0BC /* France.png */,
+				58DD16A41AAED27D002DC0BC /* Germany.png */,
+				58DD16A51AAED27D002DC0BC /* Hotel.png */,
+				58DD16A61AAED27D002DC0BC /* Italy.png */,
+				58DD16A71AAED27D002DC0BC /* Japan.png */,
+				58DD16A81AAED27D002DC0BC /* Korea.png */,
+				58DD16A91AAED27D002DC0BC /* Mexico.png */,
+				58DD16AA1AAED27D002DC0BC /* Philippines.png */,
+				58DD16AB1AAED27D002DC0BC /* Restaurant.png */,
+				58DD16AC1AAED27D002DC0BC /* Spain.png */,
+				58DD16AD1AAED27D002DC0BC /* star1.png */,
+				58DD16AE1AAED27D002DC0BC /* star2.png */,
+				58DD16AF1AAED27D002DC0BC /* star3.png */,
+				58DD16B01AAED27D002DC0BC /* star4.png */,
+				58DD16B11AAED27D002DC0BC /* star5.png */,
+				58DD16B21AAED27D002DC0BC /* Thailand.png */,
+				58DD16B31AAED27D002DC0BC /* Vietnam.png */,
+			);
+			path = image;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -359,34 +371,38 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				587012A21AAD85A400004817 /* America.png in Resources */,
-				587012AE1AAD85A400004817 /* star3.png in Resources */,
-				587012A61AAD85A400004817 /* Germany.png in Resources */,
-				587012AB1AAD85A400004817 /* Pilippine.png in Resources */,
+				58DD16B51AAED27D002DC0BC /* Building.png in Resources */,
+				58DD16C11AAED27D002DC0BC /* Spain.png in Resources */,
+				58DD16B41AAED27D002DC0BC /* America.png in Resources */,
+				58DD16C01AAED27D002DC0BC /* Restaurant.png in Resources */,
+				58DD16BB1AAED27D002DC0BC /* Italy.png in Resources */,
+				58DD16C41AAED27D002DC0BC /* star3.png in Resources */,
 				5870128F1AAD853A00004817 /* wifi.plist in Resources */,
+				58DD16BE1AAED27D002DC0BC /* Mexico.png in Resources */,
 				58AF40011A78A61F0075BAC3 /* LaunchScreen.xib in Resources */,
-				587012A41AAD85A400004817 /* China.png in Resources */,
-				587012A51AAD85A400004817 /* France.png in Resources */,
-				587012A71AAD85A400004817 /* INR.png in Resources */,
-				587012B01AAD85A400004817 /* star5.png in Resources */,
-				587012AD1AAD85A400004817 /* star2.png in Resources */,
-				587012AF1AAD85A400004817 /* star4.png in Resources */,
 				58C27E601A89BE6600D62C58 /* Info.plist in Resources */,
+				58DD16CA1AAED43C002DC0BC /* gourmet.plist in Resources */,
+				58DD16B91AAED27D002DC0BC /* Germany.png in Resources */,
 				58218A3B1A9712CA0057BB2D /* Main.storyboard in Resources */,
-				587012B21AAD85A400004817 /* Vietnam.png in Resources */,
-				587012A31AAD85A400004817 /* BRL.png in Resources */,
 				58C556151AAAE21A004DA122 /* testgourmet.plist in Resources */,
+				58DD16C61AAED27D002DC0BC /* star5.png in Resources */,
+				58DD16BA1AAED27D002DC0BC /* Hotel.png in Resources */,
+				58DD16BC1AAED27D002DC0BC /* Japan.png in Resources */,
 				5821210F1A8C6C2700B2CDF7 /* kyuuwifi.plist in Resources */,
+				58DD16C21AAED27D002DC0BC /* star1.png in Resources */,
+				58DD16C81AAED27D002DC0BC /* Vietnam.png in Resources */,
 				5855E5971A847BE90097A581 /* TableViewCustomCell.xib in Resources */,
 				583BC51F1A889D360087730B /* Default-568h@2x.png in Resources */,
-				587012AC1AAD85A400004817 /* star1.png in Resources */,
 				5821210D1A8C630300B2CDF7 /* kyuugourmet.plist in Resources */,
-				587012A81AAD85A400004817 /* Italy.png in Resources */,
+				58DD16C31AAED27D002DC0BC /* star2.png in Resources */,
 				58AF3FFE1A78A61F0075BAC3 /* Images.xcassets in Resources */,
-				5870128D1AAD5D6E00004817 /* gourmet.plist in Resources */,
-				587012AA1AAD85A400004817 /* Korea.png in Resources */,
-				587012B11AAD85A400004817 /* Thailand.png in Resources */,
-				587012A91AAD85A400004817 /* Japan.png in Resources */,
+				58DD16C51AAED27D002DC0BC /* star4.png in Resources */,
+				58DD16BF1AAED27D002DC0BC /* Philippines.png in Resources */,
+				58DD16B81AAED27D002DC0BC /* France.png in Resources */,
+				58DD16B61AAED27D002DC0BC /* Cafe.png in Resources */,
+				58DD16B71AAED27D002DC0BC /* China.png in Resources */,
+				58DD16C71AAED27D002DC0BC /* Thailand.png in Resources */,
+				58DD16BD1AAED27D002DC0BC /* Korea.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

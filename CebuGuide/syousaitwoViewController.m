@@ -40,8 +40,8 @@
 //    NSDictionary *wifiDic = _wifiArray[self.selectNum];
 //    NSDictionary *gourmetDic = _gourmetArray[self.selectNum];
     
-    //ナビゲーションコントローラのタイトル設定
-    self.navigationItem.title = [NSString stringWithFormat:@"Wi-Fi"];
+//    //ナビゲーションコントローラのタイトル設定
+//    self.navigationItem.title = [NSString stringWithFormat:@"Wi-Fi"];
     
     //wifi,gourmetどちらから来たか判定する
     NSDictionary *commonDic = [[NSDictionary alloc]init];
@@ -50,6 +50,7 @@
         NSDictionary *wifiDic = _wifiArray[self.selectNum];
         
         commonDic = wifiDic[@"wifilist"];
+        _ListNO = [wifiDic[@"NO"] intValue];
         
         //UserDefaultObjectを用意する
         NSUserDefaults *defaults = [NSUserDefaults standardUserDefaults];
@@ -58,7 +59,7 @@
         NSMutableArray *wifiArray = [[defaults objectForKey:@"wifiArray"] mutableCopy];
         
         for (NSString *favorite_no in wifiArray) {
-            if ([favorite_no intValue] == self.selectNum){
+            if ([favorite_no intValue] == _ListNO){
                     
                     self.myButton.enabled = NO;
                     self.myButton.alpha = 0.0;
@@ -71,6 +72,7 @@
         NSDictionary *gourmetDic = _gourmetArray[self.selectNum];
         
         commonDic = gourmetDic[@"gourmetlist"];
+        _ListNO = [gourmetDic[@"NO"] intValue];
         
         //UserDefaultObjectを用意する
         NSUserDefaults *defaults = [NSUserDefaults standardUserDefaults];
@@ -79,7 +81,7 @@
         NSMutableArray *gourmetArray = [[defaults objectForKey:@"gourmetArray"] mutableCopy];
         
         for (NSString *favorite_no in gourmetArray) {
-            if ([favorite_no intValue] == self.selectNum){
+            if ([favorite_no intValue] == _ListNO){
                 
                 self.myButton.enabled = NO;
                 self.myButton.alpha = 0.0;
@@ -195,7 +197,7 @@
                 wifiArray = [NSMutableArray new];
                 
                 //配列に新しいデータを追加
-                [wifiArray addObject:[NSString stringWithFormat:@"%d",self.selectNum]];
+                [wifiArray addObject:[NSString stringWithFormat:@"%d",_ListNO]];
                 
                 //wifiArrayを保存
                 [defaults setObject:wifiArray forKey:@"wifiArray"];
@@ -205,7 +207,7 @@
             }else {
                 
                 //配列に新しいデータを追加
-                [wifiArray addObject:[NSString stringWithFormat:@"%d",self.selectNum]];
+                [wifiArray addObject:[NSString stringWithFormat:@"%d",_ListNO]];
                 
                 //wifiArrayを保存
                 [defaults setObject:wifiArray forKey:@"wifiArray"];
@@ -224,7 +226,7 @@
                 gourmetArray = [NSMutableArray new];
                 
                 //配列に新しいデータを追加
-                [gourmetArray addObject:[NSString stringWithFormat:@"%d",self.selectNum]];
+                [gourmetArray addObject:[NSString stringWithFormat:@"%d",_ListNO]];
                 
                 //gourmetArrayを保存
                 [defaults setObject:gourmetArray forKey:@"gourmetArray"];
@@ -234,7 +236,7 @@
             }else {
                 
                 //配列に新しいデータを追加
-                [gourmetArray addObject:[NSString stringWithFormat:@"%d",self.selectNum]];
+                [gourmetArray addObject:[NSString stringWithFormat:@"%d",_ListNO]];
                 
                 //gourmetArrayを保存
                 [defaults setObject:gourmetArray forKey:@"gourmetArray"];
