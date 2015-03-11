@@ -63,7 +63,9 @@
                     
                     self.myButton.enabled = NO;
                     self.myButton.alpha = 0.0;
-                    
+                    self.myImageView4.image = [UIImage imageNamed:@"Check.png"];
+                
+                
                     break;
                 }
             }
@@ -85,6 +87,8 @@
                 
                 self.myButton.enabled = NO;
                 self.myButton.alpha = 0.0;
+                self.myImageView4.image = [UIImage imageNamed:@"Check.png"];
+                
                 
                 break;
             }
@@ -184,6 +188,10 @@
 - (void)alertView:(UIAlertView *)alertView clickedButtonAtIndex:(NSInteger)buttonIndex{
     if (buttonIndex == 1) {
         NSLog(@"OK");
+        
+        self.myButton.enabled = NO;
+        self.myButton.alpha = 0.0;
+        self.myImageView4.image = [UIImage imageNamed:@"Check.png"];
         
         //UserDefaultObjectを用意する
         NSUserDefaults *defaults = [NSUserDefaults standardUserDefaults];

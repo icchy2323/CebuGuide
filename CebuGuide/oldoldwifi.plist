@@ -26,7 +26,7 @@
 				<key>Name</key>
 				<string>Marriot Hotel</string>
 				<key>Picture</key>
-				<string>NoImage</string>
+				<string></string>
 				<key>StarEvaluation</key>
 				<string>☆☆☆☆☆</string>
 			</dict>
@@ -53,7 +53,7 @@
 				<key>Name</key>
 				<string>Coffee Bean &amp; Tea Leaf</string>
 				<key>Picture</key>
-				<string>NoImage</string>
+				<string></string>
 				<key>StarEvaluation</key>
 				<string>☆☆☆☆</string>
 			</dict>
@@ -80,7 +80,7 @@
 				<key>Name</key>
 				<string>AJITO</string>
 				<key>Picture</key>
-				<string>NoImage</string>
+				<string></string>
 				<key>StarEvaluation</key>
 				<string>☆☆</string>
 			</dict>
@@ -107,7 +107,7 @@
 				<key>Name</key>
 				<string>UCC Cafe</string>
 				<key>Picture</key>
-				<string>NoImage</string>
+				<string></string>
 				<key>StarEvaluation</key>
 				<string>☆☆☆☆</string>
 			</dict>
@@ -134,7 +134,7 @@
 				<key>Name</key>
 				<string>Chocolater</string>
 				<key>Picture</key>
-				<string>NoImage</string>
+				<string></string>
 				<key>StarEvaluation</key>
 				<string>☆☆☆☆</string>
 			</dict>
@@ -161,7 +161,7 @@
 				<key>Name</key>
 				<string>Red Mango</string>
 				<key>Picture</key>
-				<string>NoImage</string>
+				<string></string>
 				<key>StarEvaluation</key>
 				<string>☆☆☆</string>
 			</dict>
@@ -176,7 +176,7 @@
 				<key>Address</key>
 				<string>Level 2 Cebu Business Park,Archbishop Reyes Avenue,Cebu City 6000,Metro Cebu, Cardinal Rosales Ave, Cebu City, Cebu</string>
 				<key>Comment</key>
-				<string>Average of Philippines</string>
+				<string>Usually</string>
 				<key>Evaluation</key>
 				<string>3</string>
 				<key>Genre</key>
@@ -188,7 +188,7 @@
 				<key>Name</key>
 				<string>Figaro</string>
 				<key>Picture</key>
-				<string>NoImage</string>
+				<string></string>
 				<key>StarEvaluation</key>
 				<string>☆☆☆</string>
 			</dict>
@@ -203,7 +203,7 @@
 				<key>Address</key>
 				<string>Level 2 Cebu Business Park,Archbishop Reyes Avenue,Cebu City 6000,Metro Cebu, Cardinal Rosales Ave, Cebu City, Cebu</string>
 				<key>Comment</key>
-				<string>Average of Philippines</string>
+				<string>Usually</string>
 				<key>Evaluation</key>
 				<string>3</string>
 				<key>Genre</key>
@@ -215,7 +215,7 @@
 				<key>Name</key>
 				<string>Canvas</string>
 				<key>Picture</key>
-				<string>NoImage</string>
+				<string></string>
 				<key>StarEvaluation</key>
 				<string>☆☆☆</string>
 			</dict>
@@ -230,7 +230,7 @@
 				<key>Address</key>
 				<string>Level 2 Cebu Business Park,Archbishop Reyes Avenue,Cebu City 6000,Metro Cebu, Cardinal Rosales Ave, Cebu City, Cebu</string>
 				<key>Comment</key>
-				<string>Average of Philippines</string>
+				<string>Usually</string>
 				<key>Evaluation</key>
 				<string>3</string>
 				<key>Genre</key>
@@ -242,7 +242,7 @@
 				<key>Name</key>
 				<string>Bo’s Coffee</string>
 				<key>Picture</key>
-				<string>NoImage</string>
+				<string></string>
 				<key>StarEvaluation</key>
 				<string>☆☆☆</string>
 			</dict>
@@ -257,7 +257,7 @@
 				<key>Address</key>
 				<string>Archbishop Reyes Avenue, Cebu City, Cebu</string>
 				<key>Comment</key>
-				<string>Average of Philippines / Crowded</string>
+				<string>Crowded</string>
 				<key>Evaluation</key>
 				<string>3</string>
 				<key>Genre</key>
@@ -269,7 +269,7 @@
 				<key>Name</key>
 				<string>CafeNoriter</string>
 				<key>Picture</key>
-				<string>NoImage</string>
+				<string></string>
 				<key>StarEvaluation</key>
 				<string>☆☆☆</string>
 			</dict>
@@ -296,7 +296,7 @@
 				<key>Name</key>
 				<string>Seattle’s Best</string>
 				<key>Picture</key>
-				<string>NoImage</string>
+				<string></string>
 				<key>StarEvaluation</key>
 				<string>☆☆</string>
 			</dict>
@@ -323,7 +323,7 @@
 				<key>Name</key>
 				<string>Flame It</string>
 				<key>Picture</key>
-				<string>NoImage</string>
+				<string></string>
 				<key>StarEvaluation</key>
 				<string>☆☆</string>
 			</dict>
@@ -350,7 +350,7 @@
 				<key>Name</key>
 				<string>Krispy kreme</string>
 				<key>Picture</key>
-				<string>NoImage</string>
+				<string></string>
 				<key>StarEvaluation</key>
 				<string>☆☆</string>
 			</dict>
@@ -377,7 +377,7 @@
 				<key>Name</key>
 				<string>QuestHotel</string>
 				<key>Picture</key>
-				<string>NoImage</string>
+				<string></string>
 				<key>StarEvaluation</key>
 				<string>☆☆</string>
 			</dict>
@@ -404,7 +404,7 @@
 				<key>Name</key>
 				<string>TGIF</string>
 				<key>Picture</key>
-				<string>NoImage</string>
+				<string></string>
 				<key>StarEvaluation</key>
 				<string>☆☆</string>
 			</dict>
@@ -431,7 +431,7 @@
 				<key>Name</key>
 				<string>MANDARIN PLAZA HOTEL</string>
 				<key>Picture</key>
-				<string>NoImage</string>
+				<string></string>
 				<key>StarEvaluation</key>
 				<string>☆☆</string>
 			</dict>
@@ -458,7 +458,7 @@
 				<key>Name</key>
 				<string>Waterfront Hote</string>
 				<key>Picture</key>
-				<string>NoImage</string>
+				<string></string>
 				<key>StarEvaluation</key>
 				<string>☆☆☆☆☆</string>
 			</dict>
@@ -485,7 +485,7 @@
 				<key>Name</key>
 				<string>Coffee Bean &amp; Tea Leaf</string>
 				<key>Picture</key>
-				<string>NoImage</string>
+				<string></string>
 				<key>StarEvaluation</key>
 				<string>☆☆☆☆</string>
 			</dict>
@@ -500,7 +500,7 @@
 				<key>Address</key>
 				<string>G/F Calyx Centre (at A. Abad St.), 6000 Cebu, Cebu</string>
 				<key>Comment</key>
-				<string>Average of Philippines</string>
+				<string>Usually</string>
 				<key>Evaluation</key>
 				<string>3</string>
 				<key>Genre</key>
@@ -512,7 +512,7 @@
 				<key>Name</key>
 				<string>Serenitea</string>
 				<key>Picture</key>
-				<string>NoImage</string>
+				<string></string>
 				<key>StarEvaluation</key>
 				<string>☆☆☆</string>
 			</dict>
@@ -539,7 +539,7 @@
 				<key>Name</key>
 				<string>Figaro</string>
 				<key>Picture</key>
-				<string>NoImage</string>
+				<string></string>
 				<key>StarEvaluation</key>
 				<string>☆☆☆☆</string>
 			</dict>
@@ -566,7 +566,7 @@
 				<key>Name</key>
 				<string>Qbay</string>
 				<key>Picture</key>
-				<string>NoImage</string>
+				<string></string>
 				<key>StarEvaluation</key>
 				<string>☆☆☆☆</string>
 			</dict>
@@ -581,7 +581,7 @@
 				<key>Address</key>
 				<string>The Walk, Cebu IT Park, Abad St, Cebu City, Cebu</string>
 				<key>Comment</key>
-				<string>Average of Philippines</string>
+				<string>Usually</string>
 				<key>Evaluation</key>
 				<string>3</string>
 				<key>Genre</key>
@@ -593,7 +593,7 @@
 				<key>Name</key>
 				<string>Blue Elephant</string>
 				<key>Picture</key>
-				<string>NoImage</string>
+				<string></string>
 				<key>StarEvaluation</key>
 				<string>☆☆☆</string>
 			</dict>
@@ -608,7 +608,7 @@
 				<key>Address</key>
 				<string>G/F I2 Bldg., Padriga St.Cebu City, Cebu</string>
 				<key>Comment</key>
-				<string>Average of Philippines</string>
+				<string>Usually</string>
 				<key>Evaluation</key>
 				<string>3</string>
 				<key>Genre</key>
@@ -620,7 +620,7 @@
 				<key>Name</key>
 				<string>Bo’s Coffee</string>
 				<key>Picture</key>
-				<string>NoImage</string>
+				<string></string>
 				<key>StarEvaluation</key>
 				<string>☆☆☆</string>
 			</dict>
@@ -635,7 +635,7 @@
 				<key>Address</key>
 				<string>G/F i2 Bldg, Jose Maria del Mar St, Cebu IT Park, 6000 Cebu City, Cebu</string>
 				<key>Comment</key>
-				<string>Average of Philippines but paid</string>
+				<string>Usually but paid</string>
 				<key>Evaluation</key>
 				<string>3</string>
 				<key>Genre</key>
@@ -647,7 +647,7 @@
 				<key>Name</key>
 				<string>Starbucks</string>
 				<key>Picture</key>
-				<string>NoImage</string>
+				<string></string>
 				<key>StarEvaluation</key>
 				<string>☆☆☆</string>
 			</dict>
@@ -662,7 +662,7 @@
 				<key>Address</key>
 				<string>7th Floor eBloc Tower, Jose Ma. del Mar Avenue (Cebu I.T. Park, Lahug), 6000 Cebu City, Cebu</string>
 				<key>Comment</key>
-				<string>Average of Philippines</string>
+				<string>Usually</string>
 				<key>Evaluation</key>
 				<string>3</string>
 				<key>Genre</key>
@@ -674,7 +674,7 @@
 				<key>Name</key>
 				<string>Coffee Cat – JP Morgan &amp; Chase</string>
 				<key>Picture</key>
-				<string>NoImage</string>
+				<string></string>
 				<key>StarEvaluation</key>
 				<string>☆☆☆</string>
 			</dict>
@@ -701,7 +701,7 @@
 				<key>Name</key>
 				<string>Moon cafe</string>
 				<key>Picture</key>
-				<string>NoImage</string>
+				<string></string>
 				<key>StarEvaluation</key>
 				<string>☆☆</string>
 			</dict>
@@ -728,7 +728,7 @@
 				<key>Name</key>
 				<string>ila puti</string>
 				<key>Picture</key>
-				<string>NoImage</string>
+				<string></string>
 				<key>StarEvaluation</key>
 				<string>☆☆</string>
 			</dict>
@@ -755,7 +755,7 @@
 				<key>Name</key>
 				<string>Da vinci</string>
 				<key>Picture</key>
-				<string>NoImage</string>
+				<string></string>
 				<key>StarEvaluation</key>
 				<string>☆☆</string>
 			</dict>
@@ -770,7 +770,7 @@
 				<key>Address</key>
 				<string>G/F SM City Cebu, Juan Luna Ave ExtCebu City, Cebu</string>
 				<key>Comment</key>
-				<string>Average of Philippines</string>
+				<string>Usually</string>
 				<key>Evaluation</key>
 				<string>3</string>
 				<key>Genre</key>
@@ -782,7 +782,7 @@
 				<key>Name</key>
 				<string>Coffee Bean &amp; Tea Leaf</string>
 				<key>Picture</key>
-				<string>NoImage</string>
+				<string></string>
 				<key>StarEvaluation</key>
 				<string>☆☆☆</string>
 			</dict>
@@ -809,7 +809,7 @@
 				<key>Name</key>
 				<string>Radison Blu Hotel</string>
 				<key>Picture</key>
-				<string>NoImage</string>
+				<string></string>
 				<key>StarEvaluation</key>
 				<string>☆☆☆☆</string>
 			</dict>
@@ -824,7 +824,7 @@
 				<key>Address</key>
 				<string>G/F SM City Cebu, Juan Luna Ave ExtCebu City, Cebu</string>
 				<key>Comment</key>
-				<string>Average of Philippines</string>
+				<string>Usually</string>
 				<key>Evaluation</key>
 				<string>3</string>
 				<key>Genre</key>
@@ -836,7 +836,7 @@
 				<key>Name</key>
 				<string>French Baker</string>
 				<key>Picture</key>
-				<string>NoImage</string>
+				<string></string>
 				<key>StarEvaluation</key>
 				<string>☆☆☆</string>
 			</dict>
@@ -851,7 +851,7 @@
 				<key>Address</key>
 				<string>G/F SM City Cebu, Juan Luna Ave ExtCebu City, Cebu</string>
 				<key>Comment</key>
-				<string>Average of Philippines</string>
+				<string>Usually</string>
 				<key>Evaluation</key>
 				<string>3</string>
 				<key>Genre</key>
@@ -863,7 +863,7 @@
 				<key>Name</key>
 				<string>BIBGY’S</string>
 				<key>Picture</key>
-				<string>NoImage</string>
+				<string></string>
 				<key>StarEvaluation</key>
 				<string>☆☆☆</string>
 			</dict>
@@ -878,7 +878,7 @@
 				<key>Address</key>
 				<string>G/F SM City Cebu, Juan Luna Ave ExtCebu City, Cebu</string>
 				<key>Comment</key>
-				<string>Average of Philippines</string>
+				<string>Usually</string>
 				<key>Evaluation</key>
 				<string>3</string>
 				<key>Genre</key>
@@ -890,7 +890,7 @@
 				<key>Name</key>
 				<string>VANILLE</string>
 				<key>Picture</key>
-				<string>NoImage</string>
+				<string></string>
 				<key>StarEvaluation</key>
 				<string>☆☆☆</string>
 			</dict>
@@ -917,7 +917,7 @@
 				<key>Name</key>
 				<string>A Cafe</string>
 				<key>Picture</key>
-				<string>NoImage</string>
+				<string></string>
 				<key>StarEvaluation</key>
 				<string>☆☆☆☆☆</string>
 			</dict>
@@ -944,7 +944,7 @@
 				<key>Name</key>
 				<string>La Marea</string>
 				<key>Picture</key>
-				<string>NoImage</string>
+				<string></string>
 				<key>StarEvaluation</key>
 				<string>☆☆☆☆</string>
 			</dict>
@@ -959,7 +959,7 @@
 				<key>Address</key>
 				<string>Crossroad Mall, Gov M Cuenco AveCebu City, Cebu</string>
 				<key>Comment</key>
-				<string>Average of Philippines</string>
+				<string>Usually</string>
 				<key>Evaluation</key>
 				<string>3</string>
 				<key>Genre</key>
@@ -971,7 +971,7 @@
 				<key>Name</key>
 				<string>ClubKing</string>
 				<key>Picture</key>
-				<string>NoImage</string>
+				<string></string>
 				<key>StarEvaluation</key>
 				<string>☆☆☆</string>
 			</dict>
@@ -986,7 +986,7 @@
 				<key>Address</key>
 				<string>Crossroad Mall, Gov M Cuenco AveCebu City, Cebu</string>
 				<key>Comment</key>
-				<string>Average of Philippines</string>
+				<string>Usually</string>
 				<key>Evaluation</key>
 				<string>3</string>
 				<key>Genre</key>
@@ -998,7 +998,7 @@
 				<key>Name</key>
 				<string>Olio Steak &amp; Seafood Restaurant</string>
 				<key>Picture</key>
-				<string>NoImage</string>
+				<string></string>
 				<key>StarEvaluation</key>
 				<string>☆☆☆</string>
 			</dict>
@@ -1013,7 +1013,7 @@
 				<key>Address</key>
 				<string>Crossroad Mall, Gov M Cuenco AveCebu City, Cebu</string>
 				<key>Comment</key>
-				<string>Average of Philippines</string>
+				<string>Usually</string>
 				<key>Evaluation</key>
 				<string>3</string>
 				<key>Genre</key>
@@ -1025,7 +1025,7 @@
 				<key>Name</key>
 				<string>Maya Mexican Restaurant</string>
 				<key>Picture</key>
-				<string>NoImage</string>
+				<string></string>
 				<key>StarEvaluation</key>
 				<string>☆☆☆</string>
 			</dict>
@@ -1040,7 +1040,7 @@
 				<key>Address</key>
 				<string>Crossroad Mall, Gov M Cuenco AveCebu City, Cebu</string>
 				<key>Comment</key>
-				<string>Average of Philippines</string>
+				<string>Usually</string>
 				<key>Evaluation</key>
 				<string>3</string>
 				<key>Genre</key>
@@ -1052,7 +1052,7 @@
 				<key>Name</key>
 				<string>Tajimaya</string>
 				<key>Picture</key>
-				<string>NoImage</string>
+				<string></string>
 				<key>StarEvaluation</key>
 				<string>☆☆☆</string>
 			</dict>
@@ -1079,7 +1079,7 @@
 				<key>Name</key>
 				<string>Coffee Bean &amp; Tea Leaf</string>
 				<key>Picture</key>
-				<string>NoImage</string>
+				<string></string>
 				<key>StarEvaluation</key>
 				<string>☆☆☆☆</string>
 			</dict>
@@ -1094,7 +1094,7 @@
 				<key>Address</key>
 				<string>Fuente Osmeña Circle, Capitol Site, Cebu City, Philippines</string>
 				<key>Comment</key>
-				<string>Average of Philippines</string>
+				<string>Usually</string>
 				<key>Evaluation</key>
 				<string>3</string>
 				<key>Genre</key>
@@ -1106,7 +1106,7 @@
 				<key>Name</key>
 				<string>Bo’s Coffee Cybergate</string>
 				<key>Picture</key>
-				<string>NoImage</string>
+				<string></string>
 				<key>StarEvaluation</key>
 				<string>☆☆☆</string>
 			</dict>
@@ -1121,7 +1121,7 @@
 				<key>Address</key>
 				<string>Osmena Blvd, Cebu City, Cebu</string>
 				<key>Comment</key>
-				<string>Average of Philippines</string>
+				<string>Usually</string>
 				<key>Evaluation</key>
 				<string>3</string>
 				<key>Genre</key>
@@ -1133,7 +1133,7 @@
 				<key>Name</key>
 				<string>Crown Legency 2Fcafe</string>
 				<key>Picture</key>
-				<string>NoImage</string>
+				<string></string>
 				<key>StarEvaluation</key>
 				<string>☆☆☆</string>
 			</dict>
@@ -1148,7 +1148,7 @@
 				<key>Address</key>
 				<string>11 Don Jose Avila St. (Cebu, Philippines), 6000 Cebu City, Cebu</string>
 				<key>Comment</key>
-				<string>Average of Philippines</string>
+				<string>Usually</string>
 				<key>Evaluation</key>
 				<string>3</string>
 				<key>Genre</key>
@@ -1160,7 +1160,7 @@
 				<key>Name</key>
 				<string>Hannya</string>
 				<key>Picture</key>
-				<string>NoImage</string>
+				<string></string>
 				<key>StarEvaluation</key>
 				<string>☆☆☆</string>
 			</dict>
@@ -1175,7 +1175,7 @@
 				<key>Address</key>
 				<string>Escario St., cor. Juana Osmena Ext., Juana Osmeña Extension Road, Cebu City, 6000 Cebu</string>
 				<key>Comment</key>
-				<string>Average of Philippines</string>
+				<string>Usually</string>
 				<key>Evaluation</key>
 				<string>3</string>
 				<key>Genre</key>
@@ -1187,7 +1187,7 @@
 				<key>Name</key>
 				<string>Best Western Plus Lex Cebu</string>
 				<key>Picture</key>
-				<string>NoImage</string>
+				<string></string>
 				<key>StarEvaluation</key>
 				<string>☆☆☆</string>
 			</dict>
@@ -1202,7 +1202,7 @@
 				<key>Address</key>
 				<string>Gorordo Ave Cebu City Cebu</string>
 				<key>Comment</key>
-				<string>Average of Philippines</string>
+				<string>Usually</string>
 				<key>Evaluation</key>
 				<string>3</string>
 				<key>Genre</key>
@@ -1214,7 +1214,7 @@
 				<key>Name</key>
 				<string>Coffee Dream</string>
 				<key>Picture</key>
-				<string>NoImage</string>
+				<string></string>
 				<key>StarEvaluation</key>
 				<string>☆☆☆</string>
 			</dict>
@@ -1229,7 +1229,7 @@
 				<key>Address</key>
 				<string>Capitol Site, Cebu City, Cebu</string>
 				<key>Comment</key>
-				<string>Average of Philippines</string>
+				<string>Usually</string>
 				<key>Evaluation</key>
 				<string>3</string>
 				<key>Genre</key>
@@ -1241,7 +1241,7 @@
 				<key>Name</key>
 				<string>Bo’s coffee capitol</string>
 				<key>Picture</key>
-				<string>NoImage</string>
+				<string></string>
 				<key>StarEvaluation</key>
 				<string>☆☆☆</string>
 			</dict>
@@ -1268,7 +1268,7 @@
 				<key>Name</key>
 				<string>Buddies burger</string>
 				<key>Picture</key>
-				<string>NoImage</string>
+				<string></string>
 				<key>StarEvaluation</key>
 				<string>☆☆</string>
 			</dict>
@@ -1295,7 +1295,7 @@
 				<key>Name</key>
 				<string>William’s ninoy payag</string>
 				<key>Picture</key>
-				<string>NoImage</string>
+				<string></string>
 				<key>StarEvaluation</key>
 				<string>☆☆</string>
 			</dict>
@@ -1322,7 +1322,7 @@
 				<key>Name</key>
 				<string>Bubble bee</string>
 				<key>Picture</key>
-				<string>NoImage</string>
+				<string></string>
 				<key>StarEvaluation</key>
 				<string>☆☆</string>
 			</dict>
@@ -1341,7 +1341,7 @@
 				<key>Evaluation</key>
 				<string>2</string>
 				<key>Genre</key>
-				<string>building</string>
+				<string>other</string>
 				<key>Latitude</key>
 				<string>10.31281</string>
 				<key>Longitude</key>
@@ -1349,7 +1349,7 @@
 				<key>Name</key>
 				<string>Politics</string>
 				<key>Picture</key>
-				<string>NoImage</string>
+				<string></string>
 				<key>StarEvaluation</key>
 				<string>☆☆</string>
 			</dict>
@@ -1364,7 +1364,7 @@
 				<key>Address</key>
 				<string>Banilad Cebu City, Cebu</string>
 				<key>Comment</key>
-				<string>Average of Philippines</string>
+				<string>Usually</string>
 				<key>Evaluation</key>
 				<string>3</string>
 				<key>Genre</key>
@@ -1376,7 +1376,7 @@
 				<key>Name</key>
 				<string>BTC Bo’s Coffee</string>
 				<key>Picture</key>
-				<string>NoImage</string>
+				<string></string>
 				<key>StarEvaluation</key>
 				<string>☆☆☆</string>
 			</dict>
@@ -1403,7 +1403,7 @@
 				<key>Name</key>
 				<string>M citi Suites Hotel</string>
 				<key>Picture</key>
-				<string>NoImage</string>
+				<string></string>
 				<key>StarEvaluation</key>
 				<string>☆☆☆☆</string>
 			</dict>
@@ -1418,7 +1418,7 @@
 				<key>Address</key>
 				<string>79 Don Gil Garcia Street Capitol Site, Cebu City, Cebu, Philippines 6000</string>
 				<key>Comment</key>
-				<string>Average of Philippines</string>
+				<string>Usually</string>
 				<key>Evaluation</key>
 				<string>3</string>
 				<key>Genre</key>
@@ -1430,7 +1430,7 @@
 				<key>Name</key>
 				<string>Verbena capitol suites</string>
 				<key>Picture</key>
-				<string>NoImage</string>
+				<string></string>
 				<key>StarEvaluation</key>
 				<string>☆☆☆</string>
 			</dict>
@@ -1445,7 +1445,7 @@
 				<key>Address</key>
 				<string>J. Llorente St, Cebu City, 6000 Cebu</string>
 				<key>Comment</key>
-				<string>Average of Philippines</string>
+				<string>Usually</string>
 				<key>Evaluation</key>
 				<string>3</string>
 				<key>Genre</key>
@@ -1457,7 +1457,7 @@
 				<key>Name</key>
 				<string>Adelfa Hotel</string>
 				<key>Picture</key>
-				<string>NoImage</string>
+				<string></string>
 				<key>StarEvaluation</key>
 				<string>☆☆☆</string>
 			</dict>
@@ -1484,7 +1484,7 @@
 				<key>Name</key>
 				<string>Island stay Hotel</string>
 				<key>Picture</key>
-				<string>NoImage</string>
+				<string></string>
 				<key>StarEvaluation</key>
 				<string>☆☆</string>
 			</dict>
@@ -1511,7 +1511,7 @@
 				<key>Name</key>
 				<string>Tune Hotel</string>
 				<key>Picture</key>
-				<string>NoImage</string>
+				<string></string>
 				<key>StarEvaluation</key>
 				<string>☆☆</string>
 			</dict>
@@ -1538,7 +1538,7 @@
 				<key>Name</key>
 				<string>Marco Polo Hotel</string>
 				<key>Picture</key>
-				<string>NoImage</string>
+				<string></string>
 				<key>StarEvaluation</key>
 				<string>☆☆☆☆</string>
 			</dict>
@@ -1565,7 +1565,7 @@
 				<key>Name</key>
 				<string>Dolce</string>
 				<key>Picture</key>
-				<string>NoImage</string>
+				<string></string>
 				<key>StarEvaluation</key>
 				<string>☆☆☆☆</string>
 			</dict>
@@ -1580,7 +1580,7 @@
 				<key>Address</key>
 				<string>Bellini Champagne Lounge and Live music Bar, Panorama Heights,, Nivel Hills, Lahug Cebu City 6000 Cebu</string>
 				<key>Comment</key>
-				<string>Average of Philippines</string>
+				<string>Usually</string>
 				<key>Evaluation</key>
 				<string>3</string>
 				<key>Genre</key>
@@ -1592,7 +1592,7 @@
 				<key>Name</key>
 				<string>Anzani</string>
 				<key>Picture</key>
-				<string>NoImage</string>
+				<string></string>
 				<key>StarEvaluation</key>
 				<string>☆☆☆</string>
 			</dict>
@@ -1607,7 +1607,7 @@
 				<key>Address</key>
 				<string>G/F, i2 Bldg., Jose Maria del Mar St, Cebu City, 6000 Cebu</string>
 				<key>Comment</key>
-				<string>Average of Philippines</string>
+				<string>Usually</string>
 				<key>Evaluation</key>
 				<string>3</string>
 				<key>Genre</key>
@@ -1619,7 +1619,7 @@
 				<key>Name</key>
 				<string>Abuhan Tres</string>
 				<key>Picture</key>
-				<string>NoImage</string>
+				<string></string>
 				<key>StarEvaluation</key>
 				<string>☆☆☆</string>
 			</dict>
@@ -1634,7 +1634,7 @@
 				<key>Address</key>
 				<string>G/F eBloc1 Tower, Cebu I.T. Park Jose Maria del Mar St Cebu City, 6000 Cebu</string>
 				<key>Comment</key>
-				<string>Average of Philippines</string>
+				<string>Usually</string>
 				<key>Evaluation</key>
 				<string>3</string>
 				<key>Genre</key>
@@ -1646,7 +1646,7 @@
 				<key>Name</key>
 				<string>Wanna Eat</string>
 				<key>Picture</key>
-				<string>NoImage</string>
+				<string></string>
 				<key>StarEvaluation</key>
 				<string>☆☆☆</string>
 			</dict>
@@ -1661,7 +1661,7 @@
 				<key>Address</key>
 				<string>Jose Maria del Mar St Cebu City, Cebu</string>
 				<key>Comment</key>
-				<string>Average of Philippines</string>
+				<string>Usually</string>
 				<key>Evaluation</key>
 				<string>3</string>
 				<key>Genre</key>
@@ -1673,7 +1673,7 @@
 				<key>Name</key>
 				<string>Chibori</string>
 				<key>Picture</key>
-				<string>NoImage</string>
+				<string></string>
 				<key>StarEvaluation</key>
 				<string>☆☆☆</string>
 			</dict>
@@ -1688,7 +1688,7 @@
 				<key>Address</key>
 				<string>I. Villa St, Cebu IT Park, 6000 Cebu City, Cebu</string>
 				<key>Comment</key>
-				<string>Average of Philippines</string>
+				<string>Usually</string>
 				<key>Evaluation</key>
 				<string>3</string>
 				<key>Genre</key>
@@ -1700,7 +1700,7 @@
 				<key>Name</key>
 				<string>Bites</string>
 				<key>Picture</key>
-				<string>NoImage</string>
+				<string></string>
 				<key>StarEvaluation</key>
 				<string>☆☆☆</string>
 			</dict>
@@ -1715,7 +1715,7 @@
 				<key>Address</key>
 				<string>Sky Rise, IT Park, Apas, Cebu City, 6000 Cebu</string>
 				<key>Comment</key>
-				<string>Average of Philippines</string>
+				<string>Usually</string>
 				<key>Evaluation</key>
 				<string>3</string>
 				<key>Genre</key>
@@ -1727,7 +1727,7 @@
 				<key>Name</key>
 				<string>Ziburo</string>
 				<key>Picture</key>
-				<string>NoImage</string>
+				<string></string>
 				<key>StarEvaluation</key>
 				<string>☆☆☆</string>
 			</dict>
@@ -1742,7 +1742,7 @@
 				<key>Address</key>
 				<string>eBloc 2, Bldg. Tower, Cebu City, Cebu</string>
 				<key>Comment</key>
-				<string>Average of Philippines</string>
+				<string>Usually</string>
 				<key>Evaluation</key>
 				<string>3</string>
 				<key>Genre</key>
@@ -1754,7 +1754,7 @@
 				<key>Name</key>
 				<string>Everything Yummy</string>
 				<key>Picture</key>
-				<string>NoImage</string>
+				<string></string>
 				<key>StarEvaluation</key>
 				<string>☆☆☆</string>
 			</dict>
@@ -1769,7 +1769,7 @@
 				<key>Address</key>
 				<string>G/F eBloc 2 Building, W Geonzon Street, Cebu City, 6000 Cebu</string>
 				<key>Comment</key>
-				<string>Average of Philippines</string>
+				<string>Usually</string>
 				<key>Evaluation</key>
 				<string>3</string>
 				<key>Genre</key>
@@ -1781,7 +1781,7 @@
 				<key>Name</key>
 				<string>Chatime</string>
 				<key>Picture</key>
-				<string>NoImage</string>
+				<string></string>
 				<key>StarEvaluation</key>
 				<string>☆☆☆</string>
 			</dict>
@@ -1796,7 +1796,7 @@
 				<key>Address</key>
 				<string>eBloc Tower 2, Cebu I.T. Park (Geonzon St cor V Padriga St), 6000 Cebu City,Cebu</string>
 				<key>Comment</key>
-				<string>Average of Philippines</string>
+				<string>Usually</string>
 				<key>Evaluation</key>
 				<string>3</string>
 				<key>Genre</key>
@@ -1808,7 +1808,7 @@
 				<key>Name</key>
 				<string>Yellow Cab</string>
 				<key>Picture</key>
-				<string>NoImage</string>
+				<string></string>
 				<key>StarEvaluation</key>
 				<string>☆☆☆</string>
 			</dict>
@@ -1823,7 +1823,7 @@
 				<key>Address</key>
 				<string>G/F Cebu Long Se Bldg. Osmeña Blvd, Cebu City, Cebu</string>
 				<key>Comment</key>
-				<string>Average of Philippines</string>
+				<string>Usually</string>
 				<key>Evaluation</key>
 				<string>3</string>
 				<key>Genre</key>
@@ -1835,7 +1835,7 @@
 				<key>Name</key>
 				<string>Jovens Grill</string>
 				<key>Picture</key>
-				<string>NoImage</string>
+				<string></string>
 				<key>StarEvaluation</key>
 				<string>☆☆☆</string>
 			</dict>
@@ -1850,7 +1850,7 @@
 				<key>Address</key>
 				<string>Irie Gastropubliko G/F Skyrise 4 Building W Geonzon St Cebu City</string>
 				<key>Comment</key>
-				<string>Average of Philippines</string>
+				<string>Usually</string>
 				<key>Evaluation</key>
 				<string>3</string>
 				<key>Genre</key>
@@ -1862,7 +1862,7 @@
 				<key>Name</key>
 				<string>Irie</string>
 				<key>Picture</key>
-				<string>NoImage</string>
+				<string></string>
 				<key>StarEvaluation</key>
 				<string>☆☆☆</string>
 			</dict>
@@ -1877,7 +1877,7 @@
 				<key>Address</key>
 				<string>Cebu IT Park, Cebu City, Cebu</string>
 				<key>Comment</key>
-				<string>Average of Philippines</string>
+				<string>Usually</string>
 				<key>Evaluation</key>
 				<string>3</string>
 				<key>Genre</key>
@@ -1889,7 +1889,7 @@
 				<key>Name</key>
 				<string>East West</string>
 				<key>Picture</key>
-				<string>NoImage</string>
+				<string></string>
 				<key>StarEvaluation</key>
 				<string>☆☆☆</string>
 			</dict>
@@ -1904,7 +1904,7 @@
 				<key>Address</key>
 				<string>The Walk, Cebu I.T. Park (Salinas Dr., Lahug), 6000 Cebu City, Cebu</string>
 				<key>Comment</key>
-				<string>Average of Philippines</string>
+				<string>Usually</string>
 				<key>Evaluation</key>
 				<string>3</string>
 				<key>Genre</key>
@@ -1916,7 +1916,7 @@
 				<key>Name</key>
 				<string>Blue Elephant</string>
 				<key>Picture</key>
-				<string>NoImage</string>
+				<string></string>
 				<key>StarEvaluation</key>
 				<string>☆☆☆</string>
 			</dict>
@@ -1931,11 +1931,11 @@
 				<key>Address</key>
 				<string>Cebu IT Park, Cebu City, Cebu</string>
 				<key>Comment</key>
-				<string>Average of Philippines</string>
+				<string>Usually</string>
 				<key>Evaluation</key>
 				<string>3</string>
 				<key>Genre</key>
-				<string>building</string>
+				<string>other</string>
 				<key>Latitude</key>
 				<string>10.33045</string>
 				<key>Longitude</key>
@@ -1943,7 +1943,7 @@
 				<key>Name</key>
 				<string>Music One</string>
 				<key>Picture</key>
-				<string>NoImage</string>
+				<string></string>
 				<key>StarEvaluation</key>
 				<string>☆☆☆</string>
 			</dict>
@@ -1958,7 +1958,7 @@
 				<key>Address</key>
 				<string>West Geonzon Street, Cebu City, Cebu</string>
 				<key>Comment</key>
-				<string>Average of Philippines</string>
+				<string>Usually</string>
 				<key>Evaluation</key>
 				<string>3</string>
 				<key>Genre</key>
@@ -1970,7 +1970,7 @@
 				<key>Name</key>
 				<string>Sunburst</string>
 				<key>Picture</key>
-				<string>NoImage</string>
+				<string></string>
 				<key>StarEvaluation</key>
 				<string>☆☆☆</string>
 			</dict>
@@ -1985,7 +1985,7 @@
 				<key>Address</key>
 				<string>W Geonzon St, Cebu City, Cebu</string>
 				<key>Comment</key>
-				<string>Average of Philippines</string>
+				<string>Usually</string>
 				<key>Evaluation</key>
 				<string>3</string>
 				<key>Genre</key>
@@ -1997,7 +1997,7 @@
 				<key>Name</key>
 				<string>Dong juan</string>
 				<key>Picture</key>
-				<string>NoImage</string>
+				<string></string>
 				<key>StarEvaluation</key>
 				<string>☆☆☆</string>
 			</dict>
@@ -2012,7 +2012,7 @@
 				<key>Address</key>
 				<string>Asiatown, IT Park, Cebu City, Philippines</string>
 				<key>Comment</key>
-				<string>Average of Philippines</string>
+				<string>Usually</string>
 				<key>Evaluation</key>
 				<string>3</string>
 				<key>Genre</key>
@@ -2024,7 +2024,7 @@
 				<key>Name</key>
 				<string>Gusto</string>
 				<key>Picture</key>
-				<string>NoImage</string>
+				<string></string>
 				<key>StarEvaluation</key>
 				<string>☆☆☆</string>
 			</dict>
