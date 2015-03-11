@@ -17,13 +17,13 @@
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Wi-Fi" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="XDE-kU-APp">
-                                <rect key="frame" x="140" y="28" width="198" height="35"/>
+                                <rect key="frame" x="140" y="30" width="200" height="35"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Fpn-k5-jCN">
-                                <rect key="frame" x="258" y="28" width="54" height="30"/>
+                                <rect key="frame" x="233" y="35" width="100" height="25"/>
                                 <state key="normal" title="Change">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
@@ -34,7 +34,7 @@
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Wi-Fi" id="ECJ-Xw-hyy"/>
+                    <tabBarItem key="tabBarItem" title="Wi-Fi" image="Wi-Fi2.png" id="ECJ-Xw-hyy"/>
                     <connections>
                         <outlet property="myButton" destination="Fpn-k5-jCN" id="L0W-2V-q9X"/>
                         <outlet property="myLabel" destination="XDE-kU-APp" id="kOd-Qs-0NZ"/>
@@ -61,7 +61,7 @@
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                             </tableView>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bc3-UZ-FXg">
-                                <rect key="frame" x="257" y="28" width="54" height="30"/>
+                                <rect key="frame" x="233" y="35" width="100" height="25"/>
                                 <state key="normal" title="Change">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
@@ -71,7 +71,7 @@
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Wi-Fi" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="m5A-gM-bpx">
-                                <rect key="frame" x="139" y="28" width="110" height="35"/>
+                                <rect key="frame" x="140" y="30" width="200" height="35"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
@@ -249,16 +249,14 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Gourmet" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jgX-Ky-jBc">
-                                <rect key="frame" x="130" y="28" width="198" height="35"/>
+                                <rect key="frame" x="140" y="30" width="200" height="35"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tCv-s2-xR0">
-                                <rect key="frame" x="258" y="28" width="54" height="30"/>
-                                <state key="normal" title="Change">
-                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
-                                </state>
+                                <rect key="frame" x="233" y="35" width="100" height="25"/>
+                                <state key="normal" title="Change"/>
                                 <connections>
                                     <action selector="tapBtn:" destination="Hk1-CT-dlO" eventType="touchUpInside" id="WBB-VD-Krh"/>
                                 </connections>
@@ -266,7 +264,7 @@
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Gourmet" id="dlZ-NO-fGg"/>
+                    <tabBarItem key="tabBarItem" title="Gourmet" image="Gourmet2.png" id="dlZ-NO-fGg"/>
                     <connections>
                         <outlet property="myButton" destination="tCv-s2-xR0" id="1lI-EP-Gqy"/>
                         <outlet property="myLabel" destination="jgX-Ky-jBc" id="tod-UL-iMn"/>
@@ -289,13 +287,13 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Gourmet" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pEp-Nd-OKT">
-                                <rect key="frame" x="128" y="28" width="120" height="35"/>
+                                <rect key="frame" x="140" y="30" width="200" height="35"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lyu-u8-aQ8">
-                                <rect key="frame" x="256" y="28" width="54" height="30"/>
+                                <rect key="frame" x="233" y="35" width="100" height="25"/>
                                 <state key="normal" title="Change">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
@@ -345,19 +343,10 @@
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ZWw-Le-9pw">
-                                <rect key="frame" x="136" y="297" width="36" height="30"/>
-                                <state key="normal" title="Wi-Fi">
-                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
-                                </state>
-                                <connections>
-                                    <action selector="tapBtn4:" destination="GKb-sE-QCw" eventType="touchUpInside" id="TC2-YX-tdP"/>
-                                    <segue destination="aBH-Wk-yB0" kind="show" identifier="wifi" id="Ayo-1S-IpS"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9L0-jD-jMh">
-                                <rect key="frame" x="136" y="153" width="60" height="30"/>
-                                <state key="normal" title="Gourmet">
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9L0-jD-jMh">
+                                <rect key="frame" x="100" y="120" width="125" height="125"/>
+                                <state key="normal" title="Gourmet" backgroundImage="Gourmet.png">
+                                    <color key="titleColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
@@ -365,12 +354,25 @@
                                     <segue destination="XHz-zd-PNy" kind="show" identifier="gourmet" id="9kk-xQ-kuc"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ZWw-Le-9pw">
+                                <rect key="frame" x="100" y="336" width="125" height="125"/>
+                                <state key="normal" title="Wi-Fi" backgroundImage="Wi-Fi.png">
+                                    <color key="titleColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="tapBtn4:" destination="GKb-sE-QCw" eventType="touchUpInside" id="TC2-YX-tdP"/>
+                                    <segue destination="aBH-Wk-yB0" kind="show" identifier="wifi" id="Ayo-1S-IpS"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Bookmark" id="LvB-dL-E7y"/>
+                    <tabBarItem key="tabBarItem" title="Bookmark" image="Bookmark.png" id="LvB-dL-E7y"/>
                     <navigationItem key="navigationItem" id="pgJ-Ka-HOS"/>
                     <connections>
+                        <outlet property="myButton" destination="9L0-jD-jMh" id="fzy-SO-V6r"/>
+                        <outlet property="myButton2" destination="ZWw-Le-9pw" id="GhN-8B-z7m"/>
                         <outlet property="myLabel" destination="t3d-wy-QWc" id="Ihz-io-kA8"/>
                     </connections>
                 </viewController>
@@ -492,7 +494,7 @@
         <scene sceneID="LRw-WZ-q8r">
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="hbY-kj-xoQ" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Bookmark" id="0p7-di-LNE"/>
+                    <tabBarItem key="tabBarItem" title="Bookmark" image="Bookmark.png" id="0p7-di-LNE"/>
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="5np-3p-sVD">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
@@ -508,6 +510,13 @@
             <point key="canvasLocation" x="431" y="-402"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="Bookmark.png" width="40" height="40"/>
+        <image name="Gourmet.png" width="407" height="407"/>
+        <image name="Gourmet2.png" width="35" height="35"/>
+        <image name="Wi-Fi.png" width="534" height="535"/>
+        <image name="Wi-Fi2.png" width="35" height="35"/>
+    </resources>
     <inferredMetricsTieBreakers>
         <segue reference="cFr-Ah-1ZN"/>
     </inferredMetricsTieBreakers>

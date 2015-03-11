@@ -11,6 +11,8 @@
 @interface bookmarkViewController : UIViewController
 
 @property (weak, nonatomic) IBOutlet UILabel *myLabel;
+@property (weak, nonatomic) IBOutlet UIButton *myButton;
+@property (weak, nonatomic) IBOutlet UIButton *myButton2;
 
 - (IBAction)tapBtn3:(id)sender;
 

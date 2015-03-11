@@ -17,6 +17,10 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
+    
+    //ナビゲーションコントローラのタイトル設定
+    self.navigationItem.title = [NSString stringWithFormat:@"Bookmark"];
+    
 }
 
 - (void)didReceiveMemoryWarning {
