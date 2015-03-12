@@ -284,7 +284,7 @@
 				<key>Address</key>
 				<string>Saac2 brgy 6015 Mactan, Lapu-Lapu, Philippines</string>
 				<key>Comment</key>
-				<string>No comment</string>
+				<string></string>
 				<key>Evaluation</key>
 				<string>4</string>
 				<key>Genre</key>
@@ -311,7 +311,7 @@
 				<key>Address</key>
 				<string>Salinas Drive, Lahug, Cebu City</string>
 				<key>Comment</key>
-				<string>No comment</string>
+				<string></string>
 				<key>Evaluation</key>
 				<string>3</string>
 				<key>Genre</key>
@@ -338,7 +338,7 @@
 				<key>Address</key>
 				<string>Ibabao,Agus Lapu-Lapu City</string>
 				<key>Comment</key>
-				<string>No comment</string>
+				<string></string>
 				<key>Evaluation</key>
 				<string>3</string>
 				<key>Genre</key>
@@ -365,7 +365,7 @@
 				<key>Address</key>
 				<string>219 - A.S.Fortuna st, Bakilid, Mandaue City Cebu</string>
 				<key>Comment</key>
-				<string>No comment</string>
+				<string></string>
 				<key>Evaluation</key>
 				<string>3</string>
 				<key>Genre</key>
@@ -392,7 +392,7 @@
 				<key>Address</key>
 				<string>Amro, Plaza M.L.Quezon National Hiway Pajo, LapuLapu City Cebu</string>
 				<key>Comment</key>
-				<string>No comment</string>
+				<string></string>
 				<key>Evaluation</key>
 				<string>3</string>
 				<key>Genre</key>
@@ -419,7 +419,7 @@
 				<key>Address</key>
 				<string>Banilad, Cebu City (Gaisano Coubtry Mall)</string>
 				<key>Comment</key>
-				<string>No comment</string>
+				<string></string>
 				<key>Evaluation</key>
 				<string>3</string>
 				<key>Genre</key>
@@ -446,7 +446,7 @@
 				<key>Address</key>
 				<string>Punta Engano Road, Lapu-Lapu, Cebu, 6015, Philippines</string>
 				<key>Comment</key>
-				<string>No comment</string>
+				<string></string>
 				<key>Evaluation</key>
 				<string>4</string>
 				<key>Genre</key>
@@ -473,7 +473,7 @@
 				<key>Address</key>
 				<string>Marina Mall Bldg., Ibo Lapu-lapu City Cebu</string>
 				<key>Comment</key>
-				<string>No comment</string>
+				<string></string>
 				<key>Evaluation</key>
 				<string>3</string>
 				<key>Genre</key>
@@ -500,7 +500,7 @@
 				<key>Address</key>
 				<string>A.S Fortuna St., Banilad, Cebu</string>
 				<key>Comment</key>
-				<string>No comment</string>
+				<string></string>
 				<key>Evaluation</key>
 				<string>3</string>
 				<key>Genre</key>
@@ -527,7 +527,7 @@
 				<key>Address</key>
 				<string>Sa Baybayon, Cordova, pilippine</string>
 				<key>Comment</key>
-				<string>No comment</string>
+				<string></string>
 				<key>Evaluation</key>
 				<string>4</string>
 				<key>Genre</key>
@@ -554,7 +554,7 @@
 				<key>Address</key>
 				<string>Paseo Saturnino, Ma.Luisa Road, Banilad, Cebu</string>
 				<key>Comment</key>
-				<string>No comment</string>
+				<string></string>
 				<key>Evaluation</key>
 				<string>4</string>
 				<key>Genre</key>
@@ -581,7 +581,7 @@
 				<key>Address</key>
 				<string>Salinas Drive, Lahug, Cebu City</string>
 				<key>Comment</key>
-				<string>No comment</string>
+				<string></string>
 				<key>Evaluation</key>
 				<string>3</string>
 				<key>Genre</key>
@@ -608,7 +608,7 @@
 				<key>Address</key>
 				<string>Jose Maria del Mar St Cebu City, Cebu</string>
 				<key>Comment</key>
-				<string>No comment</string>
+				<string></string>
 				<key>Evaluation</key>
 				<string>5</string>
 				<key>Genre</key>
@@ -635,7 +635,7 @@
 				<key>Address</key>
 				<string>69 Lim Tian Teng St. Ramos, Cebu City</string>
 				<key>Comment</key>
-				<string>No comment</string>
+				<string></string>
 				<key>Evaluation</key>
 				<string>3</string>
 				<key>Genre</key>
@@ -662,7 +662,7 @@
 				<key>Address</key>
 				<string>A.S.Fortuna Street,Mandaue City Cebu</string>
 				<key>Comment</key>
-				<string>No comment</string>
+				<string></string>
 				<key>Evaluation</key>
 				<string>3</string>
 				<key>Genre</key>
@@ -689,7 +689,7 @@
 				<key>Address</key>
 				<string>Punta Engano Road, Mactan, Lapu Lapu City, 6015, Cebu</string>
 				<key>Comment</key>
-				<string>No comment</string>
+				<string></string>
 				<key>Evaluation</key>
 				<string>4</string>
 				<key>Genre</key>
@@ -716,7 +716,7 @@
 				<key>Address</key>
 				<string>The Walk I.T Park Cebu City</string>
 				<key>Comment</key>
-				<string>No comment</string>
+				<string></string>
 				<key>Evaluation</key>
 				<string>3</string>
 				<key>Genre</key>
@@ -743,7 +743,7 @@
 				<key>Address</key>
 				<string>168 Punta Engano, Lapu-Lapu City Cebu</string>
 				<key>Comment</key>
-				<string>No comment</string>
+				<string></string>
 				<key>Evaluation</key>
 				<string>3</string>
 				<key>Genre</key>
@@ -770,7 +770,7 @@
 				<key>Address</key>
 				<string>G/F Castle Peak Hotel F.Cabahug St.,Cor.Pres.Quezon St. Mabolo,Cebu</string>
 				<key>Comment</key>
-				<string>No comment</string>
+				<string></string>
 				<key>Evaluation</key>
 				<string>4</string>
 				<key>Genre</key>
@@ -797,7 +797,7 @@
 				<key>Address</key>
 				<string>Gov. M. Cuenco Ave, Lungsod ng Cebu, pilippine</string>
 				<key>Comment</key>
-				<string>No comment</string>
+				<string></string>
 				<key>Evaluation</key>
 				<string>3</string>
 				<key>Genre</key>
@@ -824,7 +824,7 @@
 				<key>Address</key>
 				<string>11 Don Jose Avila St., Capitol Site, Cebu (Hotel Asia)</string>
 				<key>Comment</key>
-				<string>No comment</string>
+				<string></string>
 				<key>Evaluation</key>
 				<string>3</string>
 				<key>Genre</key>
@@ -851,7 +851,7 @@
 				<key>Address</key>
 				<string>The Gallery,Juan Luna Ave.Mabolo Cebu</string>
 				<key>Comment</key>
-				<string>No comment</string>
+				<string></string>
 				<key>Evaluation</key>
 				<string>3</string>
 				<key>Genre</key>
@@ -878,7 +878,7 @@
 				<key>Address</key>
 				<string>1st Level, Waterfront Hotel, Salinas Dr. (Lahug), Cebu City, Cebu 6000</string>
 				<key>Comment</key>
-				<string>No comment</string>
+				<string></string>
 				<key>Evaluation</key>
 				<string>3</string>
 				<key>Genre</key>
@@ -905,7 +905,7 @@
 				<key>Address</key>
 				<string>1 Airport Road, Lapu-Lapu City, Mactan, 6015</string>
 				<key>Comment</key>
-				<string>No comment</string>
+				<string></string>
 				<key>Evaluation</key>
 				<string>3</string>
 				<key>Genre</key>
@@ -932,7 +932,7 @@
 				<key>Address</key>
 				<string>Crossroads Banilad, Cebu City, 6000 Cebu</string>
 				<key>Comment</key>
-				<string>No comment</string>
+				<string></string>
 				<key>Evaluation</key>
 				<string>4</string>
 				<key>Genre</key>
@@ -959,7 +959,7 @@
 				<key>Address</key>
 				<string>176 F. Ramos Street, Sta. Cruz. Cebu City</string>
 				<key>Comment</key>
-				<string>No comment</string>
+				<string></string>
 				<key>Evaluation</key>
 				<string>3</string>
 				<key>Genre</key>
@@ -986,7 +986,7 @@
 				<key>Address</key>
 				<string>Punta Engano Road, Lapu-Lapu, Cebu, 6015, Philippines</string>
 				<key>Comment</key>
-				<string>No comment</string>
+				<string></string>
 				<key>Evaluation</key>
 				<string>3</string>
 				<key>Genre</key>
@@ -1013,7 +1013,7 @@
 				<key>Address</key>
 				<string>Crossroads Mall, Governor Cuenco Avenue, Banilad, Cebu City, 6000, Cebu</string>
 				<key>Comment</key>
-				<string>No comment</string>
+				<string></string>
 				<key>Evaluation</key>
 				<string>4</string>
 				<key>Genre</key>
@@ -1040,7 +1040,7 @@
 				<key>Address</key>
 				<string>Basak, Cagody RD. Lapu-lapu City</string>
 				<key>Comment</key>
-				<string>No comment</string>
+				<string></string>
 				<key>Evaluation</key>
 				<string>3</string>
 				<key>Genre</key>
@@ -1067,7 +1067,7 @@
 				<key>Address</key>
 				<string>BridgeTown Square, Mandaue, Cebu</string>
 				<key>Comment</key>
-				<string>No comment</string>
+				<string></string>
 				<key>Evaluation</key>
 				<string>3</string>
 				<key>Genre</key>
@@ -1094,7 +1094,7 @@
 				<key>Address</key>
 				<string>A.S. Fortuna St. Bakilid, Mandaue City</string>
 				<key>Comment</key>
-				<string>No comment</string>
+				<string></string>
 				<key>Evaluation</key>
 				<string>3</string>
 				<key>Genre</key>
@@ -1121,7 +1121,7 @@
 				<key>Address</key>
 				<string>South Road Properties, 6000 Cebu</string>
 				<key>Comment</key>
-				<string>No comment</string>
+				<string></string>
 				<key>Evaluation</key>
 				<string>4</string>
 				<key>Genre</key>
@@ -1148,7 +1148,7 @@
 				<key>Address</key>
 				<string>Salinas Drive, Lahug, Cebu City</string>
 				<key>Comment</key>
-				<string>No comment</string>
+				<string></string>
 				<key>Evaluation</key>
 				<string>4</string>
 				<key>Genre</key>
@@ -1175,7 +1175,7 @@
 				<key>Address</key>
 				<string>20 Salinas Drive, Lahug, Cebu City 6000</string>
 				<key>Comment</key>
-				<string>No comment</string>
+				<string></string>
 				<key>Evaluation</key>
 				<string>4</string>
 				<key>Genre</key>
@@ -1202,7 +1202,7 @@
 				<key>Address</key>
 				<string>Paseo Saturnino Ma. Luisa Road, Banilad, Cebu City</string>
 				<key>Comment</key>
-				<string>No comment</string>
+				<string></string>
 				<key>Evaluation</key>
 				<string>4</string>
 				<key>Genre</key>
@@ -1229,7 +1229,7 @@
 				<key>Address</key>
 				<string>Gorordo Avenue, Lahug, 6000, Cebu City</string>
 				<key>Comment</key>
-				<string>No comment</string>
+				<string></string>
 				<key>Evaluation</key>
 				<string>4</string>
 				<key>Genre</key>
@@ -1256,7 +1256,7 @@
 				<key>Address</key>
 				<string>2nd flr. The Ridges Commercial Bldg., F. Cabahug St, Panagdait, Cebu</string>
 				<key>Comment</key>
-				<string>No comment</string>
+				<string></string>
 				<key>Evaluation</key>
 				<string>3</string>
 				<key>Genre</key>
@@ -1283,7 +1283,7 @@
 				<key>Address</key>
 				<string>i2 Bldg, Asiatown I.T. Park, Lahug, Cebu City</string>
 				<key>Comment</key>
-				<string>No comment</string>
+				<string></string>
 				<key>Evaluation</key>
 				<string>4</string>
 				<key>Genre</key>
@@ -1310,7 +1310,7 @@
 				<key>Address</key>
 				<string>Cebu Veteran Drive, Nivel Hills, Apas Cebu</string>
 				<key>Comment</key>
-				<string>No comment</string>
+				<string></string>
 				<key>Evaluation</key>
 				<string>3</string>
 				<key>Genre</key>
@@ -1337,7 +1337,7 @@
 				<key>Address</key>
 				<string>Mactan Marina Mall, Pusok, M.L. Quezon National Hwy, Lapu-Lapu City, Cebu</string>
 				<key>Comment</key>
-				<string>No comment</string>
+				<string></string>
 				<key>Evaluation</key>
 				<string>3</string>
 				<key>Genre</key>
@@ -1364,7 +1364,7 @@
 				<key>Address</key>
 				<string>A.S.Fortina St., Banilad Mandaue, Cebu City</string>
 				<key>Comment</key>
-				<string>No comment</string>
+				<string></string>
 				<key>Evaluation</key>
 				<string>3</string>
 				<key>Genre</key>
@@ -1391,7 +1391,7 @@
 				<key>Address</key>
 				<string>Airport Road, Pusok, Lapu-lapu City</string>
 				<key>Comment</key>
-				<string>No comment</string>
+				<string></string>
 				<key>Evaluation</key>
 				<string>4</string>
 				<key>Genre</key>
@@ -1418,7 +1418,7 @@
 				<key>Address</key>
 				<string>15 N. Escario Street, Cebu City 6000, Philippines</string>
 				<key>Comment</key>
-				<string>No comment</string>
+				<string></string>
 				<key>Evaluation</key>
 				<string>4</string>
 				<key>Genre</key>
@@ -1445,7 +1445,7 @@
 				<key>Address</key>
 				<string>DoorNo.4, MCT Bldg.F.Cabahug St. Mabolo,Cebu</string>
 				<key>Comment</key>
-				<string>No comment</string>
+				<string></string>
 				<key>Evaluation</key>
 				<string>3</string>
 				<key>Genre</key>
@@ -1472,7 +1472,7 @@
 				<key>Address</key>
 				<string>Punta Engano Road, Lapu-Lapu, Cebu, 6015, Philippines</string>
 				<key>Comment</key>
-				<string>No comment</string>
+				<string></string>
 				<key>Evaluation</key>
 				<string>3</string>
 				<key>Genre</key>
@@ -1499,7 +1499,7 @@
 				<key>Address</key>
 				<string>The Crossroads, J. Abad Santos St, Mandaue City, 6000 Cebu</string>
 				<key>Comment</key>
-				<string>No comment</string>
+				<string></string>
 				<key>Evaluation</key>
 				<string>3</string>
 				<key>Genre</key>
@@ -1526,7 +1526,7 @@
 				<key>Address</key>
 				<string>Banilad Town Center Gov. M. Cuenco, Banilad,Cebu</string>
 				<key>Comment</key>
-				<string>No comment</string>
+				<string></string>
 				<key>Evaluation</key>
 				<string>4</string>
 				<key>Genre</key>
@@ -1553,7 +1553,7 @@
 				<key>Address</key>
 				<string>M.L.Quezon St., Lapu-lapu City</string>
 				<key>Comment</key>
-				<string>No comment</string>
+				<string></string>
 				<key>Evaluation</key>
 				<string>3</string>
 				<key>Genre</key>
@@ -1580,7 +1580,7 @@
 				<key>Address</key>
 				<string>Skyrise 4, Padriga St, Dakbayan sa Sugbu, Cebu</string>
 				<key>Comment</key>
-				<string>No comment</string>
+				<string></string>
 				<key>Evaluation</key>
 				<string>4</string>
 				<key>Genre</key>
@@ -1607,7 +1607,7 @@
 				<key>Address</key>
 				<string>219 A.S. Fortuna St. Bakilid, 6014 Mandaue</string>
 				<key>Comment</key>
-				<string>No comment</string>
+				<string></string>
 				<key>Evaluation</key>
 				<string>3</string>
 				<key>Genre</key>
@@ -1634,7 +1634,7 @@
 				<key>Address</key>
 				<string>Busay Cebu City</string>
 				<key>Comment</key>
-				<string>No comment</string>
+				<string></string>
 				<key>Evaluation</key>
 				<string>4</string>
 				<key>Genre</key>
@@ -1661,7 +1661,7 @@
 				<key>Address</key>
 				<string>Buyong, Mactan Island, Cebu, Philippines</string>
 				<key>Comment</key>
-				<string>No comment</string>
+				<string></string>
 				<key>Evaluation</key>
 				<string>3</string>
 				<key>Genre</key>
@@ -1688,7 +1688,7 @@
 				<key>Address</key>
 				<string>Level 1, The Terraces Ayala Center, Cebu City 6000</string>
 				<key>Comment</key>
-				<string>No comment</string>
+				<string></string>
 				<key>Evaluation</key>
 				<string>4</string>
 				<key>Genre</key>
@@ -1715,7 +1715,7 @@
 				<key>Address</key>
 				<string>Design Center of Cebu, AS Fortuna at P. Remedio St., Mandaue City 6000</string>
 				<key>Comment</key>
-				<string>No comment</string>
+				<string></string>
 				<key>Evaluation</key>
 				<string>3</string>
 				<key>Genre</key>
@@ -1742,7 +1742,7 @@
 				<key>Address</key>
 				<string>371 Gorordo Avenue lahug Cebu City</string>
 				<key>Comment</key>
-				<string>No comment</string>
+				<string></string>
 				<key>Evaluation</key>
 				<string>3</string>
 				<key>Genre</key>
@@ -1769,7 +1769,7 @@
 				<key>Address</key>
 				<string>APM Mall, Mabolo, Cebu City, Philippines</string>
 				<key>Comment</key>
-				<string>No comment</string>
+				<string></string>
 				<key>Evaluation</key>
 				<string>4</string>
 				<key>Genre</key>
@@ -1796,7 +1796,7 @@
 				<key>Address</key>
 				<string>Advance Business Center 139, Acasia Street, Kamputhaw</string>
 				<key>Comment</key>
-				<string>No comment</string>
+				<string></string>
 				<key>Evaluation</key>
 				<string>3</string>
 				<key>Genre</key>
@@ -1823,7 +1823,7 @@
 				<key>Address</key>
 				<string>Gate777 across Cebu Country Club, Banilad Road, Apas, Cebu City</string>
 				<key>Comment</key>
-				<string>No comment</string>
+				<string></string>
 				<key>Evaluation</key>
 				<string>3</string>
 				<key>Genre</key>
@@ -1850,7 +1850,7 @@
 				<key>Address</key>
 				<string>Veteran's Dr., Lahug, 6000 Cebu City, Cebu</string>
 				<key>Comment</key>
-				<string>No comment</string>
+				<string></string>
 				<key>Evaluation</key>
 				<string>3</string>
 				<key>Genre</key>
@@ -1877,7 +1877,7 @@
 				<key>Address</key>
 				<string>2F Mactan Marina Mall Lapu-Lapu city, Cebu</string>
 				<key>Comment</key>
-				<string>No comment</string>
+				<string></string>
 				<key>Evaluation</key>
 				<string>3</string>
 				<key>Genre</key>
@@ -1904,7 +1904,7 @@
 				<key>Address</key>
 				<string>Mango Square Mall, Juana Osmeña Street, Cebu City, Cebu</string>
 				<key>Comment</key>
-				<string>No comment</string>
+				<string></string>
 				<key>Evaluation</key>
 				<string>3</string>
 				<key>Genre</key>
@@ -1931,7 +1931,7 @@
 				<key>Address</key>
 				<string>M. L. Quezon National Highway, Pusok, Lapu-Lapu CIty</string>
 				<key>Comment</key>
-				<string>No comment</string>
+				<string></string>
 				<key>Evaluation</key>
 				<string>3</string>
 				<key>Genre</key>
@@ -1958,7 +1958,7 @@
 				<key>Address</key>
 				<string>Ground Floor, J Centre Mall, 165 AS Fortuna Street, Bakilid, Mandaue City, Cebu, Philippines</string>
 				<key>Comment</key>
-				<string>No comment</string>
+				<string></string>
 				<key>Evaluation</key>
 				<string>3</string>
 				<key>Genre</key>
@@ -1985,7 +1985,7 @@
 				<key>Address</key>
 				<string>Level 1,Ayala Center in Cebu, Apitong Street, Cebu City, Cebu</string>
 				<key>Comment</key>
-				<string>No comment</string>
+				<string></string>
 				<key>Evaluation</key>
 				<string>3</string>
 				<key>Genre</key>
@@ -2012,7 +2012,7 @@
 				<key>Address</key>
 				<string>Cebu Veterans Drive, Nivel Hills, Apas, Cebu City, Philippines</string>
 				<key>Comment</key>
-				<string>No comment</string>
+				<string></string>
 				<key>Evaluation</key>
 				<string>4</string>
 				<key>Genre</key>
@@ -2039,7 +2039,7 @@
 				<key>Address</key>
 				<string>Punta Engano Road, Lapu-Lapu, Cebu, 6015, Philippines</string>
 				<key>Comment</key>
-				<string>No comment</string>
+				<string></string>
 				<key>Evaluation</key>
 				<string>3</string>
 				<key>Genre</key>
@@ -2066,7 +2066,7 @@
 				<key>Address</key>
 				<string>11 Don Jose Avila St., Capitol Site, Cebu (Hotel Asia)</string>
 				<key>Comment</key>
-				<string>No comment</string>
+				<string></string>
 				<key>Evaluation</key>
 				<string>2</string>
 				<key>Genre</key>
@@ -2093,7 +2093,7 @@
 				<key>Address</key>
 				<string>Wilson St., Lahug, Cebu City.</string>
 				<key>Comment</key>
-				<string>No comment</string>
+				<string></string>
 				<key>Evaluation</key>
 				<string>3</string>
 				<key>Genre</key>
@@ -2120,7 +2120,7 @@
 				<key>Address</key>
 				<string>A.S. Fortuna Mandaue City, Cebu 6000</string>
 				<key>Comment</key>
-				<string>No comment</string>
+				<string></string>
 				<key>Evaluation</key>
 				<string>5</string>
 				<key>Genre</key>
@@ -2147,7 +2147,7 @@
 				<key>Address</key>
 				<string>Archbishop Reyes Avenue Cebu City Cebu</string>
 				<key>Comment</key>
-				<string>No comment</string>
+				<string></string>
 				<key>Evaluation</key>
 				<string>5</string>
 				<key>Genre</key>
@@ -2174,7 +2174,7 @@
 				<key>Address</key>
 				<string>MovenPick Macton Cebu</string>
 				<key>Comment</key>
-				<string>No comment</string>
+				<string></string>
 				<key>Evaluation</key>
 				<string>5</string>
 				<key>Genre</key>
@@ -2201,7 +2201,7 @@
 				<key>Address</key>
 				<string>371 Gorordo Avenue Lahug, Cebu City</string>
 				<key>Comment</key>
-				<string>No comment</string>
+				<string></string>
 				<key>Evaluation</key>
 				<string>5</string>
 				<key>Genre</key>
@@ -2228,7 +2228,7 @@
 				<key>Address</key>
 				<string>M. Cuenco Avenue Banilad, Cebu City</string>
 				<key>Comment</key>
-				<string>No comment</string>
+				<string></string>
 				<key>Evaluation</key>
 				<string>5</string>
 				<key>Genre</key>
@@ -2255,7 +2255,7 @@
 				<key>Address</key>
 				<string>Salinas Dr, Cebu City, 6000 Cebu</string>
 				<key>Comment</key>
-				<string>No comment</string>
+				<string></string>
 				<key>Evaluation</key>
 				<string>4</string>
 				<key>Genre</key>
@@ -2282,7 +2282,7 @@
 				<key>Address</key>
 				<string>The Terraces, Ayala Center Cebu, Cebu Business Park, 6000 Cebu</string>
 				<key>Comment</key>
-				<string>No comment</string>
+				<string></string>
 				<key>Evaluation</key>
 				<string>4</string>
 				<key>Genre</key>
@@ -2309,7 +2309,7 @@
 				<key>Address</key>
 				<string>2/L J Centre Mall, A. S. Fortuna Street, Mandaue City, 6014</string>
 				<key>Comment</key>
-				<string>No comment</string>
+				<string></string>
 				<key>Evaluation</key>
 				<string>4</string>
 				<key>Genre</key>
@@ -2336,7 +2336,7 @@
 				<key>Address</key>
 				<string>Osmeña Blvd, Cebu City, Cebu</string>
 				<key>Comment</key>
-				<string>No comment</string>
+				<string></string>
 				<key>Evaluation</key>
 				<string>4</string>
 				<key>Genre</key>
@@ -2363,7 +2363,7 @@
 				<key>Address</key>
 				<string>Bellini Champagne Lounge and Live music Bar, Panorama Heights,, Nivel Hills, Lahug Cebu City 6000 Cebu</string>
 				<key>Comment</key>
-				<string>No comment</string>
+				<string></string>
 				<key>Evaluation</key>
 				<string>5</string>
 				<key>Genre</key>
@@ -2390,7 +2390,7 @@
 				<key>Address</key>
 				<string>Piazza Elesia, Talamban Road, Cebu</string>
 				<key>Comment</key>
-				<string>No comment</string>
+				<string></string>
 				<key>Evaluation</key>
 				<string>5</string>
 				<key>Genre</key>
@@ -2417,7 +2417,7 @@
 				<key>Address</key>
 				<string>Datag Maribago Lapu Lapu city</string>
 				<key>Comment</key>
-				<string>No comment</string>
+				<string></string>
 				<key>Evaluation</key>
 				<string>4</string>
 				<key>Genre</key>
@@ -2444,7 +2444,7 @@
 				<key>Address</key>
 				<string>Gov. M. Roa St., Capitol Site Cebu</string>
 				<key>Comment</key>
-				<string>No comment</string>
+				<string></string>
 				<key>Evaluation</key>
 				<string>4</string>
 				<key>Genre</key>
@@ -2471,7 +2471,7 @@
 				<key>Address</key>
 				<string>Banilad Town Center Cebucity Cebu</string>
 				<key>Comment</key>
-				<string>No comment</string>
+				<string></string>
 				<key>Evaluation</key>
 				<string>4</string>
 				<key>Genre</key>
@@ -2498,7 +2498,7 @@
 				<key>Address</key>
 				<string>Guadalupe near Capitol</string>
 				<key>Comment</key>
-				<string>No comment</string>
+				<string></string>
 				<key>Evaluation</key>
 				<string>4</string>
 				<key>Genre</key>
@@ -2525,7 +2525,7 @@
 				<key>Address</key>
 				<string>Salinas Dr, Cebu City, 6000 Cebu</string>
 				<key>Comment</key>
-				<string>No comment</string>
+				<string></string>
 				<key>Evaluation</key>
 				<string>4</string>
 				<key>Genre</key>
@@ -2552,7 +2552,7 @@
 				<key>Address</key>
 				<string>268-B Don Mariano Cui St Cebucity Cebu</string>
 				<key>Comment</key>
-				<string>No comment</string>
+				<string></string>
 				<key>Evaluation</key>
 				<string>4</string>
 				<key>Genre</key>
@@ -2579,7 +2579,7 @@
 				<key>Address</key>
 				<string>Level 3 Ayala Center in Cebu, Apitong Street, Cebu City, Cebu</string>
 				<key>Comment</key>
-				<string>No comment</string>
+				<string></string>
 				<key>Evaluation</key>
 				<string>4</string>
 				<key>Genre</key>
@@ -2606,7 +2606,7 @@
 				<key>Address</key>
 				<string>G &amp; A Arcade N. Escario St., 6000 Cebu City, Philippines</string>
 				<key>Comment</key>
-				<string>No comment</string>
+				<string></string>
 				<key>Evaluation</key>
 				<string>4</string>
 				<key>Genre</key>
@@ -2633,7 +2633,7 @@
 				<key>Address</key>
 				<string>Level 1, Ayala Center in Cebu, Apitong Street, Cebu City, Cebu</string>
 				<key>Comment</key>
-				<string>No comment</string>
+				<string></string>
 				<key>Evaluation</key>
 				<string>4</string>
 				<key>Genre</key>
@@ -2660,7 +2660,7 @@
 				<key>Address</key>
 				<string>Salinas Drive, Lahug, Cebu City, Philippines</string>
 				<key>Comment</key>
-				<string>No comment</string>
+				<string></string>
 				<key>Evaluation</key>
 				<string>4</string>
 				<key>Genre</key>
@@ -2687,7 +2687,7 @@
 				<key>Address</key>
 				<string>Archbishop Reyes Avenue / Old Grand Convention Center, Cebu City, Philippines</string>
 				<key>Comment</key>
-				<string>No comment</string>
+				<string></string>
 				<key>Evaluation</key>
 				<string>3</string>
 				<key>Genre</key>
@@ -2714,7 +2714,7 @@
 				<key>Address</key>
 				<string>Pacific Square Building F Cabahug Cebu City Cebu</string>
 				<key>Comment</key>
-				<string>No comment</string>
+				<string></string>
 				<key>Evaluation</key>
 				<string>4</string>
 				<key>Genre</key>
@@ -2735,13 +2735,13 @@
 			<key></key>
 			<string></string>
 			<key>NO</key>
-			<string>102</string>
+			<string>103</string>
 			<key>gourmetlist</key>
 			<dict>
 				<key>Address</key>
 				<string>Level 1, Ayala Center in Cebu, Apitong Street, Cebu City, Cebu</string>
 				<key>Comment</key>
-				<string>No comment</string>
+				<string></string>
 				<key>Evaluation</key>
 				<string>3</string>
 				<key>Genre</key>
@@ -2762,13 +2762,13 @@
 			<key></key>
 			<string></string>
 			<key>NO</key>
-			<string>103</string>
+			<string>102</string>
 			<key>gourmetlist</key>
 			<dict>
 				<key>Address</key>
 				<string>Mabolo Proper -Upper Ground SM City Cebu</string>
 				<key>Comment</key>
-				<string>No comment</string>
+				<string></string>
 				<key>Evaluation</key>
 				<string>3</string>
 				<key>Genre</key>
@@ -2795,7 +2795,7 @@
 				<key>Address</key>
 				<string>4th San Antonio Village Rd Cebu City Cebu</string>
 				<key>Comment</key>
-				<string>No comment</string>
+				<string></string>
 				<key>Evaluation</key>
 				<string>4</string>
 				<key>Genre</key>
@@ -2822,7 +2822,7 @@
 				<key>Address</key>
 				<string>Irie Gastropubliko G/F Skyrise 4 Building W Geonzon St Cebu City</string>
 				<key>Comment</key>
-				<string>No comment</string>
+				<string></string>
 				<key>Evaluation</key>
 				<string>3</string>
 				<key>Genre</key>
@@ -2849,7 +2849,7 @@
 				<key>Address</key>
 				<string>Unit 2-B 2nd Floor, The Forum Bldg., Archbishop Reyes Ave, Lahug, Cebu City, Philippines</string>
 				<key>Comment</key>
-				<string>No comment</string>
+				<string></string>
 				<key>Evaluation</key>
 				<string>5</string>
 				<key>Genre</key>

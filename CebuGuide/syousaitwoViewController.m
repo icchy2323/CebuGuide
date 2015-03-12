@@ -153,7 +153,7 @@
     self.myImageView.image = [UIImage imageNamed:commonDic[@"Picture"]];
     self.myImageView2.image = [UIImage imageNamed:commonDic[@"Genre"]];
     self.myLabel.text = strNameList;
-    self.myLabel2.text = strAddressList;
+    self.myTextView2.text = strAddressList;
     self.myTextView.text = strCommentList;
 }
 
