@@ -20,6 +20,14 @@
     [super viewDidLoad];
     // Do any additional setup after loading the view.
     
+    //textViewを角丸にする
+    [[self.myTextView3 layer] setCornerRadius:10.0];
+    [self.myTextView3 setClipsToBounds:YES];
+    
+    //textViewに黒色の枠を付ける
+    [[self.myTextView3 layer] setBorderColor:[[UIColor blackColor] CGColor]];
+    [[self.myTextView3 layer] setBorderWidth:1.0];
+    
     NSLog(@"%d",_selectNum);
     
     //プロジェクト内のファイルにアクセスできるオブジェクトを作成
@@ -155,6 +163,10 @@
     self.myLabel.text = strNameList;
     self.myTextView2.text = strAddressList;
     self.myTextView.text = strCommentList;
+    self.myLabel3.text = strGenreList;
+    self.myImageView5.image = [UIImage imageNamed:@"Comment.png"];
+    self.myImageView6.image = [UIImage imageNamed:@"Address.png"];
+    self.myImageView7.image = [UIImage imageNamed:@"Memo.png"];
 }
 
 - (void)didReceiveMemoryWarning {

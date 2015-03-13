@@ -7,6 +7,7 @@
 //
 
 #import <UIKit/UIKit.h>
+#import <QuartzCore/QuartzCore.h>
 
 @interface syousaiViewController : UIViewController{
     NSArray *_gourmetArray;
@@ -21,6 +22,12 @@
 @property (weak, nonatomic) IBOutlet UITextView *myTextView;
 @property (weak, nonatomic) IBOutlet UIImageView *myImageView3;
 @property (weak, nonatomic) IBOutlet UITextView *myTextView2;
+@property (weak, nonatomic) IBOutlet UILabel *myLabel3;
+@property (weak, nonatomic) IBOutlet UITextView *myTextView3;
+@property (weak, nonatomic) IBOutlet UIImageView *myImageView4;
+@property (weak, nonatomic) IBOutlet UIImageView *myImageView5;
+@property (weak, nonatomic) IBOutlet UIImageView *myImageView6;
+
 
 @property (nonatomic,assign) int selectNum;
 
