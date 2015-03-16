@@ -43,14 +43,7 @@
     
     _wifiArray = [dic objectForKey:@"Wifilist"];
     _gourmetArray = [dic2 objectForKey:@"Gourmetlist"];
-    
-    //if文の中に移動
-//    NSDictionary *wifiDic = _wifiArray[self.selectNum];
-//    NSDictionary *gourmetDic = _gourmetArray[self.selectNum];
-    
-//    //ナビゲーションコントローラのタイトル設定
-//    self.navigationItem.title = [NSString stringWithFormat:@"Wi-Fi"];
-    
+
     //wifi,gourmetどちらから来たか判定する
     NSDictionary *commonDic = [[NSDictionary alloc]init];
     
@@ -167,6 +160,26 @@
     self.myImageView5.image = [UIImage imageNamed:@"Comment.png"];
     self.myImageView6.image = [UIImage imageNamed:@"Address.png"];
     self.myImageView7.image = [UIImage imageNamed:@"Memo.png"];
+    
+    self.myTextView3.delegate = self;
+    
+////////////////////////////////////////////////////////////////////////////////////////
+    
+//    //UserDefaultObjectを用意する
+//    NSUserDefaults *defaults = [NSUserDefaults standardUserDefaults];
+//    
+//    //文字を保存
+//    [defaults setObject:self.myTextView3.text forKey:@"Memo"];
+//    
+//    [defaults synchronize];
+//    
+//    //保存されたデータを取り出す
+//    NSString *memoStr = [defaults stringForKey:@"Memo"];
+//    
+//    self.myTextView3.text = memoStr;
+    
+///////////////////////////////////////////////////////////////////////////////////////
+
 }
 
 - (void)didReceiveMemoryWarning {
@@ -188,6 +201,9 @@
     //AlertViewの設定
     UIAlertView *alert= [[UIAlertView alloc] initWithTitle:@"Add to" message:@"Bookmark?" delegate:self cancelButtonTitle:@"cancel" otherButtonTitles:@"OK", nil];
     
+    //AlertViewに番号をつける
+    alert.tag = 1;
+    
     //設定したAlertViewを表示
     [alert show];
 }
@@ -196,10 +212,51 @@
     [self dismissViewControllerAnimated:YES completion:nil];
 }
 
+- (IBAction)tapBtn3:(id)sender {
+    
+    //アラートを表示する
+    UIAlertView *message = [[UIAlertView alloc] initWithTitle:@"Memo"
+                                                      message:nil
+                                                     delegate:self
+                                            cancelButtonTitle:@"Cansel"
+                                            otherButtonTitles:@"OK", nil];
+    
+    //AlertViewに番号をつける
+    message.tag = 0;
+    
+    [message setAlertViewStyle:UIAlertViewStylePlainTextInput];
+    
+    [message show];
+}
+
 //ボタンがクリックされた時に、どのボタンが押されたか認識できるメソッド
 - (void)alertView:(UIAlertView *)alertView clickedButtonAtIndex:(NSInteger)buttonIndex{
     if (buttonIndex == 1) {
         NSLog(@"OK");
+        
+        if (alertView.tag == 0) {
+            
+            //メモ
+            if (buttonIndex == 1) {
+                
+                //UserDefaultObjectを用意する
+                NSUserDefaults *defaults = [NSUserDefaults standardUserDefaults];
+                
+                //文字を保存
+                [defaults setObject:self.myTextView3.text forKey:@"Memo"];
+                
+                [defaults synchronize];
+                
+                //保存されたデータを取り出す
+                NSString *memoStr = [defaults stringForKey:@"Memo"];
+                
+                self.myTextView3.text = memoStr;
+            }
+            
+
+        }else{
+            //お気に入り
+        }
         
         self.myButton.enabled = NO;
         self.myButton.alpha = 0.0;

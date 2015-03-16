@@ -7,18 +7,14 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		5821210D1A8C630300B2CDF7 /* oldgourmet.plist in Resources */ = {isa = PBXBuildFile; fileRef = 5821210C1A8C630300B2CDF7 /* oldgourmet.plist */; };
-		5821210F1A8C6C2700B2CDF7 /* oldwifi.plist in Resources */ = {isa = PBXBuildFile; fileRef = 5821210E1A8C6C2700B2CDF7 /* oldwifi.plist */; };
 		58218A3B1A9712CA0057BB2D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 58218A391A9712CA0057BB2D /* Main.storyboard */; };
 		583BC51B1A886E460087730B /* syousaiViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 583BC51A1A886E460087730B /* syousaiViewController.m */; };
 		583BC51F1A889D360087730B /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 583BC51E1A889D360087730B /* Default-568h@2x.png */; };
 		583F96B01AA0388D002447C3 /* annotationWithNumber.m in Sources */ = {isa = PBXBuildFile; fileRef = 583F96AF1AA0388D002447C3 /* annotationWithNumber.m */; };
-		584F69F81AB18F9C00C974B4 /* gourmet.plist in Resources */ = {isa = PBXBuildFile; fileRef = 584F69F71AB18F9C00C974B4 /* gourmet.plist */; };
 		584F6A4F1AB1DEA200C974B4 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 584F6A4E1AB1DEA200C974B4 /* QuartzCore.framework */; };
 		5855E5951A847BA00097A581 /* TableViewConst.m in Sources */ = {isa = PBXBuildFile; fileRef = 5855E5941A847BA00097A581 /* TableViewConst.m */; };
 		5855E5971A847BE90097A581 /* TableViewCustomCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5855E5961A847BE90097A581 /* TableViewCustomCell.xib */; };
 		5855E59A1A847C9F0097A581 /* customTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 5855E5991A847C9F0097A581 /* customTableViewCell.m */; };
-		5870128F1AAD853A00004817 /* oldoldwifi.plist in Resources */ = {isa = PBXBuildFile; fileRef = 5870128E1AAD853A00004817 /* oldoldwifi.plist */; };
 		58AF3FF61A78A61F0075BAC3 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 58AF3FF51A78A61F0075BAC3 /* AppDelegate.m */; };
 		58AF3FF91A78A61F0075BAC3 /* wifimainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 58AF3FF81A78A61F0075BAC3 /* wifimainViewController.m */; };
 		58AF3FFE1A78A61F0075BAC3 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 58AF3FFD1A78A61F0075BAC3 /* Images.xcassets */; };
@@ -35,7 +31,6 @@
 		58C27E601A89BE6600D62C58 /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 58C27E5E1A89BE6600D62C58 /* Info.plist */; };
 		58C27E611A89BE6600D62C58 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 58C27E5F1A89BE6600D62C58 /* main.m */; };
 		58C27E631A89C51C00D62C58 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 58C27E621A89C51C00D62C58 /* CoreLocation.framework */; };
-		58C556151AAAE21A004DA122 /* testgourmet.plist in Resources */ = {isa = PBXBuildFile; fileRef = 58C556141AAAE21A004DA122 /* testgourmet.plist */; };
 		58CF6ACA1AB2AB3D00E9838F /* Address.png in Resources */ = {isa = PBXBuildFile; fileRef = 58CF6A9F1AB2AB3D00E9838F /* Address.png */; };
 		58CF6ACB1AB2AB3D00E9838F /* America.png in Resources */ = {isa = PBXBuildFile; fileRef = 58CF6AA01AB2AB3D00E9838F /* America.png */; };
 		58CF6ACC1AB2AB3D00E9838F /* Bookmark.png in Resources */ = {isa = PBXBuildFile; fileRef = 58CF6AA11AB2AB3D00E9838F /* Bookmark.png */; };
@@ -79,9 +74,8 @@
 		58CF6AF21AB2AB3D00E9838F /* Vietnam.png in Resources */ = {isa = PBXBuildFile; fileRef = 58CF6AC71AB2AB3D00E9838F /* Vietnam.png */; };
 		58CF6AF31AB2AB3D00E9838F /* Wi-Fi.png in Resources */ = {isa = PBXBuildFile; fileRef = 58CF6AC81AB2AB3D00E9838F /* Wi-Fi.png */; };
 		58CF6AF41AB2AB3D00E9838F /* Wi-Fi2.png in Resources */ = {isa = PBXBuildFile; fileRef = 58CF6AC91AB2AB3D00E9838F /* Wi-Fi2.png */; };
-		58DD18F21AB039FD002DC0BC /* oldoldgourmet.plist in Resources */ = {isa = PBXBuildFile; fileRef = 58DD18F11AB039FD002DC0BC /* oldoldgourmet.plist */; };
-		58DD19411AB03ED2002DC0BC /* oldoldoldgourmet.plist in Resources */ = {isa = PBXBuildFile; fileRef = 58DD19401AB03ED2002DC0BC /* oldoldoldgourmet.plist */; };
-		58DD19431AB04034002DC0BC /* wifi.plist in Resources */ = {isa = PBXBuildFile; fileRef = 58DD19421AB04034002DC0BC /* wifi.plist */; };
+		58CF6AF61AB2DADA00E9838F /* wifi.plist in Resources */ = {isa = PBXBuildFile; fileRef = 58CF6AF51AB2DADA00E9838F /* wifi.plist */; };
+		58CF6AF81AB6BF3D00E9838F /* gourmet.plist in Resources */ = {isa = PBXBuildFile; fileRef = 58CF6AF71AB6BF3D00E9838F /* gourmet.plist */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -95,22 +89,18 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		5821210C1A8C630300B2CDF7 /* oldgourmet.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = oldgourmet.plist; sourceTree = "<group>"; };
-		5821210E1A8C6C2700B2CDF7 /* oldwifi.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = oldwifi.plist; sourceTree = "<group>"; };
 		58218A3A1A9712CA0057BB2D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = CebuGuide/Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		583BC5191A886E460087730B /* syousaiViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = syousaiViewController.h; sourceTree = "<group>"; };
 		583BC51A1A886E460087730B /* syousaiViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = syousaiViewController.m; sourceTree = "<group>"; };
 		583BC51E1A889D360087730B /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
 		583F96AE1AA0388C002447C3 /* annotationWithNumber.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = annotationWithNumber.h; sourceTree = "<group>"; };
 		583F96AF1AA0388D002447C3 /* annotationWithNumber.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = annotationWithNumber.m; sourceTree = "<group>"; };
-		584F69F71AB18F9C00C974B4 /* gourmet.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = gourmet.plist; sourceTree = "<group>"; };
 		584F6A4E1AB1DEA200C974B4 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
 		5855E5931A847BA00097A581 /* TableViewConst.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TableViewConst.h; sourceTree = "<group>"; };
 		5855E5941A847BA00097A581 /* TableViewConst.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TableViewConst.m; sourceTree = "<group>"; };
 		5855E5961A847BE90097A581 /* TableViewCustomCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TableViewCustomCell.xib; sourceTree = "<group>"; };
 		5855E5981A847C9F0097A581 /* customTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = customTableViewCell.h; sourceTree = "<group>"; };
 		5855E5991A847C9F0097A581 /* customTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = customTableViewCell.m; sourceTree = "<group>"; };
-		5870128E1AAD853A00004817 /* oldoldwifi.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = oldoldwifi.plist; sourceTree = "<group>"; };
 		58AF3FED1A78A61F0075BAC3 /* CebuGuide.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CebuGuide.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		58AF3FF41A78A61F0075BAC3 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		58AF3FF51A78A61F0075BAC3 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -139,7 +129,6 @@
 		58C27E5E1A89BE6600D62C58 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		58C27E5F1A89BE6600D62C58 /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		58C27E621A89C51C00D62C58 /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
-		58C556141AAAE21A004DA122 /* testgourmet.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = testgourmet.plist; path = ../../../Downloads/testgourmet.plist; sourceTree = "<group>"; };
 		58CF6A9F1AB2AB3D00E9838F /* Address.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Address.png; sourceTree = "<group>"; };
 		58CF6AA01AB2AB3D00E9838F /* America.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = America.png; sourceTree = "<group>"; };
 		58CF6AA11AB2AB3D00E9838F /* Bookmark.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Bookmark.png; sourceTree = "<group>"; };
@@ -183,9 +172,8 @@
 		58CF6AC71AB2AB3D00E9838F /* Vietnam.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Vietnam.png; sourceTree = "<group>"; };
 		58CF6AC81AB2AB3D00E9838F /* Wi-Fi.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Wi-Fi.png"; sourceTree = "<group>"; };
 		58CF6AC91AB2AB3D00E9838F /* Wi-Fi2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Wi-Fi2.png"; sourceTree = "<group>"; };
-		58DD18F11AB039FD002DC0BC /* oldoldgourmet.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = oldoldgourmet.plist; sourceTree = "<group>"; };
-		58DD19401AB03ED2002DC0BC /* oldoldoldgourmet.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = oldoldoldgourmet.plist; sourceTree = "<group>"; };
-		58DD19421AB04034002DC0BC /* wifi.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = wifi.plist; sourceTree = "<group>"; };
+		58CF6AF51AB2DADA00E9838F /* wifi.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = wifi.plist; sourceTree = "<group>"; };
+		58CF6AF71AB6BF3D00E9838F /* gourmet.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = gourmet.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -277,18 +265,12 @@
 		58AF3FF01A78A61F0075BAC3 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				58CF6AF71AB6BF3D00E9838F /* gourmet.plist */,
+				58CF6AF51AB2DADA00E9838F /* wifi.plist */,
 				58CF6A9E1AB2AB3D00E9838F /* image */,
-				584F69F71AB18F9C00C974B4 /* gourmet.plist */,
-				58DD19421AB04034002DC0BC /* wifi.plist */,
 				5855E5961A847BE90097A581 /* TableViewCustomCell.xib */,
 				5855E5981A847C9F0097A581 /* customTableViewCell.h */,
 				5855E5991A847C9F0097A581 /* customTableViewCell.m */,
-				58DD19401AB03ED2002DC0BC /* oldoldoldgourmet.plist */,
-				58DD18F11AB039FD002DC0BC /* oldoldgourmet.plist */,
-				5870128E1AAD853A00004817 /* oldoldwifi.plist */,
-				58C556141AAAE21A004DA122 /* testgourmet.plist */,
-				5821210C1A8C630300B2CDF7 /* oldgourmet.plist */,
-				5821210E1A8C6C2700B2CDF7 /* oldwifi.plist */,
 				58C27E5E1A89BE6600D62C58 /* Info.plist */,
 				58C27E5F1A89BE6600D62C58 /* main.m */,
 				58C081091A96FCCA009E009F /* icon */,
@@ -454,13 +436,9 @@
 				58CF6AD21AB2AB3D00E9838F /* Chix Savour.png in Resources */,
 				58CF6ACB1AB2AB3D00E9838F /* America.png in Resources */,
 				58CF6ADF1AB2AB3D00E9838F /* Korea.png in Resources */,
-				58DD19411AB03ED2002DC0BC /* oldoldoldgourmet.plist in Resources */,
 				58CF6ACF1AB2AB3D00E9838F /* Cafe.png in Resources */,
-				58DD19431AB04034002DC0BC /* wifi.plist in Resources */,
 				58CF6AEB1AB2AB3D00E9838F /* star1.png in Resources */,
-				5870128F1AAD853A00004817 /* oldoldwifi.plist in Resources */,
 				58AF40011A78A61F0075BAC3 /* LaunchScreen.xib in Resources */,
-				58DD18F21AB039FD002DC0BC /* oldoldgourmet.plist in Resources */,
 				58CF6AF41AB2AB3D00E9838F /* Wi-Fi2.png in Resources */,
 				58CF6AF21AB2AB3D00E9838F /* Vietnam.png in Resources */,
 				58C27E601A89BE6600D62C58 /* Info.plist in Resources */,
@@ -468,16 +446,15 @@
 				58218A3B1A9712CA0057BB2D /* Main.storyboard in Resources */,
 				58CF6AE41AB2AB3D00E9838F /* Moon cafe.png in Resources */,
 				58CF6AD31AB2AB3D00E9838F /* Close.png in Resources */,
-				58C556151AAAE21A004DA122 /* testgourmet.plist in Resources */,
+				58CF6AF61AB2DADA00E9838F /* wifi.plist in Resources */,
+				58CF6AF81AB6BF3D00E9838F /* gourmet.plist in Resources */,
 				58CF6AD81AB2AB3D00E9838F /* Gourmet.png in Resources */,
 				58CF6AF01AB2AB3D00E9838F /* STK ｔa Bay.png in Resources */,
-				5821210F1A8C6C2700B2CDF7 /* oldwifi.plist in Resources */,
 				58CF6AD71AB2AB3D00E9838F /* Gold Mango.png in Resources */,
 				5855E5971A847BE90097A581 /* TableViewCustomCell.xib in Resources */,
 				583BC51F1A889D360087730B /* Default-568h@2x.png in Resources */,
 				58CF6AE31AB2AB3D00E9838F /* Mexico.png in Resources */,
 				58CF6AE91AB2AB3D00E9838F /* Restaurant.png in Resources */,
-				5821210D1A8C630300B2CDF7 /* oldgourmet.plist in Resources */,
 				58CF6ADC1AB2AB3D00E9838F /* Italy.png in Resources */,
 				58CF6AEA1AB2AB3D00E9838F /* Spain.png in Resources */,
 				58CF6AE01AB2AB3D00E9838F /* Larsian.png in Resources */,
@@ -498,7 +475,6 @@
 				58CF6AEE1AB2AB3D00E9838F /* star4.png in Resources */,
 				58CF6AD51AB2AB3D00E9838F /* France.png in Resources */,
 				58CF6AE51AB2AB3D00E9838F /* NoImage.png in Resources */,
-				584F69F81AB18F9C00C974B4 /* gourmet.plist in Resources */,
 				58CF6AD11AB2AB3D00E9838F /* China.png in Resources */,
 				58CF6AD91AB2AB3D00E9838F /* Gourmet2.png in Resources */,
 				58CF6AD41AB2AB3D00E9838F /* Comment.png in Resources */,

@@ -18,7 +18,7 @@
 				<key>Evaluation</key>
 				<string>5</string>
 				<key>Genre</key>
-				<string>hotel</string>
+				<string>Hotel</string>
 				<key>Latitude</key>
 				<string>10.317566</string>
 				<key>Longitude</key>
@@ -45,7 +45,7 @@
 				<key>Evaluation</key>
 				<string>4</string>
 				<key>Genre</key>
-				<string>cafe</string>
+				<string>Cafe</string>
 				<key>Latitude</key>
 				<string>10.318021</string>
 				<key>Longitude</key>
@@ -72,7 +72,7 @@
 				<key>Evaluation</key>
 				<string>2</string>
 				<key>Genre</key>
-				<string>building</string>
+				<string>Building</string>
 				<key>Latitude</key>
 				<string>10.318855</string>
 				<key>Longitude</key>
@@ -99,7 +99,7 @@
 				<key>Evaluation</key>
 				<string>4</string>
 				<key>Genre</key>
-				<string>cafe</string>
+				<string>Cafe</string>
 				<key>Latitude</key>
 				<string>10.318021</string>
 				<key>Longitude</key>
@@ -126,7 +126,7 @@
 				<key>Evaluation</key>
 				<string>4</string>
 				<key>Genre</key>
-				<string>cafe</string>
+				<string>Cafe</string>
 				<key>Latitude</key>
 				<string>10.318021</string>
 				<key>Longitude</key>
@@ -153,7 +153,7 @@
 				<key>Evaluation</key>
 				<string>3</string>
 				<key>Genre</key>
-				<string>cafe</string>
+				<string>Cafe</string>
 				<key>Latitude</key>
 				<string>10.318021</string>
 				<key>Longitude</key>
@@ -180,7 +180,7 @@
 				<key>Evaluation</key>
 				<string>3</string>
 				<key>Genre</key>
-				<string>cafe</string>
+				<string>Cafe</string>
 				<key>Latitude</key>
 				<string>10.318021</string>
 				<key>Longitude</key>
@@ -207,7 +207,7 @@
 				<key>Evaluation</key>
 				<string>3</string>
 				<key>Genre</key>
-				<string>restaurant</string>
+				<string>Restaurant</string>
 				<key>Latitude</key>
 				<string>10.318021</string>
 				<key>Longitude</key>
@@ -234,7 +234,7 @@
 				<key>Evaluation</key>
 				<string>3</string>
 				<key>Genre</key>
-				<string>cafe</string>
+				<string>Cafe</string>
 				<key>Latitude</key>
 				<string>10.318021</string>
 				<key>Longitude</key>
@@ -261,7 +261,7 @@
 				<key>Evaluation</key>
 				<string>3</string>
 				<key>Genre</key>
-				<string>cafe</string>
+				<string>Cafe</string>
 				<key>Latitude</key>
 				<string>10.320846</string>
 				<key>Longitude</key>
@@ -288,7 +288,7 @@
 				<key>Evaluation</key>
 				<string>2</string>
 				<key>Genre</key>
-				<string>cafe</string>
+				<string>Cafe</string>
 				<key>Latitude</key>
 				<string>10.318021</string>
 				<key>Longitude</key>
@@ -315,7 +315,7 @@
 				<key>Evaluation</key>
 				<string>2</string>
 				<key>Genre</key>
-				<string>restaurant</string>
+				<string>Restaurant</string>
 				<key>Latitude</key>
 				<string>10.318021</string>
 				<key>Longitude</key>
@@ -342,7 +342,7 @@
 				<key>Evaluation</key>
 				<string>1</string>
 				<key>Genre</key>
-				<string>cafe</string>
+				<string>Cafe</string>
 				<key>Latitude</key>
 				<string>10.318021</string>
 				<key>Longitude</key>
@@ -369,7 +369,7 @@
 				<key>Evaluation</key>
 				<string>2</string>
 				<key>Genre</key>
-				<string>hotel</string>
+				<string>Hotel</string>
 				<key>Latitude</key>
 				<string>10.319413</string>
 				<key>Longitude</key>
@@ -396,7 +396,7 @@
 				<key>Evaluation</key>
 				<string>2</string>
 				<key>Genre</key>
-				<string>restaurant</string>
+				<string>Restaurant</string>
 				<key>Latitude</key>
 				<string>10.318021</string>
 				<key>Longitude</key>
@@ -423,13 +423,13 @@
 				<key>Evaluation</key>
 				<string>2</string>
 				<key>Genre</key>
-				<string>hotel</string>
+				<string>Hotel</string>
 				<key>Latitude</key>
 				<string>10.32002</string>
 				<key>Longitude</key>
 				<string>123.903148</string>
 				<key>Name</key>
-				<string>MANDARIN PLAZA HOTEL</string>
+				<string>MANDARIN PLAZA Hotel</string>
 				<key>Picture</key>
 				<string>NoImage</string>
 				<key>StarEvaluation</key>
@@ -450,7 +450,7 @@
 				<key>Evaluation</key>
 				<string>5</string>
 				<key>Genre</key>
-				<string>hotel</string>
+				<string>Hotel</string>
 				<key>Latitude</key>
 				<string>10.325052</string>
 				<key>Longitude</key>
@@ -477,7 +477,7 @@
 				<key>Evaluation</key>
 				<string>4</string>
 				<key>Genre</key>
-				<string>cafe</string>
+				<string>Cafe</string>
 				<key>Latitude</key>
 				<string>10.328679</string>
 				<key>Longitude</key>
@@ -504,7 +504,7 @@
 				<key>Evaluation</key>
 				<string>3</string>
 				<key>Genre</key>
-				<string>cafe</string>
+				<string>Cafe</string>
 				<key>Latitude</key>
 				<string>10.328551</string>
 				<key>Longitude</key>
@@ -531,7 +531,7 @@
 				<key>Evaluation</key>
 				<string>4</string>
 				<key>Genre</key>
-				<string>cafe</string>
+				<string>Cafe</string>
 				<key>Latitude</key>
 				<string>10.328472</string>
 				<key>Longitude</key>
@@ -558,7 +558,7 @@
 				<key>Evaluation</key>
 				<string>4</string>
 				<key>Genre</key>
-				<string>restaurant</string>
+				<string>Restaurant</string>
 				<key>Latitude</key>
 				<string>10.3301</string>
 				<key>Longitude</key>
@@ -585,7 +585,7 @@
 				<key>Evaluation</key>
 				<string>3</string>
 				<key>Genre</key>
-				<string>restaurant</string>
+				<string>Restaurant</string>
 				<key>Latitude</key>
 				<string>10.328569</string>
 				<key>Longitude</key>
@@ -612,7 +612,7 @@
 				<key>Evaluation</key>
 				<string>3</string>
 				<key>Genre</key>
-				<string>cafe</string>
+				<string>Cafe</string>
 				<key>Latitude</key>
 				<string>10.329918</string>
 				<key>Longitude</key>
@@ -639,7 +639,7 @@
 				<key>Evaluation</key>
 				<string>3</string>
 				<key>Genre</key>
-				<string>cafe</string>
+				<string>Cafe</string>
 				<key>Latitude</key>
 				<string>10.327546</string>
 				<key>Longitude</key>
@@ -666,7 +666,7 @@
 				<key>Evaluation</key>
 				<string>3</string>
 				<key>Genre</key>
-				<string>cafe</string>
+				<string>Cafe</string>
 				<key>Latitude</key>
 				<string>10.323794</string>
 				<key>Longitude</key>
@@ -693,13 +693,13 @@
 				<key>Evaluation</key>
 				<string>2</string>
 				<key>Genre</key>
-				<string>restaurant</string>
+				<string>Restaurant</string>
 				<key>Latitude</key>
 				<string>10.330814</string>
 				<key>Longitude</key>
 				<string>123.900223</string>
 				<key>Name</key>
-				<string>Moon cafe</string>
+				<string>Moon Cafe</string>
 				<key>Picture</key>
 				<string>NoImage</string>
 				<key>StarEvaluation</key>
@@ -720,7 +720,7 @@
 				<key>Evaluation</key>
 				<string>2</string>
 				<key>Genre</key>
-				<string>restaurant</string>
+				<string>Restaurant</string>
 				<key>Latitude</key>
 				<string>10.331685</string>
 				<key>Longitude</key>
@@ -747,7 +747,7 @@
 				<key>Evaluation</key>
 				<string>2</string>
 				<key>Genre</key>
-				<string>restaurant</string>
+				<string>Restaurant</string>
 				<key>Latitude</key>
 				<string>10.328706</string>
 				<key>Longitude</key>
@@ -774,7 +774,7 @@
 				<key>Evaluation</key>
 				<string>3</string>
 				<key>Genre</key>
-				<string>cafe</string>
+				<string>Cafe</string>
 				<key>Latitude</key>
 				<string>10.307543</string>
 				<key>Longitude</key>
@@ -801,7 +801,7 @@
 				<key>Evaluation</key>
 				<string>4</string>
 				<key>Genre</key>
-				<string>hotel</string>
+				<string>Hotel</string>
 				<key>Latitude</key>
 				<string>10.309883</string>
 				<key>Longitude</key>
@@ -828,7 +828,7 @@
 				<key>Evaluation</key>
 				<string>3</string>
 				<key>Genre</key>
-				<string>cafe</string>
+				<string>Cafe</string>
 				<key>Latitude</key>
 				<string>10.307543</string>
 				<key>Longitude</key>
@@ -855,7 +855,7 @@
 				<key>Evaluation</key>
 				<string>3</string>
 				<key>Genre</key>
-				<string>restaurant</string>
+				<string>Restaurant</string>
 				<key>Latitude</key>
 				<string>10.307543</string>
 				<key>Longitude</key>
@@ -882,7 +882,7 @@
 				<key>Evaluation</key>
 				<string>3</string>
 				<key>Genre</key>
-				<string>cafe</string>
+				<string>Cafe</string>
 				<key>Latitude</key>
 				<string>10.307543</string>
 				<key>Longitude</key>
@@ -909,7 +909,7 @@
 				<key>Evaluation</key>
 				<string>5</string>
 				<key>Genre</key>
-				<string>cafe</string>
+				<string>Cafe</string>
 				<key>Latitude</key>
 				<string>10.327807</string>
 				<key>Longitude</key>
@@ -936,7 +936,7 @@
 				<key>Evaluation</key>
 				<string>4</string>
 				<key>Genre</key>
-				<string>cafe</string>
+				<string>Cafe</string>
 				<key>Latitude</key>
 				<string>10.338957</string>
 				<key>Longitude</key>
@@ -963,7 +963,7 @@
 				<key>Evaluation</key>
 				<string>3</string>
 				<key>Genre</key>
-				<string>restaurant</string>
+				<string>Restaurant</string>
 				<key>Latitude</key>
 				<string>10.338957</string>
 				<key>Longitude</key>
@@ -990,7 +990,7 @@
 				<key>Evaluation</key>
 				<string>3</string>
 				<key>Genre</key>
-				<string>restaurant</string>
+				<string>Restaurant</string>
 				<key>Latitude</key>
 				<string>10.338957</string>
 				<key>Longitude</key>
@@ -1017,7 +1017,7 @@
 				<key>Evaluation</key>
 				<string>3</string>
 				<key>Genre</key>
-				<string>restaurant</string>
+				<string>Restaurant</string>
 				<key>Latitude</key>
 				<string>10.338957</string>
 				<key>Longitude</key>
@@ -1044,7 +1044,7 @@
 				<key>Evaluation</key>
 				<string>3</string>
 				<key>Genre</key>
-				<string>restaurant</string>
+				<string>Restaurant</string>
 				<key>Latitude</key>
 				<string>10.338957</string>
 				<key>Longitude</key>
@@ -1071,7 +1071,7 @@
 				<key>Evaluation</key>
 				<string>4</string>
 				<key>Genre</key>
-				<string>cafe</string>
+				<string>Cafe</string>
 				<key>Latitude</key>
 				<string>10.311129</string>
 				<key>Longitude</key>
@@ -1098,7 +1098,7 @@
 				<key>Evaluation</key>
 				<string>3</string>
 				<key>Genre</key>
-				<string>cafe</string>
+				<string>Cafe</string>
 				<key>Latitude</key>
 				<string>10.311716</string>
 				<key>Longitude</key>
@@ -1125,13 +1125,13 @@
 				<key>Evaluation</key>
 				<string>3</string>
 				<key>Genre</key>
-				<string>cafe</string>
+				<string>Cafe</string>
 				<key>Latitude</key>
 				<string>10.308282</string>
 				<key>Longitude</key>
 				<string>123.893722</string>
 				<key>Name</key>
-				<string>Crown Legency 2Fcafe</string>
+				<string>Crown Legency 2FCafe</string>
 				<key>Picture</key>
 				<string>NoImage</string>
 				<key>StarEvaluation</key>
@@ -1152,7 +1152,7 @@
 				<key>Evaluation</key>
 				<string>3</string>
 				<key>Genre</key>
-				<string>restaurant</string>
+				<string>Restaurant</string>
 				<key>Latitude</key>
 				<string>10.314368</string>
 				<key>Longitude</key>
@@ -1179,7 +1179,7 @@
 				<key>Evaluation</key>
 				<string>3</string>
 				<key>Genre</key>
-				<string>hotel</string>
+				<string>Hotel</string>
 				<key>Latitude</key>
 				<string>10.31723</string>
 				<key>Longitude</key>
@@ -1206,7 +1206,7 @@
 				<key>Evaluation</key>
 				<string>3</string>
 				<key>Genre</key>
-				<string>cafe</string>
+				<string>Cafe</string>
 				<key>Latitude</key>
 				<string>10.321415</string>
 				<key>Longitude</key>
@@ -1233,7 +1233,7 @@
 				<key>Evaluation</key>
 				<string>3</string>
 				<key>Genre</key>
-				<string>cafe</string>
+				<string>Cafe</string>
 				<key>Latitude</key>
 				<string>10.314343</string>
 				<key>Longitude</key>
@@ -1260,7 +1260,7 @@
 				<key>Evaluation</key>
 				<string>2</string>
 				<key>Genre</key>
-				<string>restaurant</string>
+				<string>Restaurant</string>
 				<key>Latitude</key>
 				<string>10.317114</string>
 				<key>Longitude</key>
@@ -1287,7 +1287,7 @@
 				<key>Evaluation</key>
 				<string>2</string>
 				<key>Genre</key>
-				<string>restaurant</string>
+				<string>Restaurant</string>
 				<key>Latitude</key>
 				<string>10.313439</string>
 				<key>Longitude</key>
@@ -1314,7 +1314,7 @@
 				<key>Evaluation</key>
 				<string>2</string>
 				<key>Genre</key>
-				<string>cafe</string>
+				<string>Cafe</string>
 				<key>Latitude</key>
 				<string>10.317628</string>
 				<key>Longitude</key>
@@ -1341,7 +1341,7 @@
 				<key>Evaluation</key>
 				<string>2</string>
 				<key>Genre</key>
-				<string>building</string>
+				<string>Building</string>
 				<key>Latitude</key>
 				<string>10.31281</string>
 				<key>Longitude</key>
@@ -1368,7 +1368,7 @@
 				<key>Evaluation</key>
 				<string>3</string>
 				<key>Genre</key>
-				<string>cafe</string>
+				<string>Cafe</string>
 				<key>Latitude</key>
 				<string>10.341872</string>
 				<key>Longitude</key>
@@ -1395,7 +1395,7 @@
 				<key>Evaluation</key>
 				<string>4</string>
 				<key>Genre</key>
-				<string>hotel</string>
+				<string>Hotel</string>
 				<key>Latitude</key>
 				<string>10.310906</string>
 				<key>Longitude</key>
@@ -1422,7 +1422,7 @@
 				<key>Evaluation</key>
 				<string>3</string>
 				<key>Genre</key>
-				<string>hotel</string>
+				<string>Hotel</string>
 				<key>Latitude</key>
 				<string>10.315373</string>
 				<key>Longitude</key>
@@ -1449,7 +1449,7 @@
 				<key>Evaluation</key>
 				<string>3</string>
 				<key>Genre</key>
-				<string>hotel</string>
+				<string>Hotel</string>
 				<key>Latitude</key>
 				<string>10.310906</string>
 				<key>Longitude</key>
@@ -1476,7 +1476,7 @@
 				<key>Evaluation</key>
 				<string>2</string>
 				<key>Genre</key>
-				<string>hotel</string>
+				<string>Hotel</string>
 				<key>Latitude</key>
 				<string>10.370311</string>
 				<key>Longitude</key>
@@ -1503,7 +1503,7 @@
 				<key>Evaluation</key>
 				<string>2</string>
 				<key>Genre</key>
-				<string>hotel</string>
+				<string>Hotel</string>
 				<key>Latitude</key>
 				<string>10.323912</string>
 				<key>Longitude</key>
@@ -1530,7 +1530,7 @@
 				<key>Evaluation</key>
 				<string>4</string>
 				<key>Genre</key>
-				<string>hotel</string>
+				<string>Hotel</string>
 				<key>Latitude</key>
 				<string>10.34173</string>
 				<key>Longitude</key>
@@ -1557,7 +1557,7 @@
 				<key>Evaluation</key>
 				<string>4</string>
 				<key>Genre</key>
-				<string>cafe</string>
+				<string>Cafe</string>
 				<key>Latitude</key>
 				<string>10.335913</string>
 				<key>Longitude</key>
@@ -1584,7 +1584,7 @@
 				<key>Evaluation</key>
 				<string>3</string>
 				<key>Genre</key>
-				<string>restaurant</string>
+				<string>Restaurant</string>
 				<key>Latitude</key>
 				<string>10.335533</string>
 				<key>Longitude</key>
@@ -1611,7 +1611,7 @@
 				<key>Evaluation</key>
 				<string>3</string>
 				<key>Genre</key>
-				<string>restaurant</string>
+				<string>Restaurant</string>
 				<key>Latitude</key>
 				<string>10.327546</string>
 				<key>Longitude</key>
@@ -1638,7 +1638,7 @@
 				<key>Evaluation</key>
 				<string>3</string>
 				<key>Genre</key>
-				<string>restaurant</string>
+				<string>Restaurant</string>
 				<key>Latitude</key>
 				<string>10.331933</string>
 				<key>Longitude</key>
@@ -1665,7 +1665,7 @@
 				<key>Evaluation</key>
 				<string>3</string>
 				<key>Genre</key>
-				<string>restaurant</string>
+				<string>Restaurant</string>
 				<key>Latitude</key>
 				<string>10.331043</string>
 				<key>Longitude</key>
@@ -1692,7 +1692,7 @@
 				<key>Evaluation</key>
 				<string>3</string>
 				<key>Genre</key>
-				<string>restaurant</string>
+				<string>Restaurant</string>
 				<key>Latitude</key>
 				<string>10.323114</string>
 				<key>Longitude</key>
@@ -1719,7 +1719,7 @@
 				<key>Evaluation</key>
 				<string>3</string>
 				<key>Genre</key>
-				<string>restaurant</string>
+				<string>Restaurant</string>
 				<key>Latitude</key>
 				<string>10.330902</string>
 				<key>Longitude</key>
@@ -1746,7 +1746,7 @@
 				<key>Evaluation</key>
 				<string>3</string>
 				<key>Genre</key>
-				<string>restaurant</string>
+				<string>Restaurant</string>
 				<key>Latitude</key>
 				<string>10.323812</string>
 				<key>Longitude</key>
@@ -1773,7 +1773,7 @@
 				<key>Evaluation</key>
 				<string>3</string>
 				<key>Genre</key>
-				<string>cafe</string>
+				<string>Cafe</string>
 				<key>Latitude</key>
 				<string>10.331038</string>
 				<key>Longitude</key>
@@ -1800,7 +1800,7 @@
 				<key>Evaluation</key>
 				<string>3</string>
 				<key>Genre</key>
-				<string>restaurant</string>
+				<string>Restaurant</string>
 				<key>Latitude</key>
 				<string>10.331966</string>
 				<key>Longitude</key>
@@ -1827,7 +1827,7 @@
 				<key>Evaluation</key>
 				<string>3</string>
 				<key>Genre</key>
-				<string>restaurant</string>
+				<string>Restaurant</string>
 				<key>Latitude</key>
 				<string>10.312804</string>
 				<key>Longitude</key>
@@ -1854,7 +1854,7 @@
 				<key>Evaluation</key>
 				<string>3</string>
 				<key>Genre</key>
-				<string>restaurant</string>
+				<string>Restaurant</string>
 				<key>Latitude</key>
 				<string>10.330232</string>
 				<key>Longitude</key>
@@ -1881,7 +1881,7 @@
 				<key>Evaluation</key>
 				<string>3</string>
 				<key>Genre</key>
-				<string>restaurant</string>
+				<string>Restaurant</string>
 				<key>Latitude</key>
 				<string>10.33045</string>
 				<key>Longitude</key>
@@ -1908,7 +1908,7 @@
 				<key>Evaluation</key>
 				<string>3</string>
 				<key>Genre</key>
-				<string>restaurant</string>
+				<string>Restaurant</string>
 				<key>Latitude</key>
 				<string>10.327344</string>
 				<key>Longitude</key>
@@ -1935,7 +1935,7 @@
 				<key>Evaluation</key>
 				<string>3</string>
 				<key>Genre</key>
-				<string>building</string>
+				<string>Building</string>
 				<key>Latitude</key>
 				<string>10.33045</string>
 				<key>Longitude</key>
@@ -1962,7 +1962,7 @@
 				<key>Evaluation</key>
 				<string>3</string>
 				<key>Genre</key>
-				<string>restaurant</string>
+				<string>Restaurant</string>
 				<key>Latitude</key>
 				<string>10.329237</string>
 				<key>Longitude</key>
@@ -1989,7 +1989,7 @@
 				<key>Evaluation</key>
 				<string>3</string>
 				<key>Genre</key>
-				<string>restaurant</string>
+				<string>Restaurant</string>
 				<key>Latitude</key>
 				<string>10.329237</string>
 				<key>Longitude</key>
@@ -2016,7 +2016,7 @@
 				<key>Evaluation</key>
 				<string>3</string>
 				<key>Genre</key>
-				<string>restaurant</string>
+				<string>Restaurant</string>
 				<key>Latitude</key>
 				<string>10.321772</string>
 				<key>Longitude</key>

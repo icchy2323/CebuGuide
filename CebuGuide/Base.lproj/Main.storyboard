@@ -9,8 +9,8 @@
             <objects>
                 <viewController storyboardIdentifier="wifimainViewController" id="vXZ-lx-hvc" customClass="wifimainViewController" sceneMemberID="viewController">
                     <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="jyV-Pf-zRb"/>
-                        <viewControllerLayoutGuide type="bottom" id="2fi-mo-0CV"/>
+                        <viewControllerLayoutGuide type="top" id="udt-Gb-rBv"/>
+                        <viewControllerLayoutGuide type="bottom" id="Wql-rw-ajS"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="kh9-bI-dsS">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
@@ -49,8 +49,8 @@
             <objects>
                 <viewController storyboardIdentifier="wifilistViewController" id="yxU-Rf-ULj" customClass="wifilistViewController" sceneMemberID="viewController">
                     <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="PTk-OO-88j"/>
-                        <viewControllerLayoutGuide type="bottom" id="uAG-ds-ztq"/>
+                        <viewControllerLayoutGuide type="top" id="2d0-re-cys"/>
+                        <viewControllerLayoutGuide type="bottom" id="Ogs-s7-cKn"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="OPr-ue-vXA">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
@@ -80,12 +80,8 @@
                         </subviews>
                         <color key="backgroundColor" red="0.94901960780000005" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                         <constraints>
-                            <constraint firstItem="LMC-Tn-byu" firstAttribute="leading" secondItem="OPr-ue-vXA" secondAttribute="leading" id="90U-o5-Qgd"/>
-                            <constraint firstItem="LMC-Tn-byu" firstAttribute="leading" secondItem="OPr-ue-vXA" secondAttribute="leading" id="PMm-UE-2EP"/>
-                            <constraint firstAttribute="trailing" secondItem="LMC-Tn-byu" secondAttribute="trailing" id="Zkk-hR-Mua"/>
-                            <constraint firstAttribute="trailing" secondItem="LMC-Tn-byu" secondAttribute="trailing" id="c4e-kT-TI4"/>
-                            <constraint firstItem="LMC-Tn-byu" firstAttribute="leading" secondItem="OPr-ue-vXA" secondAttribute="leading" id="hZQ-fd-C9D"/>
-                            <constraint firstAttribute="trailing" secondItem="LMC-Tn-byu" secondAttribute="trailing" id="tkY-lC-q5Q"/>
+                            <constraint firstItem="LMC-Tn-byu" firstAttribute="leading" secondItem="OPr-ue-vXA" secondAttribute="leading" id="ovW-9p-BEv"/>
+                            <constraint firstAttribute="trailing" secondItem="LMC-Tn-byu" secondAttribute="trailing" id="v6t-A4-oOa"/>
                         </constraints>
                     </view>
                     <connections>
@@ -96,20 +92,35 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Jf8-tD-9iO" userLabel="First Responder" sceneMemberID="firstResponder"/>
                 <exit id="ZSe-Dk-YPg" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
-            <point key="canvasLocation" x="1946" y="347"/>
+            <point key="canvasLocation" x="1945" y="347"/>
         </scene>
         <!--Syousaitwo View Controller-->
         <scene sceneID="MRQ-vx-inG">
             <objects>
                 <viewController storyboardIdentifier="syousaitwoViewController" id="d5q-2m-lTW" customClass="syousaitwoViewController" sceneMemberID="viewController">
                     <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="xq1-HO-ndY"/>
-                        <viewControllerLayoutGuide type="bottom" id="S9c-TP-Q2e"/>
+                        <viewControllerLayoutGuide type="top" id="Pwu-4Z-AYO"/>
+                        <viewControllerLayoutGuide type="bottom" id="Fsa-bp-XMl"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="LE2-4E-7GL">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
+                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="H5o-c8-A2o">
+                                <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="RF8-y2-Tr8">
+                                        <rect key="frame" x="46" y="378" width="100" height="21"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <state key="normal" title="Memo">
+                                            <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="tapBtn3:" destination="d5q-2m-lTW" eventType="touchUpInside" id="7M4-wW-Y9v"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                            </view>
                             <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="C8S-ri-4E6">
                                 <rect key="frame" x="0.0" y="0.0" width="600" height="64"/>
                                 <subviews>
@@ -122,6 +133,12 @@
                                             <action selector="tapBtn2:" destination="d5q-2m-lTW" eventType="touchUpInside" id="grn-5G-raJ"/>
                                         </connections>
                                     </button>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Store name" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="e1h-fj-W0l">
+                                        <rect key="frame" x="50" y="15" width="250" height="50"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
                                 </subviews>
                                 <color key="backgroundColor" red="0.83137254901960789" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                             </view>
@@ -176,12 +193,6 @@
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Store name" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="e1h-fj-W0l">
-                                <rect key="frame" x="50" y="15" width="250" height="50"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="16"/>
-                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" editable="NO" text="Address・Mark" translatesAutoresizingMaskIntoConstraints="NO" id="IlU-RR-9VG">
                                 <rect key="frame" x="10" y="276" width="275" height="80"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -206,13 +217,7 @@
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Memo" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pvN-L7-hZa">
-                                <rect key="frame" x="48" y="375" width="100" height="21"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="kIi-hy-miw">
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" editable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kIi-hy-miw">
                                 <rect key="frame" x="10" y="409" width="300" height="105"/>
                                 <color key="backgroundColor" red="0.98823529409999999" green="0.98823529409999999" blue="0.98823529409999999" alpha="1" colorSpace="calibratedRGB"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
@@ -232,6 +237,7 @@
                     </view>
                     <connections>
                         <outlet property="myButton" destination="kia-R9-a5O" id="BoY-HQ-D4a"/>
+                        <outlet property="myButton2" destination="RF8-y2-Tr8" id="bal-gf-Saj"/>
                         <outlet property="myImageView" destination="Rjv-gM-sPM" id="Xba-hb-VSE"/>
                         <outlet property="myImageView2" destination="ZJz-RX-YsO" id="cLH-uE-Yjg"/>
                         <outlet property="myImageView3" destination="a8Z-VS-JBR" id="R4l-4o-vR8"/>
@@ -245,19 +251,20 @@
                         <outlet property="myTextView" destination="eJF-Hf-DiS" id="rjf-Do-IpU"/>
                         <outlet property="myTextView2" destination="IlU-RR-9VG" id="4Rk-Sh-oqz"/>
                         <outlet property="myTextView3" destination="kIi-hy-miw" id="Y7M-3w-ub6"/>
+                        <outlet property="myView" destination="H5o-c8-A2o" id="ZNB-88-DG0"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="qj8-Os-oSb" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2786" y="707"/>
+            <point key="canvasLocation" x="2786" y="706.99999999999989"/>
         </scene>
         <!--Syousai View Controller-->
         <scene sceneID="OGg-nL-acS">
             <objects>
                 <viewController storyboardIdentifier="syousaiViewController" id="QhH-Zg-VwR" customClass="syousaiViewController" sceneMemberID="viewController">
                     <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="xhL-Gw-ptp"/>
-                        <viewControllerLayoutGuide type="bottom" id="Mc4-Ld-PXn"/>
+                        <viewControllerLayoutGuide type="top" id="buB-fb-sjI"/>
+                        <viewControllerLayoutGuide type="bottom" id="ccO-TR-Qwh"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="QCa-Jd-gnt">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
@@ -380,15 +387,15 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="mfc-PR-Bma" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2786" y="-777"/>
+            <point key="canvasLocation" x="2786" y="-776.99999999999989"/>
         </scene>
         <!--Gourmet-->
         <scene sceneID="7lN-MB-Alx">
             <objects>
                 <viewController storyboardIdentifier="gourmetmainViewController" id="Hk1-CT-dlO" customClass="gourmetmainViewController" sceneMemberID="viewController">
                     <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="9kb-5h-Fbu"/>
-                        <viewControllerLayoutGuide type="bottom" id="BOL-Fg-vwd"/>
+                        <viewControllerLayoutGuide type="top" id="2Aq-vx-CBJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="1aX-Bb-HjY"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="EvP-JO-VMs">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
@@ -425,14 +432,14 @@
             <objects>
                 <viewController storyboardIdentifier="gourmetlistViewController" id="QCX-zK-C7b" customClass="gourmetlistViewController" sceneMemberID="viewController">
                     <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="Jcc-3B-cez"/>
-                        <viewControllerLayoutGuide type="bottom" id="oX3-jv-sa6"/>
+                        <viewControllerLayoutGuide type="top" id="5gW-BS-6bs"/>
+                        <viewControllerLayoutGuide type="bottom" id="25b-Tm-ecF"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="qOf-Mr-C6A">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Gourmet" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pEp-Nd-OKT">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" text="Gourmet" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pEp-Nd-OKT">
                                 <rect key="frame" x="127" y="23" width="200" height="35"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
@@ -456,10 +463,12 @@
                         </subviews>
                         <color key="backgroundColor" red="0.94901960780000005" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                         <constraints>
-                            <constraint firstAttribute="trailing" secondItem="vv7-xO-njE" secondAttribute="trailing" id="DUx-52-vXz"/>
-                            <constraint firstAttribute="trailing" secondItem="vv7-xO-njE" secondAttribute="trailing" id="FUs-ru-ghk"/>
-                            <constraint firstItem="vv7-xO-njE" firstAttribute="leading" secondItem="qOf-Mr-C6A" secondAttribute="leading" id="JuT-w9-a0u"/>
-                            <constraint firstItem="vv7-xO-njE" firstAttribute="leading" secondItem="qOf-Mr-C6A" secondAttribute="leading" id="iSY-xC-pZg"/>
+                            <constraint firstItem="vv7-xO-njE" firstAttribute="leading" secondItem="qOf-Mr-C6A" secondAttribute="leading" id="JGN-aC-tyb"/>
+                            <constraint firstAttribute="trailing" secondItem="vv7-xO-njE" secondAttribute="trailing" id="YFm-za-PF1"/>
+                            <constraint firstItem="25b-Tm-ecF" firstAttribute="top" secondItem="vv7-xO-njE" secondAttribute="bottom" constant="59" id="fRG-3I-M5K"/>
+                            <constraint firstItem="vv7-xO-njE" firstAttribute="top" secondItem="pEp-Nd-OKT" secondAttribute="bottom" constant="1" id="gJm-po-b9l"/>
+                            <constraint firstAttribute="trailing" secondItem="vv7-xO-njE" secondAttribute="trailing" id="jbV-zZ-P19"/>
+                            <constraint firstItem="vv7-xO-njE" firstAttribute="leading" secondItem="qOf-Mr-C6A" secondAttribute="leading" id="r6y-OX-tDL"/>
                         </constraints>
                     </view>
                     <connections>
@@ -470,15 +479,15 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="WEm-zS-Q6f" userLabel="First Responder" sceneMemberID="firstResponder"/>
                 <exit id="soB-Sr-NjV" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
-            <point key="canvasLocation" x="1946" y="1089"/>
+            <point key="canvasLocation" x="1945" y="1089"/>
         </scene>
         <!--Bookmark-->
         <scene sceneID="d2m-50-cfw">
             <objects>
                 <viewController storyboardIdentifier="bookmarkViewController" id="GKb-sE-QCw" customClass="bookmarkViewController" sceneMemberID="viewController">
                     <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="3eT-ny-Voo"/>
-                        <viewControllerLayoutGuide type="bottom" id="Myv-LZ-4kC"/>
+                        <viewControllerLayoutGuide type="top" id="LHN-7h-IMe"/>
+                        <viewControllerLayoutGuide type="bottom" id="SQH-ly-OGI"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="Kju-2X-apa">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
@@ -534,8 +543,8 @@
             <objects>
                 <viewController storyboardIdentifier="wifibookmarkViewController" id="aBH-Wk-yB0" customClass="wifibookmarkViewController" sceneMemberID="viewController">
                     <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="jwM-DZ-R5u"/>
-                        <viewControllerLayoutGuide type="bottom" id="47b-YB-kEB"/>
+                        <viewControllerLayoutGuide type="top" id="jRe-aa-O0C"/>
+                        <viewControllerLayoutGuide type="bottom" id="mw8-NU-Z0A"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="BTj-sH-8TO">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
@@ -560,7 +569,7 @@
                                         </tableViewCellContentView>
                                         <color key="backgroundColor" red="0.94901960780000005" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                         <connections>
-                                            <segue destination="QhH-Zg-VwR" kind="modal" identifier="move" id="vDC-le-IjC"/>
+                                            <segue destination="QhH-Zg-VwR" kind="presentation" identifier="move" id="vDC-le-IjC"/>
                                         </connections>
                                     </tableViewCell>
                                 </prototypes>
@@ -568,21 +577,22 @@
                         </subviews>
                         <color key="backgroundColor" red="0.94901960780000005" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                     </view>
+                    <navigationItem key="navigationItem" id="8L4-Fp-gK6"/>
                     <connections>
                         <outlet property="myTableView" destination="gVo-IS-stf" id="p6V-Je-11V"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="DEL-1G-Ftr" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1954" y="-402"/>
+            <point key="canvasLocation" x="1953.9999999999998" y="-402"/>
         </scene>
         <!--Gourmetbookmark View Controller-->
         <scene sceneID="nWI-B0-H7m">
             <objects>
                 <viewController storyboardIdentifier="gourmetbookmarkViewController" id="XHz-zd-PNy" customClass="gourmetbookmarkViewController" sceneMemberID="viewController">
                     <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="VRV-Le-4Cq"/>
-                        <viewControllerLayoutGuide type="bottom" id="TQ0-YI-ztJ"/>
+                        <viewControllerLayoutGuide type="top" id="oyc-TG-F8V"/>
+                        <viewControllerLayoutGuide type="bottom" id="ZcZ-cd-CmC"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="st7-hQ-546">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
@@ -607,7 +617,7 @@
                                         </tableViewCellContentView>
                                         <color key="backgroundColor" red="0.94901960780000005" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                         <connections>
-                                            <segue destination="QhH-Zg-VwR" kind="modal" identifier="move2" id="cFr-Ah-1ZN"/>
+                                            <segue destination="QhH-Zg-VwR" kind="presentation" identifier="move2" id="cFr-Ah-1ZN"/>
                                         </connections>
                                     </tableViewCell>
                                 </prototypes>
@@ -615,13 +625,14 @@
                         </subviews>
                         <color key="backgroundColor" red="0.94901960780000005" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                     </view>
+                    <navigationItem key="navigationItem" id="BNh-1h-9xt"/>
                     <connections>
                         <outlet property="myTableView" destination="DYx-sz-jc5" id="zkK-xS-p0W"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="cdo-8g-4Vy" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1946" y="-1145"/>
+            <point key="canvasLocation" x="1945.9999999999998" y="-1145"/>
         </scene>
         <!--Tab Bar Controller-->
         <scene sceneID="4gx-bJ-PIb">
@@ -672,6 +683,6 @@
         <image name="Wi-Fi2.png" width="35" height="35"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="cFr-Ah-1ZN"/>
+        <segue reference="vDC-le-IjC"/>
     </inferredMetricsTieBreakers>
 </document>

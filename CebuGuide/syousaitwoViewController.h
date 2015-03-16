@@ -8,7 +8,7 @@
 
 #import <UIKit/UIKit.h>
 
-@interface syousaitwoViewController : UIViewController{
+@interface syousaitwoViewController : UIViewController<UITextViewDelegate,UIAlertViewDelegate>{
     NSArray *_gourmetArray;
     NSArray *_wifiArray;
     int _ListNO;
@@ -28,6 +28,8 @@
 @property (weak, nonatomic) IBOutlet UIImageView *myImageView5;
 @property (weak, nonatomic) IBOutlet UIImageView *myImageView6;
 @property (weak, nonatomic) IBOutlet UIImageView *myImageView7;
+@property (weak, nonatomic) IBOutlet UIView *myView;
+@property (weak, nonatomic) IBOutlet UIButton *myButton2;
 
 @property (nonatomic,assign) int selectNum;
 
@@ -42,5 +44,6 @@
 
 - (IBAction)tapBtn:(id)sender;
 - (IBAction)tapBtn2:(id)sender;
+- (IBAction)tapBtn3:(id)sender;
 
 @end
