@@ -43,44 +43,23 @@
     _wifiArray = [dic objectForKey:@"Wifilist"];
     _gourmetArray = [dic2 objectForKey:@"Gourmetlist"];
    
-//    //if文の中に移動
-//    NSDictionary *wifiDic = _wifiArray[self.selectNum];
-//    NSDictionary *gourmetDic = _gourmetArray[self.selectNum];
-    
-//    //ナビゲーションコントローラのタイトル設定
-//    self.navigationItem.title = [NSString stringWithFormat:@"Wi-Fi"];
-
     //wifi,gourmetどちらから来たか判定する
     NSDictionary *commonDic = [[NSDictionary alloc]init];
     
     if ([self.selectType isEqualToString:@"wifi"]) {
         
-//        //UserDefaultObjectを用意する
-//        NSUserDefaults *defaults = [NSUserDefaults standardUserDefaults];
-//        
-//        //一旦配列に取り出す
-//        NSMutableArray *wifiArray = [[defaults objectForKey:@"wifiArray"] mutableCopy];
-//
-//        _ListNO = [wifiArray[self.selectNum] intValue];
-        
         NSDictionary *wifiDic = _wifiArray[self.selectNum -1];
         
         commonDic = wifiDic[@"wifilist"];
+         _ListNO = [wifiDic[@"NO"] intValue];
         
         
     } else {
         
-//        //UserDefaultObjectを用意する
-//        NSUserDefaults *defaults = [NSUserDefaults standardUserDefaults];
-//        
-//        //一旦配列に取り出す
-//        NSMutableArray *gourmetArray = [[defaults objectForKey:@"gourmetArray"] mutableCopy];
-//        
-//        _ListNO = [gourmetArray[self.selectNum] intValue];
-
         NSDictionary *gourmetDic = _gourmetArray[self.selectNum -1];
         
         commonDic = gourmetDic[@"gourmetlist"];
+         _ListNO = [gourmetDic[@"NO"] intValue];
 
     }
     
@@ -146,6 +125,21 @@
     self.myImageView4.image = [UIImage imageNamed:@"Comment.png"];
     self.myImageView5.image = [UIImage imageNamed:@"Address.png"];
     self.myImageView6.image = [UIImage imageNamed:@"Memo.png"];
+    
+    self.myTextView3.delegate = self;
+    
+    //メモを取り出す
+    NSUserDefaults *defaults = [NSUserDefaults standardUserDefaults];
+    //配列変数に取り出す
+    NSArray *arrayMemoList = [defaults objectForKey:@"MemoList"];
+    
+    for (NSDictionary *memoDic in arrayMemoList) {
+        NSLog(@"%@%@",memoDic[@"NO"],memoDic[@"Type"]);
+        if (([memoDic[@"NO"] intValue] == _ListNO) && ([memoDic[@"Type"] isEqualToString:self.selectType])) {
+            self.myTextView3.text = memoDic[@"Memo"];
+            break;
+        }
+    }
 }
 
 
@@ -167,5 +161,61 @@
 - (IBAction)tapBtn2:(id)sender {
     [self dismissViewControllerAnimated:YES completion:nil];
 }
+
+- (IBAction)tapBtn3:(id)sender {
+    
+    //アラートを表示する
+    UIAlertView *message = [[UIAlertView alloc] initWithTitle:@"Memo"
+                                                      message:nil
+                                                     delegate:self
+                                            cancelButtonTitle:@"Cansel"
+                                            otherButtonTitles:@"OK", nil];
+    
+    //AlertViewに番号をつける
+    message.tag = 0;
+    
+    [message setAlertViewStyle:UIAlertViewStylePlainTextInput];
+    
+    [message show];
+
+}
+
+//ボタンがクリックされた時に、どのボタンが押されたか認識できるメソッド
+- (void)alertView:(UIAlertView *)alertView clickedButtonAtIndex:(NSInteger)buttonIndex{
+    
+    if (buttonIndex == 1) {
+        
+        //UserDefaultObjectを用意する
+        NSUserDefaults *defaults = [NSUserDefaults standardUserDefaults];
+        
+        //配列変数に取り出す
+        NSMutableArray *arrayMemoList = [[defaults objectForKey:@"MemoList"] mutableCopy];
+        
+        if (arrayMemoList == nil) {
+            arrayMemoList = [NSMutableArray new];
+        }
+        
+        for (NSDictionary *delMemoDic in arrayMemoList) {
+            NSLog(@"%@%@",delMemoDic[@"NO"],delMemoDic[@"type"]);
+            if (([delMemoDic[@"NO"] intValue] == _ListNO) && ([delMemoDic[@"Type"] isEqualToString:self.selectType])) {
+                [arrayMemoList removeObject:delMemoDic];
+                break;
+            }
+        }
+        
+        NSDictionary *memoDic = @{@"NO":[NSString stringWithFormat:@"%d",_ListNO],@"Type":self.selectType,@"Memo":[[alertView textFieldAtIndex:0] text]};
+        
+        [arrayMemoList addObject:memoDic];
+        
+        //文字を保存
+        [defaults setObject: arrayMemoList forKey:@"MemoList"];
+        
+        [defaults synchronize];
+        
+        self.myTextView3.text = [[alertView textFieldAtIndex:0] text];
+
+    }
+}
+    
 
 @end

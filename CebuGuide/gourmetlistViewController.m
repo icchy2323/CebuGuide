@@ -95,7 +95,7 @@
     NSDictionary *gourmetDic =(NSDictionary *)_gourmetArray[indexPath.row][@"gourmetlist"];
     
     cell.myLabel.text =[NSString stringWithFormat:@"%@",gourmetDic[@"Name"]];
-    //cell.myLabel2.text =[NSString stringWithFormat:@"%@",gourmetDic[@"Evaluation"]];
+    
     cell.myImageView.image = [UIImage imageNamed:gourmetDic[@"Genre"]];
                                
     NSString *strEvaluationList = gourmetDic[@"Evaluation"];

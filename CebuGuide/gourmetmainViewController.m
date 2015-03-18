@@ -43,50 +43,47 @@
         self.locationManager.desiredAccuracy = kCLLocationAccuracyNearestTenMeters;
         //最小移動間隔
         self.locationManager.distanceFilter = 100.0;                    //100m 移動ごとに通知
-        //self.locationManager.distanceFilter = kCLDistanceFilterNone;    //全ての動きを通知（デフォルト）
-        
+                
         //測位開始
         [self.locationManager startUpdatingLocation];
     }
     
-    // 地図の表示
-    _mapView = [[MKMapView alloc] init];
+        // 地図の表示
+        _mapView = [[MKMapView alloc] init];
     
-    _mapView.delegate = self;
+        _mapView.delegate = self;
     
-    _mapView.frame = CGRectMake(0, 60, self.view.bounds.size.width, self.view.bounds.size.height - 130);
+        _mapView.frame = CGRectMake(0, 60, self.view.bounds.size.width, self.view.bounds.size.height - 130);
     
-    //地図の表示種類設定
-    _mapView.mapType = MKMapTypeHybrid;
+        //地図の表示種類設定
+        _mapView.mapType = MKMapTypeHybrid;
     
-    //現在地を表示
-    _mapView.showsUserLocation = YES;
+        //現在地を表示
+        _mapView.showsUserLocation = YES;
     
+        //プロジェクト内のファイルにアクセスできるオブジェクトを作成
+        NSBundle *bundle = [NSBundle mainBundle];
     
+        //読み込むプロパティリストのファイルパス（場所）を指定
+        NSString *path = [bundle pathForResource:@"gourmet" ofType:@"plist"];
     
-    //プロジェクト内のファイルにアクセスできるオブジェクトを作成
-    NSBundle *bundle = [NSBundle mainBundle];
+        //プロパティリストの中身のデータを取得
+        NSDictionary *dic = [NSDictionary dictionaryWithContentsOfFile:path];
     
-    //読み込むプロパティリストのファイルパス（場所）を指定
-    NSString *path = [bundle pathForResource:@"gourmet" ofType:@"plist"];
-    
-    //プロパティリストの中身のデータを取得
-    NSDictionary *dic = [NSDictionary dictionaryWithContentsOfFile:path];
-    
-    _gourmetArray = [dic objectForKey:@"Gourmetlist"];
+        _gourmetArray = [dic objectForKey:@"Gourmetlist"];
 
-    //リストを表示する
-    NSString *strPictureList = @"";
-    NSString *strNameList = @"";
-    NSString *strGenreList = @"";
-    NSString *strAddressList = @"";
-    NSString *strEvaluationList = @"";
-    NSString *strCommentList = @"";
-    NSString *strLatitudeList = @"";
-    NSString *strLongitudeList = @"";
+        //リストを表示する
+        NSString *strPictureList = @"";
+        NSString *strNameList = @"";
+        NSString *strGenreList = @"";
+        NSString *strAddressList = @"";
+        NSString *strEvaluationList = @"";
+        NSString *strCommentList = @"";
+        NSString *strLatitudeList = @"";
+        NSString *strLongitudeList = @"";
     
-    //今何番目か番号を保持しておく
-    int index = 0;
+        //今何番目か番号を保持しておく
+        int index = 0;
     
     //高速列挙でデータを取り出して文字列変数にセット
     for (NSDictionary *gourmetDic in _gourmetArray) {
@@ -226,7 +223,6 @@
     
     [self presentViewController:GourmetlistViewController animated:YES completion:nil];
 
-    //[self.navigationController pushViewController:GourmetlistViewController animated:YES];
 }
 
 - (void)didReceiveMemoryWarning {

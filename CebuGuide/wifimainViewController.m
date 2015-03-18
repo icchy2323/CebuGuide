@@ -61,34 +61,32 @@
         //現在地を表示
         _mapView.showsUserLocation = YES;
     
+        //プロジェクト内のファイルにアクセスできるオブジェクトを作成
+        NSBundle *bundle = [NSBundle mainBundle];
     
+        //読み込むプロパティリストのファイルパス（場所）を指定
+        NSString *path = [bundle pathForResource:@"wifi" ofType:@"plist"];
     
-    //プロジェクト内のファイルにアクセスできるオブジェクトを作成
-    NSBundle *bundle = [NSBundle mainBundle];
+        //プロパティリストの中身のデータを取得
+        NSDictionary *dic = [NSDictionary dictionaryWithContentsOfFile:path];
     
-    //読み込むプロパティリストのファイルパス（場所）を指定
-    NSString *path = [bundle pathForResource:@"wifi" ofType:@"plist"];
+        _wifiArray = [dic objectForKey:@"Wifilist"];
     
-    //プロパティリストの中身のデータを取得
-    NSDictionary *dic = [NSDictionary dictionaryWithContentsOfFile:path];
+        //リストを表示する
+        NSString *strPictureList = @"";
+        NSString *strNameList = @"";
+        NSString *strGenreList = @"";
+        NSString *strAddressList = @"";
+        NSString *strEvaluationList = @"";
+        NSString *strCommentList = @"";
+        NSString *strLatitudeList = @"";
+        NSString *strLongitudeList = @"";
     
-    _wifiArray = [dic objectForKey:@"Wifilist"];
+        //今何番目か番号を保持しておく
+        int index = 0;
     
-    //リストを表示する
-    NSString *strPictureList = @"";
-    NSString *strNameList = @"";
-    NSString *strGenreList = @"";
-    NSString *strAddressList = @"";
-    NSString *strEvaluationList = @"";
-    NSString *strCommentList = @"";
-    NSString *strLatitudeList = @"";
-    NSString *strLongitudeList = @"";
-    
-    //今何番目か番号を保持しておく
-    int index = 0;
-    
-    //高速列挙でデータを取り出して文字列変数にセット
-    for (NSDictionary *wifiDic in _wifiArray) {
+        //高速列挙でデータを取り出して文字列変数にセット
+        for (NSDictionary *wifiDic in _wifiArray) {
         
         strPictureList = @"";
         strNameList = @"";
@@ -134,7 +132,7 @@
         
     }
     
-    [self.view addSubview:_mapView];
+        [self.view addSubview:_mapView];
 }
 
     //位置情報更新時に呼ばれる
@@ -166,21 +164,21 @@
 //ピンを立てる自作メソッド
 -(annotationWithNumber *)createdPin:(CLLocationCoordinate2D)co Title:(NSString *)title Subtitle:(NSString *)subtitle PinNumber:(int)pinnumber{
     
-    annotationWithNumber *pin = [[annotationWithNumber alloc] init];
-    pin.coordinate = co;
-    pin.title = title;
-    pin.subtitle = subtitle;
-    pin.pinNumber = [NSString stringWithFormat:@"%d",pinnumber];
+        annotationWithNumber *pin = [[annotationWithNumber alloc] init];
+        pin.coordinate = co;
+        pin.title = title;
+        pin.subtitle = subtitle;
+        pin.pinNumber = [NSString stringWithFormat:@"%d",pinnumber];
     
-    return pin;
+        return pin;
 }
 
 - (MKAnnotationView *)mapView:(MKMapView *)mapView viewForAnnotation:(id<MKAnnotation>)annotation
 {
-    static NSString *pinIndentifier = @"PinAnnotationID";
+        static NSString *pinIndentifier = @"PinAnnotationID";
     
-    //ピン情報の再利用
-    MKPinAnnotationView *pinView = (MKPinAnnotationView *)[mapView dequeueReusableAnnotationViewWithIdentifier:pinIndentifier];
+        //ピン情報の再利用
+        MKPinAnnotationView *pinView = (MKPinAnnotationView *)[mapView dequeueReusableAnnotationViewWithIdentifier:pinIndentifier];
     
     if (pinView == nil){
         pinView = [[MKPinAnnotationView alloc] initWithAnnotation:annotation reuseIdentifier:pinIndentifier];
@@ -190,23 +188,23 @@
         pinView.rightCalloutAccessoryView = [UIButton buttonWithType:UIButtonTypeDetailDisclosure];
     }
     
-    return pinView;
+        return pinView;
 }
 
 - (void) mapView:(MKMapView *)mapView annotationView:(MKAnnotationView *)view calloutAccessoryControlTapped:(UIControl *)control
 {
-    //iボタンをタップした時にしたい動作を記述するメソッド
-    NSLog(@"%@",view.annotation.title);
+        //iボタンをタップした時にしたい動作を記述するメソッド
+        NSLog(@"%@",view.annotation.title);
     
-    SyousaitwoViewController = [self.storyboard instantiateViewControllerWithIdentifier:@"syousaitwoViewController"];
+        SyousaitwoViewController = [self.storyboard instantiateViewControllerWithIdentifier:@"syousaitwoViewController"];
     
-    annotationWithNumber *currentPin = (annotationWithNumber *)view.annotation;
+        annotationWithNumber *currentPin = (annotationWithNumber *)view.annotation;
     
-    SyousaitwoViewController.selectNum = [currentPin.pinNumber intValue];
+        SyousaitwoViewController.selectNum = [currentPin.pinNumber intValue];
     
-    SyousaitwoViewController.selectType = @"wifi";
+        SyousaitwoViewController.selectType = @"wifi";
     
-    [self presentViewController:SyousaitwoViewController animated:NO completion:nil];
+        [self presentViewController:SyousaitwoViewController animated:NO completion:nil];
     
 }
 
@@ -215,15 +213,15 @@
 }
 
 -(IBAction)tapBtn:(id)sender {
-    wifilistViewController *WifilistViewController;
+        wifilistViewController *WifilistViewController;
     
-    WifilistViewController = [self.storyboard instantiateViewControllerWithIdentifier:@"wifilistViewController"];
+        WifilistViewController = [self.storyboard instantiateViewControllerWithIdentifier:@"wifilistViewController"];
     
-    WifilistViewController.selectType = @"wifi";
+        WifilistViewController.selectType = @"wifi";
     
-    WifilistViewController.modalTransitionStyle = UIModalTransitionStyleFlipHorizontal;
+        WifilistViewController.modalTransitionStyle = UIModalTransitionStyleFlipHorizontal;
     
-    [self presentViewController:WifilistViewController animated:YES completion:nil];
+        [self presentViewController:WifilistViewController animated:YES completion:nil];
 }
 
 -(void)didReceiveMemoryWarning {

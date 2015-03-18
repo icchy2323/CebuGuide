@@ -95,14 +95,10 @@
     
     customTableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:CellIdentifer];
     
-//    if (cell == nil) {
-//        cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:CellIdentifer];
-//    }
-    
     NSDictionary *wifiDic =(NSDictionary *)_wifiArray[indexPath.row][@"wifilist"];
     
     cell.myLabel.text =[NSString stringWithFormat:@"%@",wifiDic[@"Name"]];
-    //cell.myLabel2.text =[NSString stringWithFormat:@"%@",wifiDic[@"Evaluation"]];
+    
     cell.myImageView.image = [UIImage imageNamed:wifiDic[@"Genre"]];
     
     NSString *strEvaluationList = wifiDic[@"Evaluation"];

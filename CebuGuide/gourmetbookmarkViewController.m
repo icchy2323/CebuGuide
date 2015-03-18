@@ -59,46 +59,7 @@
         }
     }
     
-    
     _favoriteArray = tmpArray;
-    
-    
-//    //リストを表示する
-//    NSString *strPictureList = @"";
-//    NSString *strNameList = @"";
-//    NSString *strGenreList = @"";
-//    NSString *strAddressList = @"";
-//    NSString *strEvaluationList = @"";
-//    NSString *strCommentList = @"";
-//    
-//    //高速列挙でデータを取り出して文字列変数にセット
-//    for (NSDictionary *gourmetDic in self.gourmetlist) {
-//        strPictureList = [strPictureList stringByAppendingString:gourmetDic[@"Picture"]];
-//        strPictureList = [strPictureList stringByAppendingString:@"\n"];
-//        
-//        strNameList = [strNameList stringByAppendingString:gourmetDic[@"Name"]];
-//        strNameList = [strNameList stringByAppendingString:@"\n"];
-//        
-//        strGenreList = [strGenreList stringByAppendingString:gourmetDic[@"Genre"]];
-//        strGenreList = [strGenreList stringByAppendingString:@"\n"];
-//        
-//        strAddressList = [strAddressList stringByAppendingString:gourmetDic[@"Address"]];
-//        strAddressList = [strAddressList stringByAppendingString:@"\n"];
-//        
-//        strEvaluationList = [strEvaluationList stringByAppendingString:gourmetDic[@"Evaluation"]];
-//        strEvaluationList = [strEvaluationList stringByAppendingString:@"\n"];
-//        
-//        strCommentList = [strCommentList stringByAppendingString:gourmetDic[@"Comment"]];
-//        strCommentList = [strCommentList stringByAppendingString:@"\n"];
-//        
-//    }
-//    
-//    NSLog(@"%@",strPictureList);
-//    NSLog(@"%@",strNameList);
-//    NSLog(@"%@",strGenreList);
-//    NSLog(@"%@",strAddressList);
-//    NSLog(@"%@",strEvaluationList);
-//    NSLog(@"%@",strCommentList);
     
     UINib *nib = [UINib nibWithNibName:@"TableViewCustomCell" bundle:nil];
     [self.myTableView registerNib:nib forCellReuseIdentifier:@"cell"];

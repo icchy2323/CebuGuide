@@ -163,23 +163,18 @@
     
     self.myTextView3.delegate = self;
     
-////////////////////////////////////////////////////////////////////////////////////////
+    //メモを取り出す
+    NSUserDefaults *defaults = [NSUserDefaults standardUserDefaults];
+    //配列変数に取り出す
+    NSArray *arrayMemoList = [defaults objectForKey:@"MemoList"];
     
-//    //UserDefaultObjectを用意する
-//    NSUserDefaults *defaults = [NSUserDefaults standardUserDefaults];
-//    
-//    //文字を保存
-//    [defaults setObject:self.myTextView3.text forKey:@"Memo"];
-//    
-//    [defaults synchronize];
-//    
-//    //保存されたデータを取り出す
-//    NSString *memoStr = [defaults stringForKey:@"Memo"];
-//    
-//    self.myTextView3.text = memoStr;
-    
-///////////////////////////////////////////////////////////////////////////////////////
-
+    for (NSDictionary *memoDic in arrayMemoList) {
+        NSLog(@"%@%@",memoDic[@"NO"],memoDic[@"type"]);
+        if (([memoDic[@"NO"] intValue] == _ListNO) && ([memoDic[@"Type"] isEqualToString:self.selectType])) {
+            self.myTextView3.text = memoDic[@"Memo"];
+            break;
+        }
+    }
 }
 
 - (void)didReceiveMemoryWarning {
@@ -242,22 +237,37 @@
                 //UserDefaultObjectを用意する
                 NSUserDefaults *defaults = [NSUserDefaults standardUserDefaults];
                 
+                //配列変数に取り出す
+                NSMutableArray *arrayMemoList = [[defaults objectForKey:@"MemoList"] mutableCopy];
+                
+                if (arrayMemoList == nil) {
+                    arrayMemoList = [NSMutableArray new];
+                }
+                
+                for (NSDictionary *delMemoDic in arrayMemoList) {
+                    NSLog(@"%@%@",delMemoDic[@"NO"],delMemoDic[@"type"]);
+                    if (([delMemoDic[@"NO"] intValue] == _ListNO) && ([delMemoDic[@"Type"] isEqualToString:self.selectType])) {
+                        [arrayMemoList removeObject:delMemoDic];
+                        break;
+                    }
+                }
+                
+                NSDictionary *memoDic = @{@"NO":[NSString stringWithFormat:@"%d",_ListNO],@"Type":self.selectType,@"Memo":[[alertView textFieldAtIndex:0] text]};
+                
+                [arrayMemoList addObject:memoDic];
+                
                 //文字を保存
-                [defaults setObject:self.myTextView3.text forKey:@"Memo"];
+                [defaults setObject: arrayMemoList forKey:@"MemoList"];
                 
                 [defaults synchronize];
                 
-                //保存されたデータを取り出す
-                NSString *memoStr = [defaults stringForKey:@"Memo"];
+                self.myTextView3.text = [[alertView textFieldAtIndex:0] text];
                 
-                self.myTextView3.text = memoStr;
             }
             
-
         }else{
-            //お気に入り
-        }
-        
+            
+        //お気に入り
         self.myButton.enabled = NO;
         self.myButton.alpha = 0.0;
         self.myImageView4.image = [UIImage imageNamed:@"Check.png"];
@@ -320,8 +330,9 @@
                 
                 [defaults synchronize];
 
-            }
-        }
+             }
+         }
+     }
 
     }else{
         

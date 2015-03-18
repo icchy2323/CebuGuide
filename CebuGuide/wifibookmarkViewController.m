@@ -59,46 +59,7 @@
         }
     }
     
-    
     _favoriteArray = tmpArray;
-
-    
-//    //リストを表示する
-//    NSString *strPictureList = @"";
-//    NSString *strNameList = @"";
-//    NSString *strGenreList = @"";
-//    NSString *strAddressList = @"";
-//    NSString *strEvaluationList = @"";
-//    NSString *strCommentList = @"";
-//    
-//    //高速列挙でデータを取り出して文字列変数にセット
-//    for (NSDictionary *wifiDic in self.wifilist) {
-//        strPictureList = [strPictureList stringByAppendingString:wifiDic[@"Picture"]];
-//        strPictureList = [strPictureList stringByAppendingString:@"\n"];
-//        
-//        strNameList = [strNameList stringByAppendingString:wifiDic[@"Name"]];
-//        strNameList = [strNameList stringByAppendingString:@"\n"];
-//        
-//        strGenreList = [strGenreList stringByAppendingString:wifiDic[@"Genre"]];
-//        strGenreList = [strGenreList stringByAppendingString:@"\n"];
-//        
-//        strAddressList = [strAddressList stringByAppendingString:wifiDic[@"Address"]];
-//        strAddressList = [strAddressList stringByAppendingString:@"\n"];
-//        
-//        strEvaluationList = [strEvaluationList stringByAppendingString:wifiDic[@"Evaluation"]];
-//        strEvaluationList = [strEvaluationList stringByAppendingString:@"\n"];
-//        
-//        strCommentList = [strCommentList stringByAppendingString:wifiDic[@"Comment"]];
-//        strCommentList = [strCommentList stringByAppendingString:@"\n"];
-//        
-//    }
-//    
-//    NSLog(@"%@",strPictureList);
-//    NSLog(@"%@",strNameList);
-//    NSLog(@"%@",strGenreList);
-//    NSLog(@"%@",strAddressList);
-//    NSLog(@"%@",strEvaluationList);
-//    NSLog(@"%@",strCommentList);
     
     UINib *nib = [UINib nibWithNibName:@"TableViewCustomCell" bundle:nil];
     [self.myTableView registerNib:nib forCellReuseIdentifier:@"cell"];

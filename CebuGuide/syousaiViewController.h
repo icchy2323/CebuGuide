@@ -9,7 +9,7 @@
 #import <UIKit/UIKit.h>
 #import <QuartzCore/QuartzCore.h>
 
-@interface syousaiViewController : UIViewController{
+@interface syousaiViewController : UIViewController<UITextViewDelegate,UIAlertViewDelegate>{
     NSArray *_gourmetArray;
     NSArray *_wifiArray;
     int _ListNO;
@@ -40,5 +40,6 @@
 @property (nonatomic,strong) NSString *gourmetString;
 
 - (IBAction)tapBtn2:(id)sender;
+- (IBAction)tapBtn3:(id)sender;
 
 @end
