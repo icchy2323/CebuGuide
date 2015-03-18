@@ -28,7 +28,6 @@
 @property (weak, nonatomic) IBOutlet UIImageView *myImageView5;
 @property (weak, nonatomic) IBOutlet UIImageView *myImageView6;
 @property (weak, nonatomic) IBOutlet UIImageView *myImageView7;
-@property (weak, nonatomic) IBOutlet UIView *myView;
 @property (weak, nonatomic) IBOutlet UIButton *myButton2;
 
 @property (nonatomic,assign) int selectNum;
